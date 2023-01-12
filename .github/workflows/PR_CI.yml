@@ -1,0 +1,17 @@
+name: Cont. Integration for PRs
+
+on: push
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    name: lint codebase
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      
+      - name: Super-Linter
+        uses: github/super-linter@v4.10.0
+        env:
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
