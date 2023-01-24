@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550.4 611.87">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fbb040;
+        font-family: OfeliaText-Light, 'Ofelia Text';
+        font-size: 549.34px;
+        font-weight: 300;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #fbb040;
+      }
+
+      .cls-2 {
+        fill: #ed1c24;
+        stroke-width: 33px;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke-width: 18px;
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(.5 481.18) scale(1.07 1)"><tspan x="0" y="0">L</tspan></text>
+  <path class="cls-2" d="m269.48,464.68v-121.89"/>
+  <ellipse class="cls-3" cx="269.48" cy="284.69" rx="19.94" ry="18.57"/>
+</svg>
