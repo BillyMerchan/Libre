@@ -1,5 +1,10 @@
 # Libre
-A platform allowing students to reserve individual study rooms in Folsom Library and see which rooms are currently available. This project was thought of as a solution to combat the hassle students face when trying to find an open study room. Students have the ability to view which rooms are empty via a map, coloring in the occupied rooms while lighting up the empty rooms. Once the foundation has been built up, together with the library staff, we hope to put qr codes to allow for easy crowdsourcing of occupancy data. We understand that there is a significant issue with crowdsourcing data (Shuttle Tracker) however, this concept has been proved to work before in other universities2 which makes us confident that there is a way to make this work at RPI.
+Libre is a platform allowing students to reserve individual study rooms in university libraries.
+
+This project was thought of as a solution to combat the hassle students face when trying to find an open study room at RPI. Students have the ability to view which rooms are empty via a map, coloring in the occupied rooms while lighting up the empty rooms.
+
+# Contribution/Development Guide
+People interested in contributing can go browse Github Issues to view things that currently need working on or suggest a new feature. The [Wiki](https://github.com/BillyMerchan/Libre/wiki) can be useful when learning how to navigate around the codebase.
 
 # Tech Stack
 ### Frontend ###
@@ -9,3 +14,4 @@ A platform allowing students to reserve individual study rooms in Folsom Library
 ### Backend ###
 - **MongoDB**
 - **ExpressJS**
+- **NodeJS**
