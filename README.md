@@ -1,3 +1,6 @@
+<p align="center"><img alt = "LibreLogo" width=30% src="https://i.imgur.com/b8LgXaP.png">
+</p>
+
 # Libre
 Libre is a platform allowing students to reserve individual study rooms in university libraries.
 
