@@ -5,24 +5,20 @@ on:
     branches-ignore: [master]
   pull_request:
     branches: [master]
-
+    
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: lint codebase
+    name: CI for codebase
     
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0
+          ref: ${{github.head_ref}}
       
-      - name: Super-Linter
-        uses: github/super-linter@v4.10.0
-        env:
-          VALIDATE_ALL_CODEBASE: false
-          DEFAULT_BRANCH: master
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-          IGNORE_GENERATED_FILES: true
-          IGNORE_GITIGNORED_FILES: true
+      - name: Prettier
+        uses: creyD/prettier_action@v4.2
+        with:
+          prettier_options: --write **/*.{js,md}
           
