@@ -1,3 +1,3 @@
-public void int main():
-   int smthn;
-   
+public void int main(){
+   int sum = 0;
+};
