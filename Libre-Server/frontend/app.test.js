@@ -6,10 +6,9 @@ import { App } from "../App";
 describe("App", () => {
   it("renders without crashing given the required props", () => {
     const props = {
-      isFetching: false,
-      dispatch: jest.fn(),
-      selectedSubreddit: "reactjs",
-      posts: [],
+      /*
+       * Insert props here
+       */
     };
     const wrapper = shallow(<App {...props} />);
     expect(toJson(wrapper)).toMatchSnapshot();
