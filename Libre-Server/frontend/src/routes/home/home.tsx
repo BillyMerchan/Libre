@@ -1,9 +1,18 @@
 function Home() {
   return (
-    <div className="SubPage">
-      <header className="App-header">
-        <h1 className="subPageTitle">About Me</h1>
-      </header>
+    <div className="App">
+      <h1> Libre </h1>
+        <img src={LibreLogo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+        </a>
     </div>
   );
 }
