@@ -11,14 +11,14 @@ var _database;
 module.exports = {
   connectToServer: function (callback) {
     client.connect(function (err, database) {
-      // Verify we got a good "db" object
-      if (database)
-      {
+    // Verify we got a good "db" object
+    if (database)
+    {
         _database = database.db("Libre");
         console.log("Successfully connected to MongoDB."); 
-      }
-      return callback(err);
-         });
+    }
+    return callback(err);
+    });
   },
  
   getDb: function () {
