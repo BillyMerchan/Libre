@@ -1,7 +1,7 @@
 version: '3.7'
 
 services:
-  frontend:
+  backend:
     build:
       context: ./Libre-Server/backend
       dockerfile: Dockerfile
@@ -15,7 +15,7 @@ services:
       - "5000:5000"
     depends_on:
       - mongo
-    env_file: ./Libre-Server/backend/.env
+    env_file: ./Libre-Server/backend/config.env
     environment:
       - NODE_ENV=development
     networks:
@@ -28,7 +28,7 @@ services:
       - "27017:27017"
     networks:
       - app-network
-  backend:
+  frontend:
     build:
       context: ./Libre-Server/frontend
       dockerfile: Dockerfile
@@ -39,7 +39,7 @@ services:
       - ./client/:/usr/app
       - /usr/app/node_modules
     depends_on:
-      - server
+      - backend
     ports:
       - "3000:3000"
     networks:
