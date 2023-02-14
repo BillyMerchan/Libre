@@ -4,6 +4,7 @@
   "description": "<p align=\"center\"><img alt = \"LibreLogo\" width=30% src=\"https://i.imgur.com/b8LgXaP.png\"> </p>",
   "main": "index.js",
   "scripts": {
+    "lint": "npx lint --ext .js.jsx.ts.tsx .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
