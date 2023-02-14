@@ -1,0 +1,29 @@
+{
+  "name": "libre",
+  "version": "1.0.0",
+  "description": "<p align=\"center\"><img alt = \"LibreLogo\" width=30% src=\"https://i.imgur.com/b8LgXaP.png\"> </p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BillyMerchan/Libre.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BillyMerchan/Libre/issues"
+  },
+  "homepage": "https://github.com/BillyMerchan/Libre#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.52.0",
+    "eslint": "^8.34.0",
+    "eslint-config-standard-with-typescript": "^34.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.32.2",
+    "typescript": "^4.9.5"
+  }
+}
