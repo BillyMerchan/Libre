@@ -1,7 +1,7 @@
 function Home() {
   return (
-    <Navbar></Navbar>
     <div className="App">
+      <Navbar></Navbar>
       <h1> Libre </h1>
         <img src={LibreLogo} className="App-logo" alt="logo" />
         <p>
