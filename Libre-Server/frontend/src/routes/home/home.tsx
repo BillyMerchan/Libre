@@ -1,21 +1,27 @@
-function Home() {
+import LibreLogo from'./LibreLogo.svg'
+import './App.css';
+import Navbar from './Navbar'
+import Home from './pages/Home'
+import About from './pages/About'
+import FAQ from './pages/Faq'
+import SignIn from './pages/Signin'
+import {Route, Routes} from "react-router-dom"
+
+
+function App() {
   return (
-    <Navbar></Navbar>
-    <div className="App">
-      <h1> Libre </h1>
-        <img src={LibreLogo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        </a>
-    </div>
+    <>
+      <div className="container">
+        <Navbar />
+        <Routes>
+          <Route path= "/" element= {<Home/>} > </Route>
+          <Route path= "/about" element= {<About/>} > </Route>
+          <Route path= "/faq" element= {<FAQ/>} > </Route>
+          <Route path= "/signIn" element= {<SignIn/>} > </Route>
+        </Routes>
+      </div>
+    </>
   );
 }
 
-export default Home;
+export default App;
