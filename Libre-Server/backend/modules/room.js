@@ -1,19 +1,19 @@
-const { Int32 } = require("mongodb");
-const mongoose = require("mongoose");
+const { Int32 } = require('mongodb')
+const mongoose = require('mongoose')
 
-let postSchema = new mongoose.Schema(
+const postSchema = new mongoose.Schema(
   {
     _id: {
-      type: String,
+      type: String
     },
     max_size: {
-      type: Int32,
+      type: Int32
     },
     occupancy: {
-      type: Boolean,
-    },
+      type: Boolean
+    }
   },
   { timestamps: true }
-);
+)
 
-module.exports = mongoose.model("room", postSchema);
+module.exports = mongoose.model('room', postSchema)
