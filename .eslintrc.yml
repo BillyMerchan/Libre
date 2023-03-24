@@ -5,6 +5,10 @@ extends:
   - plugin:react/recommended
   - standard-with-typescript
 overrides: []
+settings:
+  react:
+    pragma: React
+    version: detect
 parserOptions:
   ecmaVersion: latest
   sourceType: module
