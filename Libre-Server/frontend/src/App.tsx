@@ -6,14 +6,12 @@ import Map from './routes/map/map';
 
 function App() {
   return (
-    <>
       <Router>
         <Routes>
-          <Route path='/' id='home' element={<Home/>} />
+          //<Route path='/' id='home' element={<Home/>} />
           <Route path='/map' id='map' element={<Map/>} />
         </Routes>
       </Router>
-    </>
   );
 }
 
