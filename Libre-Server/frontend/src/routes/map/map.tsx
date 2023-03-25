@@ -1,11 +1,10 @@
 
-function Home() {
+function Map() {
   return (
     <div className="App">
-      <Navbar></Navbar>
-        <p> Gamer </p>
+        <h1> test </h1>
     </div>
   );
 }
 
-export default Home;
+export default Map;
