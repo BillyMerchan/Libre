@@ -1,7 +1,9 @@
+import NavBar from "../../Navbar";
+import LibreLogo from "../../logo.svg"
 function Home() {
   return (
     <div className="App">
-      <Navbar></Navbar>
+      <NavBar></NavBar>
       <h1> Libre </h1>
         <img src={LibreLogo} className="App-logo" alt="logo" />
         <p>
