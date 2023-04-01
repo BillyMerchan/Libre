@@ -6,13 +6,13 @@ const port = process.env.PORT;
 
 app.use(cors());
 app.use(express.json());
-// get driver connection
-const db = require("./db/conn");
+// get db connection
+const connection = require("./db/conn");
 
 app.get("/", (req, res) => {
   res.send("<h2>Welcome Friends</h2>");
 });
 
-app.listen(port, () => {  
+app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
 });

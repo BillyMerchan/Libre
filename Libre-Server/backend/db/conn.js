@@ -1,4 +1,4 @@
-const { Mongoose } = require("mongoose");
+const { mongoose } = require("mongoose");
 const url = process.env.DATABASE;
 
 var options = {
@@ -6,11 +6,7 @@ var options = {
   useUnifiedTopology: true,
 };
 
-Mongoose.connect(url, options, (err) => {
-  if (err) {
-    console.log("Connection error.");
-  } else {
-    console.log("Connected to MongoDB.");
-  }
-});
+mongoose.connect(url, options);
+console.log("Db connected");
+
 
