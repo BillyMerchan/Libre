@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 const roomSchema = new mongoose.Schema(
   {
-    _id: {
+    roomNumber: {
       type: String
     },
     max_size: {
