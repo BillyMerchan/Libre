@@ -24,7 +24,7 @@ router.get('/:roomId', async (req, res) => {
 router.post('/add', (req, res, next) => {
   try {
     const room = {
-      _id: req.body.id,
+      roomNumber: req.body.id,
       max_size: req.body.max_occupancy,
       occupancy: req.body.max_occupancy
     }
