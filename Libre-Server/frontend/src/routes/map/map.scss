@@ -1,0 +1,16 @@
+$bg-main: #a81100;
+$fg-main: #ffffff;
+
+body {
+    background-color: $bg-main;
+}
+
+.Map {
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: $fg-main;
+    height: 80vh;
+    width: 85vw;
+}
