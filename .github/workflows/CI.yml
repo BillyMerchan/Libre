@@ -25,4 +25,6 @@ jobs:
     steps: 
       - uses: actions/checkout@v3
       - name: Run ESLint
-        run: sudo npm run lint
+        run: |
+          sudo chown -R $USER /home/runner/.npm/
+          npm run lint
