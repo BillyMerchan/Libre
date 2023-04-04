@@ -25,4 +25,4 @@ jobs:
     steps: 
       - uses: actions/checkout@v3
       - name: Run ESLint
-        run: sudo npx eslint Libre-Server/**
+        run: sudo npx eslint /Libre-Server/**
