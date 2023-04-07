@@ -13,7 +13,7 @@
     justify-content: center;
     align-items: center;
     height: 70px;
-    max-width: 1500px;
+    width: 100vw;
   }
   
   .navbar-logo {
@@ -102,6 +102,9 @@
       left: 0%;
       opacity: 1;
       transition: all 0.5s ease;
+      width: 100vw;
+      padding:0;
+
     }
   
     .nav-links {

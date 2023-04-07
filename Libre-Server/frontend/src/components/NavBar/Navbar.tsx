@@ -1,8 +1,8 @@
 import { click } from "@testing-library/user-event/dist/click";
 import React, {useState, useEffect} from "react";
 import {Link} from "react-router-dom"
-import Button from "./Button";
-import LibreLogo from "./logo.svg"
+import Button from "../Button/Button";
+import LibreLogo from "../../img/logo.svg";
 import "./Navbar.css";
 
 

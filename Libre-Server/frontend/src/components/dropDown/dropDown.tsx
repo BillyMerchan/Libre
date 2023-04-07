@@ -2,7 +2,7 @@ import React, {FC} from 'react';
 import './dropDown.scss';
 
 const DropDown: FC = () => {
-    {
+    /*{
         const dropDowns = document.querySelectorAll('.dropDown');
         dropDowns.forEach(dropDown => {
             const select = dropDown.querySelector('.select');
@@ -17,7 +17,7 @@ const DropDown: FC = () => {
             })
         }
         )
-    }
+    }*/
 
     return(
         <div className = "dropDown">
