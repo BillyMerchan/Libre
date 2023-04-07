@@ -14,3 +14,26 @@ body {
     height: 80vh;
     width: 85vw;
 }
+
+.mapRoom {
+    position: absolute;
+    width: 62vw;
+}
+
+.dropDown {
+    min-width: 15em;
+    display: block;
+    margin: auto;
+    height: 50px;
+}
+
+.dropDown * {
+    box-sizing: border-box;
+}
+
+.floorSelect {
+    background: #2a2f3b;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
