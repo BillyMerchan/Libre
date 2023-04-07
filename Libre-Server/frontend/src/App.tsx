@@ -1,7 +1,8 @@
 import React from 'react';
-import './App.css';
+import NavBar from './Navbar';
+import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './routes/home/home';
+import Home from "./pages/Home";
 import Map from './routes/map/map';
 
 function App() {
