@@ -3,8 +3,8 @@
 # Sets the base image of the application to the node’s official image.
 FROM node:17
 
-# Sets the Working Directory as "../appr"
-WORKDIR /usr/src/app
+# Sets the Working Directory as "../app"
+WORKDIR ../usr/src/app
 
 COPY package*.json ./
 

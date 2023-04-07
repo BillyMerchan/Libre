@@ -4,8 +4,8 @@
   "description": "<p align=\"center\"><img alt = \"LibreLogo\" width=30% src=\"https://i.imgur.com/b8LgXaP.png\"> </p>",
   "main": "index.js",
   "scripts": {
-    "lint": "npx eslint Libre-Server/**",
-    "format": "npx eslint Libre-Server/** --fix",
+    "lint": "npx eslint ./Libre-Server/**",
+    "format": "npx eslint ./Libre-Server/** --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,9 +26,13 @@
     "eslint-plugin-n": "^15.6.1",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "typescript": "^4.9.5"
   },
   "dependencies": {
-    "react": "^18.2.0"
+    "@types/react": "^18.0.29",
+    "react": "^18.2.0",
+    "run-script": "^0.1.1",
+    "typescript-eslint": "^0.0.1-alpha.0"
   }
 }
