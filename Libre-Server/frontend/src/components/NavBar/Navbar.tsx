@@ -2,7 +2,7 @@ import { click } from "@testing-library/user-event/dist/click";
 import React, {useState, useEffect} from "react";
 import {Link} from "react-router-dom"
 import Button from "../Button/Button";
-import LibreLogo from "../../img/logo.svg";
+import LibreLogoWord from "../../img/LibreLogoWord.svg";
 import "./Navbar.css";
 
 
@@ -33,7 +33,7 @@ function NavBar() {
             <nav className="navbar">
                 <div className="navbar-container">
                     <Link to="/" className="navbar-logo"onClick={closeMobileMenu}>
-                        Libre <img style={{width: 50, height:50}} src={LibreLogo} />
+                        <img style={{width: 230, height:230}} src={LibreLogoWord} />
                     </Link>
                     <div className= "menu-icon" onClick={handleClick}>
                         <i className= {click ? 	"fa fa-minus-square" :"fa fa-book"  } />
