@@ -6,6 +6,10 @@
     align-items: center;
     font-size: 1.2rem;
     position: sticky;
+    top: 0;
+    z-index:999;
+    display: flex;
+
   }
   
   .navbar-container {
@@ -18,14 +22,11 @@
   
   .navbar-logo {
     color: rgb(214, 105, 32);
+    margin-top: 10px;
     cursor: pointer;
-    font-size: 2rem;
     display: flex;
     align-items: center;
     letter-spacing: 2px;
-    font-family: cursive;
-    text-decoration: none;
-    font-weight: bold;
   }
   
   .nav-menu {
@@ -41,11 +42,11 @@
   
   .nav-item {
     height: 80px;
-    font-family: cursive;
+    font-family: Libre Baskerville;
   }
   
   .nav-links {
-    color: rgb(117, 247, 11);
+    color: rgb(255, 230, 0);
     display: flex;
     align-items: center;
     text-decoration: none;

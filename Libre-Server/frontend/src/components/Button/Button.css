@@ -20,7 +20,7 @@
 
 .btn--outline {
     background-color: transparent;
-    color: greenyellow;
+    color: rgb(255, 230, 0);
     padding: 8px 20 px;
     border:  1px solid var(--primary);
 }
