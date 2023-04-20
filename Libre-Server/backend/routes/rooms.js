@@ -15,7 +15,7 @@ router.get('/list', async (req, res) => {
 
 // output a single room by roomNumber
 router.get('/:roomNumber', async (req, res) => {
-  const room = await Room.findOne({ _id: req.params.roomNumber })
+  const room = await Room.findOne({ roomNumber: req.params.roomNumber })
   if (room) {
     res.json({ data: room })
   }
@@ -42,7 +42,7 @@ router.post('/add', (req, res, next) => {
 // Delete a room by roomNumber
 router.delete('/delete/:roomNumber', async (req, res) => {
   try {
-    const deletedRoom = await Room.findByIdAndDelete(req.params.roomNumber)
+    const deletedRoom = await Room.findOneAndDelete({ roomNumber: req.params.roomNumber })
 
     if (!deletedRoom) {
       return res.status(404).json({ error: 'Room not found' })

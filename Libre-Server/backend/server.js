@@ -7,7 +7,7 @@ const port = process.env.PORT
 app.use(cors())
 app.use(express.json())
 // get database connection
-const db = require('./db/conn')
+require('./db/conn')
 const routes = require('./routes/rooms')
 
 app.use('/room', routes)
