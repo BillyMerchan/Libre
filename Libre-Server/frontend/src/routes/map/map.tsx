@@ -1,5 +1,6 @@
 import {FC} from 'react';
 import './map.scss';
+import NavBar from '../../components/NavBar/Navbar';
 import DropDown from '../../components/dropDown/dropDown'
 import {room_311, room_323A, room_323B, room_323C, room_332A,
        room_332B, room_332C, room_332D, room_332E, room_333,
@@ -11,12 +12,15 @@ import {room_311, room_323A, room_323B, room_323C, room_332A,
 
 const Map: FC = () => {
   return (
-    <div className="Page">
-      <div className="Map">
-        <DB/>
+    <div>
+      <NavBar/>
+      <div className="Page">
+        <div className="Map">
+          <DB/>
+        </div>
       </div>
-    </div>
-  );
+      </div>
+    );
 }
 
 const DB: FC = () => {

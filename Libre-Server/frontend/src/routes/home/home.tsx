@@ -13,13 +13,14 @@ function Home() {
 
       <div className='hero-container'>
          <NavBar/>
-        /*poster*/
           <video className="background-video" autoPlay={true} muted loop>
           <source src={require("../../img/lib2.mp4")} type="video/mp4"/>
+
           </video>
         
         <h1 style={{color: "white"}}>Welcome to Libre</h1>
-        <p>Secure your own Study Room</p>
+        <p>Secure your own Study Room at RPI's Folsom Library < i className='    fa fa-child'></i></p> 
+
         <div className="hero-btns">
           <Button className='bott' 
           buttonStyle="btn--outline"

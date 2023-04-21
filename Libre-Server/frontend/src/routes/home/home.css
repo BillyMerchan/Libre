@@ -19,3 +19,56 @@
     object-fit: contain;
 }
 
+.hero-container > h1{
+    color: rgba(10, 181, 238, 0.806); 
+    font-size: 85px;
+    margin-top: -3px; 
+}
+
+.hero-container > p{
+    margin-top: 8px;
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.hero-btns .btns{
+    margin: 6px;
+
+}
+
+@media screen and (max-width: 960px) {
+    .hero-container > h1{
+        font-size: 70px;
+        margin-top: -3px; 
+    }
+} 
+
+@media screen and (max-width: 768px) {
+    .hero-container > h1{
+        font-size: 50px;
+        margin-top: -3px; 
+    }
+    .hero-container > p{
+        font-size: 20px;
+
+    }
+    .hero-btns .btns{
+        width: 93%;
+        margin: 0px;
+        align-items: center;
+    }
+    
+    .btn-mobile {
+        padding: 0;
+        display: block;
+        text-decoration: none;
+    }
+
+    .btns {
+        width: 100%;
+    }
+}
+}
+
+ 
