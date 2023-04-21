@@ -12,18 +12,20 @@ import {room_311, room_323A, room_323B, room_323C, room_332A,
 
 const Map: FC = () => {
   return (
-    <div className="Page">
-      <div className="Map">
-        <DB/>
+    <div>
+      <NavBar/>
+      <div className="Page">
+        <div className="Map">
+          <DB/>
+        </div>
       </div>
-    </div>
-  );
+      </div>
+    );
 }
 
 const DB: FC = () => {
   return (
     <div>
-      <NavBar/>
       <DropDown/>
       <MapDiagram/>
     </div>
