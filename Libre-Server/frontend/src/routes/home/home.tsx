@@ -20,6 +20,7 @@ function Home() {
         
         <h1 style={{color: "white"}}>Welcome to Libre</h1>
         <p>Secure your own Study Room at RPI's Folsom Library < i className='    fa fa-child'></i></p> 
+
         <div className="hero-btns">
           <Button className='bott' 
           buttonStyle="btn--outline"

@@ -3,13 +3,17 @@ const mongoose = require('mongoose')
 const roomSchema = new mongoose.Schema(
   {
     roomNumber: {
-      type: String
+      type: String,
+      required: true,
+      unique: true
     },
     max_size: {
-      type: String
+      type: String,
+      required: true
     },
     occupancy: {
-      type: Boolean
+      type: Boolean,
+      required: true
     }
   },
   { timestamps: true }
