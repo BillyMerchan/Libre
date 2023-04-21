@@ -18,7 +18,7 @@ const DropDown: FC = () => {
             });
             options.forEach(option => {
                 option.addEventListener('click', () => {
-                    selected.innerText = option.innerText;
+                    // selected.innerText = option.innerText;
                     select.classList.remove('select-clicked');
                     caret.classList.remove('caret-rotate');
                     menu.classList.remove('menu-open');
