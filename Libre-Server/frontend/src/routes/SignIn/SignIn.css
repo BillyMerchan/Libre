@@ -1,0 +1,66 @@
+.sign{
+    background-color: grey;
+    height: 100vh;
+    width: 100%;
+    padding: 10px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    /*box-shadow: inset 0 0 0 1000px rgba(222, 104, 13, 0.637);*/
+    box-shadow: inset 0 0 0 1000px rgb(211, 240, 249);
+
+}
+.sign > h1{
+    text-align: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    opacity: 70%;
+}
+
+.header{
+    font-family: Libre Baskerville;
+    font-size: 20px;
+    color: black;
+    padding: 0px;
+    opacity: 70%;
+}
+
+ input[type='text']{
+    border-radius: 5px;
+    border-color: rgb(160, 47, 9);
+    width: 500px;
+    height: 50px;
+    font: 2px;
+    size: 12em;
+    padding: 4px;
+    margin-bottom: 10px;
+    opacity: 70%;
+    
+ }
+
+ .forgotpass{
+    font-size: 15px;
+    align-items: left;
+    text-align: left;
+    justify-content: left;
+    padding: 0px;
+    margin-right: 345px;
+    text-decoration: underline;
+    margin-top: 0;;
+    opacity: 70%;
+ }
+
+ .signInbutt[type='submit']{
+    display: block;
+    width: 500px;
+    background-color:rgb(160, 47, 9);
+    border-color: rgb(160, 47, 9);
+    border-radius: 5px;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-family: Libre Baskerville;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+ }

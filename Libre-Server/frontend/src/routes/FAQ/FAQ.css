@@ -1,0 +1,90 @@
+.FAQ{
+    background: url('../../img/wikipiclib.jpg');
+    height: 280vh;
+    width: 100%;
+    display: flex;
+    object-fit: cover;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(21, 81, 40, 0.637);
+    opacity: 70%;
+    position: relative;
+}
+
+.title{
+    align-items: center;
+    text-align: center;
+    font-family:  Libre Baskerville;
+    color: white;
+    font-size: 25px;
+}
+
+.Q{
+    padding: 25px;
+    font-size: 30px;
+    align-self: baseline;
+    color: rgb(230, 255, 90);
+    font-family: Libre Baskerville;
+    background-color: rgba(0, 0, 0, 0.623);
+    width: 100%
+}
+
+.A{
+    margin-top: 5px;
+    padding: 25px;
+    font-size: 30px;
+    align-self: baseline;
+    color: rgb(248, 154, 40);
+    font-family: Libre Baskerville;
+    background-color: rgba(0, 0, 0, 0.623);
+    width: 100%;
+    margin-bottom: 20px;;
+}
+
+.input{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 960px) {
+    .title{
+        font-size: 20px;
+
+    }
+    .Q{
+        padding: 15px;
+        font-size: 20px;
+    }
+    
+    .A{
+        margin-top: 5px;
+        padding: 15px;
+        font-size: 20px;
+    }
+    .input{
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+    }
+
+} 
+
+@media screen and (max-width: 768px) {
+    .title{
+        font-size: 15px;
+
+    }
+    .Q{
+        padding: 15px;
+        font-size: 15px;
+    }
+    
+    .A{
+        margin-top: 5px;
+        padding: 15px;
+        font-size: 15px;
+    }
+    .input{
+        font-size: 15px;
+        color: rgb(255, 255, 255);
+    }
+}
