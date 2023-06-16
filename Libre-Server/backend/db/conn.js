@@ -1,3 +1,4 @@
+// Setup connection to Mongo DB using Mongoose
 const { mongoose } = require('mongoose')
 const url = process.env.DATABASE
 

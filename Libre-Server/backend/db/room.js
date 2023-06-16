@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
 
+// Create a general scheme for how room data will be stored
 const roomSchema = new mongoose.Schema(
   {
     roomNumber: {
