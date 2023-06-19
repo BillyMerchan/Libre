@@ -1,41 +1,57 @@
-.sign{
-    background-color: grey;
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
     width: 100%;
+    background: url('../../img/Library.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 75%;
+}
+
+.sign{
+    width: 600px;
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
     padding: 10px;
     display: flex; 
     flex-direction: column;
     align-items: center;
-    /*box-shadow: inset 0 0 0 1000px rgba(222, 104, 13, 0.637);*/
-    box-shadow: inset 0 0 0 1000px rgb(211, 240, 249);
-
+    border-radius: 15px;
 }
 .sign > h1{
     text-align: center;
     align-items: center;
-    color: rgb(0, 0, 0);
+    color:white;
     opacity: 70%;
 }
 
 .header{
     font-family: Libre Baskerville;
     font-size: 20px;
-    color: black;
+    color: white;
     padding: 0px;
     opacity: 70%;
 }
 
- input[type='text']{
+ input{
     border-radius: 5px;
     border-color: rgb(160, 47, 9);
     width: 500px;
     height: 50px;
-    font: 2px;
+    font-family: Libre Baskerville;
+    font-size: 24px;
     size: 12em;
     padding: 4px;
     margin-bottom: 10px;
     opacity: 70%;
-    
+ }
+
+ input::placeholder{
+    font-size: 16px;
+    font-family: Libre Baskerville;
  }
 
  .forgotpass{
