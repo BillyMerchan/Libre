@@ -3,7 +3,7 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from "./routes/home/home";
 import SignIn from './routes/SignIn/SignIn';
-import Map from './routes/map/map';
+import Map from './routes/map/map2';
 import FAQ from './routes/FAQ/FAQ';
 import Demo from './routes/Demo';
 
