@@ -9,34 +9,41 @@ import LibreLogoWord from "../../img/logo.svg";
 
 function Home() {
 
-  return ( 
+  return (
 
-      <div className='hero-container'>
-         <NavBar/>
-          <video className="background-video" autoPlay={true} muted loop>
-          <source src={require("../../img/lib2.mp4")} type="video/mp4"/>
+    <div className='home-page'>
+      <NavBar />
 
-          </video>
-        
-        <h1 style={{color: "white"}}>Welcome to Libre</h1>
-        <p>Secure your own Study Room at RPI's Folsom Library < i className='    fa fa-child'></i></p> 
+      <h1>Welcome to Libre</h1>
 
-        <div className="hero-btns">
-          <Button className='bott' 
-          buttonStyle="btn--outline"
-          buttonSize="bin--large">
-          Get Started </Button>
+      <div className="video-container">
+        <video className="background-video" autoPlay muted loop>
+          <source src={require("../../img/lib2.mp4")} type="video/mp4" />
+        </video>
 
-          <Button className="btns"
-          buttonStyle="btn--primary"
-          buttonSize="bin--large"> 
-          Watch Demo 
-          </Button>
-
+        <div className="video-textblock">
+          <div className="text-overlay">
+            <h1>Secure a study room at RPI Folsom Library</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
         </div>
 
-        <img style={{width: 250, height:250}} src={LibreLogoWord} />
+
       </div>
+
+
+
+      {/* <Button className="btns"
+        buttonStyle="btn--primary"
+        buttonSize="bin--large">
+        Watch Demo
+      </Button> */}
+
+
+      <img style={{ width: 250, height: 250 }} src={LibreLogoWord} />
+    </div >
 
   )
 }

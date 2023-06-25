@@ -1,55 +1,105 @@
-.background-video{
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    z-index: -1;
-    opacity: 80%;
-}
-
-.hero-container{
-    /*background: url('logo.svg') center center/cover no-repeat;
-    /*background: url("lib2.mp4") center;*/
-    height: 100vh;
-    width: 100%;
+.home-page {
+    min-width: 1280px;
+    height: 2240px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    box-shadow: inset 0 0 0 1000px rgba(9, 9, 9, 0.637);
+    /* align-items: center; */
     object-fit: contain;
+    background-color: #FFEEC1;
 }
 
-.hero-container > h1{
-    color: rgba(10, 181, 238, 0.806); 
-    font-size: 85px;
-    margin-top: -3px; 
+.video-container {
+    width: 100vw;
+    height: 60vh;
+    position: relative;
+    overflow: hidden;
 }
 
-.hero-container > p{
+.background-video {
+    position: absolute;
+    opacity: 70%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.video-textblock {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 26vw;
+    height: 100%;
+    margin-left: 10vw;
+    background-color: #B14B2A;
+    opacity: 90%;
+    z-index: 1;
+    /* Place the rectangle above the video */
+}
+
+.text-overlay {
+    position: absolute;
+    padding: 10%;
+    color: #FFEEC1;
+    z-index: 2;
+    /* Place the text above the rectangle */
+}
+
+.text-overlay h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.text-overlay p {
+    font-size: 16px;
+    margin: 20px 0px;
+    line-height: 2;
+}
+
+.home-page>h1 {
+    font-size: 60px;
+    color: #6C0404;
+    text-align: right;
+    font-family: "Quicksand", sans-serif;
+    padding-right: 5%;
+}
+
+.home-page>p {
     margin-top: 8px;
     color: rgb(255, 255, 255);
     font-size: 32px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
-.hero-btns .btns{
+.btns {
     margin: 6px;
+}
 
+/* Media query for screens smaller than 1280px */
+@media (max-width: 1280px) {
+    .home-page {
+        min-width: auto;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 960px) {
-    .hero-container > h1{
+    .home-page>h1 {
         font-size: 70px;
-        margin-top: -3px; 
+        margin-top: -3px;
     }
-} 
 
-@media screen and (max-width: 768px) {
-    .hero-container > h1{
+    .text-overlay p {
+        line-height: 1.4;
+    }
+}
+
+/* @media screen and (max-width: 768px) {
+    .home-page > h1{
         font-size: 50px;
         margin-top: -3px; 
     }
-    .hero-container > p{
+    .home-page > p{
         font-size: 20px;
 
     }
@@ -68,6 +118,4 @@
     .btns {
         width: 100%;
     }
-}
-
- 
+} */
