@@ -17,6 +17,7 @@ function Home() {
       <h1>Welcome to Libre</h1>
 
       <div className="video-container">
+        <div className="gradient-bar"></div>
         <video className="background-video" autoPlay muted loop>
           <source src={require("../../img/lib2.mp4")} type="video/mp4" />
         </video>
@@ -33,16 +34,7 @@ function Home() {
 
       </div>
 
-
-
-      {/* <Button className="btns"
-        buttonStyle="btn--primary"
-        buttonSize="bin--large">
-        Watch Demo
-      </Button> */}
-
-
-      <img style={{ width: 250, height: 250 }} src={LibreLogoWord} />
+      {/* <img style={{ width: 250, height: 250 }} src={LibreLogoWord} /> */}
     </div >
 
   )

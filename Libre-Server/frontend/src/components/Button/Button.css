@@ -21,8 +21,7 @@
 .btn--outline {
     background-color: transparent;
     color: rgb(255, 230, 0);
-    padding: 8px 20 px;
-    border:  1px solid var(--primary);
+    border: 1px solid var(--primary);
 }
 
 .btn--medium{

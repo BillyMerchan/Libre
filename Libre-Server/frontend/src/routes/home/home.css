@@ -22,6 +22,7 @@
     top: 0;
     left: 0;
     object-fit: cover;
+    padding-top: 10px;
 }
 
 .video-textblock {
@@ -31,6 +32,7 @@
     width: 26vw;
     height: 100%;
     margin-left: 10vw;
+    margin-top: 10px;
     background-color: #B14B2A;
     opacity: 90%;
     z-index: 1;
@@ -48,12 +50,21 @@
 .text-overlay h1 {
     font-size: 24px;
     margin: 0;
+    font-family: 'Quicksand';
+    font-weight: 400;
 }
 
 .text-overlay p {
     font-size: 16px;
     margin: 20px 0px;
     line-height: 2;
+    font-family: 'Quicksand';
+}
+
+.gradient-bar {
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to left, #952D0B, #FFEEC1);
 }
 
 .home-page>h1 {
@@ -61,14 +72,16 @@
     color: #6C0404;
     text-align: right;
     font-family: "Quicksand", sans-serif;
+    font-weight: 500;
     padding-right: 5%;
+    margin-bottom: -11px;
 }
 
 .home-page>p {
     margin-top: 8px;
     color: rgb(255, 255, 255);
     font-size: 32px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family: 'Quicksand';
 }
 
 .btns {

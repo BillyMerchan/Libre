@@ -19,23 +19,10 @@ const Button: React.FC<Props> = ({
     buttonSize,
     children,
     className,
-    
-    /*children?:string|string[], 
-    type?:any, 
-    onClick?:any, 
-    buttonStyle:string, 
-    buttonSize:string,
-    className: JSX.Element| string
-    children?:string, 
-    type?:string, 
-    onClick:boolean, 
-    buttonStyle:string, 
-    buttonSize: string*/
+
 }) => {
-        //const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle: STYLES[0]
         const checkButtonStyle = buttonStyle;
         const checkButtonSize = buttonSize;
-        //const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize: SIZES[0];
 
         return(
             <Link to="/signIn" className="btn-mobile" >
