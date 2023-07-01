@@ -93,29 +93,3 @@
         line-height: 1.4;
     }
 }
-
-/* @media screen and (max-width: 768px) {
-    .home-page > h1{
-        font-size: 50px;
-        margin-top: -3px; 
-    }
-    .home-page > p{
-        font-size: 20px;
-
-    }
-    .hero-btns .btns{
-        width: 93%;
-        margin: 0px;
-        align-items: center;
-    }
-    
-    .btn-mobile {
-        padding: 0;
-        display: block;
-        text-decoration: none;
-    }
-
-    .btns {
-        width: 100%;
-    }
-} */
