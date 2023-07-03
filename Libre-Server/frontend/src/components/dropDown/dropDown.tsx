@@ -1,41 +1,41 @@
+import React, { useState, useEffect, useRef, MouseEvent } from 'react';
 import './dropDown.scss';
-import React, { useState, useEffect, useRef} from 'react';
 
-const DropDown = () => {
-    const [open, setOpen] = useState(false);
-    const menuRef = useRef(null);
+const DropDown: React.FC = () => {
+  const [open, setOpen] = useState<boolean>(false);
+  const menuRef = useRef<HTMLUListElement>(null);
 
-    useEffect(() => {
-        const handler = (event: Event) => {
-            if (menuRef.current && !menuRef.current.contains(event.target)){
-                setOpen(false);
-            }
-        };
-
-    document.addEventListener('click', handler);
-    return () => {
-        document.removeEventListener('click', handler);
+  useEffect(() => {
+    const handler = (event: MouseEvent): void => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setOpen(false);
+      }
     };
-    }, []);
 
-    const toggleDropdown = () => {
-        open(!setOpen);
-      };
+    document.addEventListener('click', haandler);
     
-    return(
-        <div className = "dropDown">
-            <div className = "select">
-                <span className = "selected">Option 0</span>
-                <div className = "caret"></div>
-            </div>
-            <ul className = "menu">
-                <li className = "active">floor 1</li>
-                <li>floorr 2</li>
-            </ul>
-        </div>
-        );
+    return () => {
+      document.removeEventListener('click', handler);
     };
+  }, []);
+
+  const toggleDropdown = () => {
+    setOpen(!open);
+  };
+
+  return (
+    <div className="dropDown">
+      <div className="select" onClick={toggleDropdown}>
+        <span className="selected">Option 0</span>
+        <div className="caret"></div>
+      </div>
+      <ul className={`menu ${open ? 'open' : ''}`} ref={menuRef}>
+        <li className="active">floor 1</li>
+        <li>floor 2</li>
+      </ul>
+    </div>
+  );
+};
 
 
 export default DropDown;
-
