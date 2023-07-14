@@ -1,29 +1,26 @@
-import React, { useState, useEffect, useRef, MouseEvent } from 'react';
-import './dropDown.scss';
+import React, { useState, useRef } from 'react';
+import './dropdown.css';
 
 const DropDown: React.FC = () => {
   const [open, setOpen] = useState<boolean>(false);
   const menuRef = useRef<HTMLUListElement>(null);
-
-  useEffect(() => {
-    const handler = (event: MouseEvent): void => {
-      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
-        setOpen(false);
-      }
-    };
-
-    document.addEventListener('click', haandler);
-    
-    return () => {
-      document.removeEventListener('click', handler);
-    };
-  }, []);
 
   const toggleDropdown = () => {
     setOpen(!open);
   };
 
   return (
+    <label className="Dropdown">
+      
+      <select className="look">
+        <option> Floor 3 </option>
+        <option> Floor 4 </option>
+        <option> option 1 </option>
+        <option> option 1 </option>
+        <option> option 1 </option>
+      </select>
+    </label>
+    /*
     <div className="dropDown">
       <div className="select" onClick={toggleDropdown}>
         <span className="selected">Option 0</span>
@@ -33,7 +30,7 @@ const DropDown: React.FC = () => {
         <li className="active">floor 1</li>
         <li>floor 2</li>
       </ul>
-    </div>
+    </div>*/
   );
 };
 

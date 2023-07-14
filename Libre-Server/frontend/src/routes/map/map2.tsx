@@ -1,17 +1,14 @@
 import {FC} from 'react';
-import './map.css';
+import './map.scss';
 import NavBar from '../../components/NavBar/Navbar';
 import DropDown from '../../components/dropDown/dropDown';
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import {room_311, room_323A, room_323B, room_323C, room_332A,
        room_332B, room_332C, room_332D, room_332E, room_333,
        room_337A, room_337B, room_337C, room_337D, room_337E,
        room_342A, room_342B, room_342C, room_352A, room_352B,
        room_352C, room_352D, room_352E, room_353A, room_353B
 } from '../../floors/floor3/index'
-
-
-const [isExpanded, setisExpanded] = useState(false);
 
 const Map2: FC = () => {
   return (
@@ -29,7 +26,6 @@ const Map2: FC = () => {
 const DB: FC = () => {
   return (
     <div> 
-        <button className='Dropdown'></button>
         <DropDown/>
         <MapDiagram/>
     </div>
@@ -38,7 +34,7 @@ const DB: FC = () => {
 
 const MapDiagram: FC = () => {
   return (
-    <div>
+    <div className='Room'>
       <img src = {room_311} className = "mapRoom"/>
       <img src = {room_323A} className = "mapRoom"/>
       <img src = {room_323B} className = "mapRoom"/>

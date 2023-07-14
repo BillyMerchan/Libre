@@ -1,8 +1,24 @@
-.Dropdown{
+.img{
+    width: 10%;
+    margin: auto;
+    display: block;
+}
 
-    width: 20vw;
-    height: 10vw;
-    background-color: red;
-    border-radius: 10px;
-    
+.Map {
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 80vh;
+    width: 85vw;
+}
+
+.mapRoom {
+    position: absolute;
+    width: 62vw;
+}
+
+.img:hover{
+    background: red;
+    display: block
 }
