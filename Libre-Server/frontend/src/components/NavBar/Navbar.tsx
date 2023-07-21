@@ -25,7 +25,7 @@ function NavBar() {
                     Map
                 </Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-itemFAQ">
                 <Link to="/FAQ" className="nav-links">
                     FAQ
                 </Link>

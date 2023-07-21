@@ -20,7 +20,7 @@
 
 .btn--outline {
     background-color: transparent;
-    color: rgb(255, 230, 0);
+    color: #FFEEC1;
     border: 1px solid var(--primary);
 }
 

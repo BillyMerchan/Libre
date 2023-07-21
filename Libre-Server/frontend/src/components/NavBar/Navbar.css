@@ -19,7 +19,13 @@
 
 .nav-item {
   height: 80px;
-  font-family: Libre Baskerville;
+  list-style: none;
+  padding: 0vw 2vw;
+}
+.nav-itemFAQ {
+  height: 80px;
+  list-style: none;
+  padding: 0vw 2vw;
 }
 
 .nav-links {
