@@ -18,7 +18,27 @@
     width: 62vw;
 }
 
-.img:hover{
-    background: red;
-    display: block
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.text {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.img .mapRoom:hover .overlay{
+    opacity: 1;
+    
+    color:rgb(255, 0, 0);
 }

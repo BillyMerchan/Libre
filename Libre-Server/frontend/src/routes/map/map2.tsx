@@ -1,5 +1,5 @@
 import {FC} from 'react';
-import './map.scss';
+import './map.css';
 import NavBar from '../../components/NavBar/Navbar';
 import DropDown from '../../components/dropDown/dropDown';
 import React, {useState} from "react";
@@ -60,6 +60,9 @@ const MapDiagram: FC = () => {
       <img src = {room_352E} className = "mapRoom"/>
       <img src = {room_353A} className = "mapRoom"/>
       <img src = {room_353B} className = "mapRoom"/>
+        <div className='overlay'>
+          <div className='text'>Room 353B</div>
+        </div>
     </div>
   )
 }
