@@ -6,7 +6,9 @@
   "scripts": {
     "lint": "npx eslint ./Libre-Server/**",
     "format": "npx eslint ./Libre-Server/** --fix",
-    "test": "echo \"Error: no test specified\" && exit 1"
+
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd ./Libre-Server/frontend/ && react-scripts start"
   },
   "repository": {
     "type": "git",
