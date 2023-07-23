@@ -13,8 +13,7 @@
   margin-top: 10px;
   margin-right: auto;
   width: 230px;
-  height: 230px;
-  padding: 0;
+  height: 230px
 }
 
 .nav-item {
@@ -49,7 +48,16 @@
 
 }
 
-/* 
+
 @media screen and (max-width: 960px) {
-  
-} */
+  .navbar-logo {
+    width: 200px;
+    height: 200px;
+  }
+
+  .navbar {
+    height: 75px;
+    width: 100%;
+    padding: 15px 70px 15px 15px;
+  }
+}
