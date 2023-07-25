@@ -17,7 +17,7 @@
     transition: all 0.3s ease-out;
 }
 
-.btn--outline {
+.btn--signin {
     background-color: transparent;
     color: #FFEEC1;
     border: 1px solid var(--primary);

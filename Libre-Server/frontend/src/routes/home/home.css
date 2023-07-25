@@ -17,7 +17,7 @@
 
 .background-video {
     position: absolute;
-    opacity: 70%;
+    opacity: 90%;
     top: 0;
     left: 0;
     object-fit: cover;
@@ -99,6 +99,10 @@
     .home-page>h1 {
         font-size: 70px;
         margin-top: -3px;
+    }
+
+    .video-container {
+        height: 50vh;
     }
 
     .text-overlay p {

@@ -1,5 +1,5 @@
 .FAQ{
-    background: url('../../img/wikipiclib.jpg');
+    background-color: #B14B2A;
     height: 280vh;
     width: 100%;
     display: flex;
@@ -17,6 +17,11 @@
     font-family:  Libre Baskerville;
     color: white;
     font-size: 25px;
+}
+
+.QandABlock{
+    background-color: #FFEEC1;
+    
 }
 
 .Q{
@@ -47,44 +52,7 @@
 }
 
 @media screen and (max-width: 960px) {
-    .title{
-        font-size: 20px;
-
-    }
-    .Q{
-        padding: 15px;
-        font-size: 20px;
-    }
-    
-    .A{
-        margin-top: 5px;
-        padding: 15px;
-        font-size: 20px;
-    }
-    .input{
-        font-size: 20px;
-        color: rgb(255, 255, 255);
-    }
-
 } 
 
 @media screen and (max-width: 768px) {
-    .title{
-        font-size: 15px;
-
-    }
-    .Q{
-        padding: 15px;
-        font-size: 15px;
-    }
-    
-    .A{
-        margin-top: 5px;
-        padding: 15px;
-        font-size: 15px;
-    }
-    .input{
-        font-size: 15px;
-        color: rgb(255, 255, 255);
-    }
 }

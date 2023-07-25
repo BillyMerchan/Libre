@@ -30,7 +30,7 @@ function NavBar() {
                     FAQ
                 </Link>
             </li>
-            {button && <Button buttonStyle='btn--outline'>Sign In</Button>}
+            {button && <Button buttonStyle='btn--signin'>Sign In</Button>}
         </nav>
     )
 

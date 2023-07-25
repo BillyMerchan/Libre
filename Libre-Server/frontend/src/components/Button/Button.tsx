@@ -8,28 +8,28 @@ interface Props {
     buttonSize?: string;
     children?: string;
     className?: string;
-  }
+}
 
-const Button: React.FC<Props> = ({ 
+const Button: React.FC<Props> = ({
     onClick,
-    buttonStyle, 
+    buttonStyle,
     buttonSize,
     children,
     className,
 
 }) => {
-        const checkButtonStyle = buttonStyle;
-        const checkButtonSize = buttonSize;
+    const checkButtonStyle = buttonStyle;
+    const checkButtonSize = buttonSize;
 
-        return(
-            <Link to="/signIn" className="btn-mobile" >
-                <button className={`btn ${checkButtonStyle} ${checkButtonSize} ${className}`} 
-                onClick = {onClick} type={"submit"}>
-                    {children}
-                </button>
-                
-            </Link>
-        )
-    };
+    return (
+        <Link to="/signIn" className="btn-mobile" >
+            <button className={`btn ${checkButtonStyle} ${checkButtonSize} ${className}`}
+                onClick={onClick} type={"submit"}>
+                {children}
+            </button>
+
+        </Link>
+    )
+};
 
 export default Button;
