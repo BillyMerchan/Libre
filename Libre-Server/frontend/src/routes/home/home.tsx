@@ -4,8 +4,6 @@ import "./home.css";
 import NavBar from '../../components/NavBar/Navbar';
 import Button from "../../components/Button/Button";
 
-import LibreLogoWord from "../../img/logo.svg";
-
 
 function Home() {
 
@@ -14,17 +12,39 @@ function Home() {
     <div className='home-page'>
       <NavBar />
 
-      <h1>Welcome to Libre</h1>
+      <h1 className="firstHeading">Welcome to Libre</h1>
 
-      <div className="video-container">
+      <div className="section-container">
         <div className="gradient-bar"></div>
-        <video className="background-video" autoPlay muted loop>
+        <div className="background-img"></div>
+
+        <div className="textblock">
+          <div className="text-overlay">
+            <h1>Secure a study room at RPI Folsom Library</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div className="middleGap">
+
+      </div>
+
+
+      <h1 className="secondHeading">Other Resources</h1>
+
+      <div className="section-container">
+        <div className="gradient-bar2"></div>
+        <video className="background-block" autoPlay muted loop>
           <source src={require("../../img/lib2.mp4")} type="video/mp4" />
         </video>
 
-        <div className="video-textblock">
-          <div className="text-overlay">
-            <h1>Secure a study room at RPI Folsom Library</h1>
+        <div className="textblock2">
+          <div className="text-overlay2">
+            <h1>Map, directions, and other resoucres</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
               labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.</p>

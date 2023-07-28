@@ -8,14 +8,23 @@
     background-color: #FFEEC1;
 }
 
-.video-container {
-    width: 100vw;
+.section-container {
+    width: 100%;
     height: 60vh;
     position: relative;
     overflow: hidden;
 }
 
-.background-video {
+.background-img {
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    background-image: url("../../img/lib.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.background-block {
     position: absolute;
     opacity: 90%;
     top: 0;
@@ -24,10 +33,24 @@
     padding-top: 10px;
 }
 
-.video-textblock {
+.textblock {
     position: absolute;
     top: 0;
     left: 0;
+    width: 26vw;
+    height: 100%;
+    margin-left: 10vw;
+    margin-top: 10px;
+    background-color: #B14B2A;
+    opacity: 90%;
+    z-index: 1;
+    /* Place the rectangle above the video */
+}
+
+.textblock2 {
+    position: absolute;
+    top: 0;
+    right: 10vw;
     width: 26vw;
     height: 100%;
     margin-left: 10vw;
@@ -44,6 +67,14 @@
     color: #FFEEC1;
     z-index: 2;
     /* Place the text above the rectangle */
+}
+
+.text-overlay2 {
+    position: absolute;
+    align-self: right;
+    padding: 10%;
+    color: #FFEEC1;
+    z-index: 2;
 }
 
 .text-overlay h1 {
@@ -66,14 +97,27 @@
     background: linear-gradient(to left, #952D0B, #FFEEC1);
 }
 
+.gradient-bar2 {
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to right, #952D0B, #FFEEC1);
+}
+
 .home-page>h1 {
     font-size: 60px;
     color: #6C0404;
-    text-align: right;
     font-family: "Quicksand", sans-serif;
     font-weight: 500;
     padding-right: 5%;
     margin-bottom: -11px;
+}
+
+.firstHeading {
+    text-align: right;
+}
+
+.secondHeading {
+    text-align: left;
 }
 
 .home-page>p {
@@ -85,6 +129,11 @@
 
 .btns {
     margin: 6px;
+}
+
+.middleGap {
+    width: 100%;
+    height: 10vh;
 }
 
 /* Media query for screens smaller than 1280px */
