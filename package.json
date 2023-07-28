@@ -7,7 +7,8 @@
     "lint": "npx eslint ./Libre-Server/**",
     "format": "npx eslint ./Libre-Server/** --fix",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cd ./Libre-Server/frontend/ && react-scripts start",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build",
+    "start": "node ./Libre-Server/backend/server.js",
     "frontend": "cd ./Libre-Server/frontend/ && react-scripts start",
     "backend": "cd ./Libre-Server/backend/ && node server.js"
   },
