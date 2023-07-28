@@ -1,7 +1,8 @@
-.img{
-    width: 10%;
-    margin: auto;
-    display: block;
+.Room {
+    width: 800px;
+    height: 500px;
+    background-color: red;
+    overflow: visible;
 }
 
 .Map {
@@ -13,10 +14,7 @@
     width: 85vw;
 }
 
-.mapRoom {
-    position: absolute;
-    width: 62vw;
-}
+
 
 .overlay {
   position: absolute;
@@ -37,8 +35,10 @@
     text-align: center;
   }
 
-.img .mapRoom:hover .overlay{
-    opacity: 1;
-    
-    color:rgb(255, 0, 0);
+.room311{
+    width: 50px;
+    height: 70px;
+    background-color: yellow;
+    margin-left: 150px;
+    margin-top: ;
 }
