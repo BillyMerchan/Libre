@@ -1,66 +1,49 @@
-.sign{
-    background-color: grey;
-    height: 100vh;
+.sign-in-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10%;
+  }
+  
+  .sign-in-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
     width: 100%;
     padding: 10px;
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-    /*box-shadow: inset 0 0 0 1000px rgba(222, 104, 13, 0.637);*/
-    box-shadow: inset 0 0 0 1000px rgb(211, 240, 249);
-
-}
-.sign > h1{
-    text-align: center;
-    align-items: center;
-    color: rgb(0, 0, 0);
-    opacity: 70%;
-}
-
-.header{
-    font-family: Libre Baskerville;
-    font-size: 20px;
-    color: black;
-    padding: 0px;
-    opacity: 70%;
-}
-
- input[type='text']{
-    border-radius: 5px;
-    border-color: rgb(160, 47, 9);
-    width: 500px;
-    height: 50px;
-    font: 2px;
-    size: 12em;
-    padding: 4px;
-    margin-bottom: 10px;
-    opacity: 70%;
-    
- }
-
- .forgotpass{
-    font-size: 15px;
-    align-items: left;
-    text-align: left;
-    justify-content: left;
-    padding: 0px;
-    margin-right: 345px;
-    text-decoration: underline;
-    margin-top: 0;;
-    opacity: 70%;
- }
-
- .signInbutt[type='submit']{
-    display: block;
-    width: 500px;
-    background-color:rgb(160, 47, 9);
-    border-color: rgb(160, 47, 9);
-    border-radius: 5px;
-    color: white;
-    padding: 14px 28px;
     font-size: 16px;
-    font-family: Libre Baskerville;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
     cursor: pointer;
-    text-align: center;
-    margin-top: 10px;
- }
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  
