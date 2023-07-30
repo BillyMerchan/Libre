@@ -1,5 +1,5 @@
 const express = require('express')
-const Room = require('../db/room')
+const Room = require('../models/room')
 const router = express.Router()
 
 // output list of all rooms
