@@ -10,7 +10,7 @@
 
 .section-container {
     width: 100%;
-    height: 60vh;
+    height: 80vh;
     position: relative;
     overflow: hidden;
 }
@@ -26,7 +26,7 @@
 
 .background-block {
     position: absolute;
-    opacity: 90%;
+    opacity: 100%;
     top: 0;
     left: 0;
     object-fit: cover;
