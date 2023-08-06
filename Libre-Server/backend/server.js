@@ -12,10 +12,6 @@ const routes = require('./routes/rooms')
 
 app.use('/room', routes)
 
-app.get('/', (req, res) => {
-  res.send('<h2>Welcome Friends</h2>')
-})
-
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`)
 })
