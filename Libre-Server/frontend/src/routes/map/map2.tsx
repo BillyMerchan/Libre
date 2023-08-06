@@ -31,11 +31,63 @@ const DB: FC = () => {
 const MapDiagram: FC = () => {
   return (
     <div className='Room'>
-      <div className="room311">
+      <div className="R2room332A">
         <div className='overlay'>
-          <div className='text'>Room 353B</div>
+          <div className='text'>Room 322C</div>
           </div>
-        </div>
+      </div>
+      <div className="R2room332B">
+        <div className='overlay'>
+          <div className='text'>Room 322B</div>
+          </div>
+      </div>
+      <div className="R2room332C">
+        <div className='overlay'>
+          <div className='text'>Room 322C</div>
+          </div>
+      </div>
+      <div className="R2room332D">
+        <div className='overlay'>
+          <div className='text'>Room 322C</div>
+          </div>
+      </div>
+      <div className="R2room332E">
+        <div className='overlay'>
+          <div className='text'>Room 322C</div>
+          </div>
+      </div>
+      <div className="R2room333">
+        <div className='overlay'>
+          <div className='text'>Room 322C</div>
+          </div>
+      </div>
+      
+
+      <div className="R2room337A">
+        <div className='overlay'>
+          <div className='text'>Room 322C</div>
+          </div>
+      </div>
+      <div className="R2room337B">
+        <div className='overlay'>
+          <div className='text'>Room 322B</div>
+          </div>
+      </div>
+      <div className="R2room337C">
+        <div className='overlay'>
+          <div className='text'>Room 322C</div>
+          </div>
+      </div>
+      <div className="R2room337D">
+        <div className='overlay'>
+          <div className='text'>Room 322C</div>
+          </div>
+      </div>
+      <div className="R2room337E">
+        <div className='overlay'>
+          <div className='text'>Room 322C</div>
+          </div>
+      </div>
     </div>
   )
 }

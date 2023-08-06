@@ -1,5 +1,5 @@
 .Room {
-    width: 800px;
+    width: 1000px;
     height: 500px;
     background-color: red;
     overflow: visible;
@@ -13,8 +13,6 @@
     height: 80vh;
     width: 85vw;
 }
-
-
 
 .overlay {
   position: absolute;
@@ -35,10 +33,105 @@
     text-align: center;
   }
 
-.room311{
-    width: 50px;
-    height: 70px;
+.R2room332A{
+    width: 20px;
+    height: 40px;
     background-color: yellow;
-    margin-left: 150px;
-    margin-top: ;
+    margin-left: 100px;
+    margin-top: 75px;
+    position: absolute;
+}
+
+
+.R2room332B{
+    width: 40px;
+    height: 60px;
+    background-color: yellow;
+    margin-left: 100px;
+    margin-top: 10px;
+    position: absolute;
+}
+
+.R2room332C{
+  width: 40px;
+  height: 60px;
+  background-color: yellow;
+  margin-left: 145px;
+  margin-top: 10px;
+  position: absolute;
+}
+
+
+.R2room332D{
+  width: 40px;
+  height: 60px;
+  background-color: yellow;
+  margin-left: 190px;
+  margin-top: 10px;
+  position: absolute;
+}
+
+.R2room332E{
+    width: 20px;
+    height: 40px;
+    background-color: yellow;
+    margin-left: 210px;
+    margin-top: 75px;
+    position: absolute;
+}
+
+.R2room333{
+  width: 135px;
+  height: 80px;
+  background-color: yellow;
+  margin-left: 235px;
+  margin-top: 10px;
+  position: absolute;
+}
+
+.R2room337A{
+  width: 20px;
+  height: 40px;
+  background-color: yellow;
+  margin-left: 500px;
+  margin-top: 75px;
+  position: absolute;
+}
+
+
+.R2room337B{
+  width: 40px;
+  height: 60px;
+  background-color: yellow;
+  margin-left: 500px;
+  margin-top: 10px;
+  position: absolute;
+}
+
+.R2room337C{
+width: 40px;
+height: 60px;
+background-color: yellow;
+margin-left: 545px;
+margin-top: 10px;
+position: absolute;
+}
+
+
+.R2room337D{
+width: 40px;
+height: 60px;
+background-color: yellow;
+margin-left: 590px;
+margin-top: 10px;
+position: absolute;
+}
+
+.R2room337E{
+  width: 20px;
+  height: 40px;
+  background-color: yellow;
+  margin-left: 610px;
+  margin-top: 75px;
+  position: absolute;
 }
