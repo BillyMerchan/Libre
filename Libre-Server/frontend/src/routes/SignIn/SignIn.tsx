@@ -1,16 +1,32 @@
-import React, { useState, FormEvent } from "react";
-import NavBar from "../../components/NavBar/Navbar";
+import React, { useState } from 'react';
+import NavBar from '../../components/NavBar/Navbar';
 import "./SignIn.css";
 
-const SignIn: React.FC = () => {
-  const [email, setEmail] = useState<string>("");
-  const [password, setPassword] = useState<string>("");
+const SignIn = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Perform your sign-in logic here, e.g., call an authentication API
-    console.log("Email:", email);
-    console.log("Password:", password);
+    try {
+      const response = await fetch('/api/auth/signin', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email, password }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Authentication failed');
+      }
+
+      const data = await response.json();
+      const token = data.token;
+      // Store the token in localStorage or state
+    } catch (error) {
+      console.error('Authentication error:', error);
+    }
   };
 
   return (
