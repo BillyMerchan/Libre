@@ -1,6 +1,6 @@
 .Room {
-    width: 1000px;
-    height: 500px;
+    width: 1230px;
+    height: 600px;
     background-color: red;
     overflow: visible;
 }
@@ -37,8 +37,8 @@
     width: 20px;
     height: 40px;
     background-color: yellow;
-    margin-left: 100px;
-    margin-top: 75px;
+    margin-left: 180px;
+    margin-top: 95px;
     position: absolute;
 }
 
@@ -47,8 +47,8 @@
     width: 40px;
     height: 60px;
     background-color: yellow;
-    margin-left: 100px;
-    margin-top: 10px;
+    margin-left: 180px;
+    margin-top: 30px;
     position: absolute;
 }
 
@@ -56,8 +56,8 @@
   width: 40px;
   height: 60px;
   background-color: yellow;
-  margin-left: 145px;
-  margin-top: 10px;
+  margin-left: 225px;
+  margin-top: 30px;
   position: absolute;
 }
 
@@ -66,8 +66,8 @@
   width: 40px;
   height: 60px;
   background-color: yellow;
-  margin-left: 190px;
-  margin-top: 10px;
+  margin-left: 270px;
+  margin-top: 30px;
   position: absolute;
 }
 
@@ -75,8 +75,8 @@
     width: 20px;
     height: 40px;
     background-color: yellow;
-    margin-left: 210px;
-    margin-top: 75px;
+    margin-left: 290px;
+    margin-top: 95px;
     position: absolute;
 }
 
@@ -84,8 +84,8 @@
   width: 135px;
   height: 80px;
   background-color: yellow;
-  margin-left: 235px;
-  margin-top: 10px;
+  margin-left: 315px;
+  margin-top: 30px;
   position: absolute;
 }
 
@@ -93,8 +93,8 @@
   width: 20px;
   height: 40px;
   background-color: yellow;
-  margin-left: 500px;
-  margin-top: 75px;
+  margin-left: 750px;
+  margin-top: 95px;
   position: absolute;
 }
 
@@ -103,8 +103,8 @@
   width: 40px;
   height: 60px;
   background-color: yellow;
-  margin-left: 500px;
-  margin-top: 10px;
+  margin-left: 750px;
+  margin-top: 30px;
   position: absolute;
 }
 
@@ -112,8 +112,8 @@
 width: 40px;
 height: 60px;
 background-color: yellow;
-margin-left: 545px;
-margin-top: 10px;
+margin-left: 795px;
+margin-top: 30px;
 position: absolute;
 }
 
@@ -122,8 +122,8 @@ position: absolute;
 width: 40px;
 height: 60px;
 background-color: yellow;
-margin-left: 590px;
-margin-top: 10px;
+margin-left: 840px;
+margin-top: 30px;
 position: absolute;
 }
 
@@ -131,7 +131,135 @@ position: absolute;
   width: 20px;
   height: 40px;
   background-color: yellow;
-  margin-left: 610px;
-  margin-top: 75px;
+  margin-left: 860px;
+  margin-top: 95px;
+  position: absolute;
+}
+
+.R2room342A{
+  width: 50px;
+  height: 40px;
+  background-color: yellow;
+  margin-left: 1100px;
+  margin-top: 150px;
+  position: absolute;
+}
+
+.R2room342B{
+  width: 50px;
+  height: 40px;
+  background-color: yellow;
+  margin-left: 1100px;
+  margin-top: 195px;
+  position: absolute;
+}
+
+.R2room342C{
+  width: 50px;
+  height: 40px;
+  background-color: yellow;
+  margin-left: 1100px;
+  margin-top: 240px;
+  position: absolute;
+}
+
+.R2room352E{
+  width: 20px;
+  height: 40px;
+  background-color: yellow;
+  margin-left: 860px;
+  margin-top: 350px;
+  position: absolute;
+}
+
+.R2room352D{
+  width: 40px;
+  height: 60px;
+  background-color: yellow;
+  margin-left: 840px;
+  margin-top: 395px;
+  position: absolute;
+}
+
+.R2room352C{
+width: 40px;
+height: 60px;
+background-color: yellow;
+margin-left: 795px;
+margin-top: 395px;
+position: absolute;
+}
+
+
+.R2room352B{
+width: 40px;
+height: 60px;
+background-color: yellow;
+margin-left: 750px;
+margin-top: 395px;
+position: absolute;
+}
+
+.R2room352A{
+  width: 20px;
+  height: 40px;
+  background-color: yellow;
+  margin-left: 750px;
+  margin-top: 350px;
+  position: absolute;
+}
+
+.R2room353A{
+  width: 60px;
+  height: 90px;
+  background-color: yellow;
+  margin-left: 685px;
+  margin-top: 365px;
+  position: absolute;
+}
+
+.R2room353B{
+  width: 60px;
+  height: 90px;
+  background-color: yellow;
+  margin-left: 620px;
+  margin-top: 365px;
+  position: absolute;
+}
+
+.R2room311{
+  width: 40px;
+  height: 60px;
+  background-color: yellow;
+  margin-left: 450px;
+  margin-top: 250px;
+  position: absolute;
+}
+
+
+.R2room323C{
+  width: 50px;
+  height: 40px;
+  background-color: yellow;
+  margin-left: 100px;
+  margin-top: 250px;
+  position: absolute;
+}
+
+.R2room323B{
+  width: 50px;
+  height: 40px;
+  background-color: yellow;
+  margin-left: 100px;
+  margin-top: 295px;
+  position: absolute;
+}
+
+.R2room323A{
+  width: 50px;
+  height: 40px;
+  background-color: yellow;
+  margin-left: 100px;
+  margin-top: 340px;
   position: absolute;
 }

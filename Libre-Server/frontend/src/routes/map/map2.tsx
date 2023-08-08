@@ -88,6 +88,82 @@ const MapDiagram: FC = () => {
           <div className='text'>Room 322C</div>
           </div>
       </div>
+
+      <div className="R2room342A">
+        <div className='overlay'>
+          <div className='text'>Room 322C</div>
+          </div>
+      </div>
+      <div className="R2room342B">
+        <div className='overlay'>
+          <div className='text'>Room 322C</div>
+          </div>
+      </div>
+      <div className="R2room342C">
+      <div className='overlay'>
+        <div className='text'>Room 322C</div>
+        </div>
+    </div>
+
+    <div className="R2room352A">
+        <div className='overlay'>
+          <div className='text'>Room 322C</div>
+          </div>
+      </div>
+      <div className="R2room352B">
+        <div className='overlay'>
+          <div className='text'>Room 322C</div>
+          </div>
+      </div>
+      <div className="R2room352C">
+      <div className='overlay'>
+        <div className='text'>Room 322C</div>
+        </div>
+    </div>
+    <div className="R2room352D">
+        <div className='overlay'>
+          <div className='text'>Room 322C</div>
+          </div>
+      </div>
+      <div className="R2room352E">
+        <div className='overlay'>
+          <div className='text'>Room 322C</div>
+          </div>
+      </div>
+      <div className="R2room353A">
+        <div className='overlay'>
+          <div className='text'>Room 322C</div>
+          </div>
+      </div>
+      <div className="R2room353B">
+        <div className='overlay'>
+          <div className='text'>Room 322C</div>
+          </div>
+      </div>
+    
+      <div className="R2room311">
+        <div className='overlay'>
+          <div className='text'>Room 322C</div>
+          </div>
+      </div>
+
+
+      <div className="R2room323C">
+        <div className='overlay'>
+          <div className='text'>Room 322C</div>
+          </div>
+      </div>
+      <div className="R2room323B">
+        <div className='overlay'>
+          <div className='text'>Room 322C</div>
+          </div>
+      </div>
+      <div className="R2room323A">
+        <div className='overlay'>
+          <div className='text'>Room 322C</div>
+          </div>
+      </div>
+
     </div>
   )
 }
