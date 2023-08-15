@@ -1,6 +1,5 @@
 :root{
     --primary: white;
-
 }
 
 .btn {
@@ -18,11 +17,10 @@
     transition: all 0.3s ease-out;
 }
 
-.btn--outline {
+.btn--signin {
     background-color: transparent;
-    color: rgb(255, 230, 0);
-    padding: 8px 20 px;
-    border:  1px solid var(--primary);
+    color: #FFEEC1;
+    border: 1px solid var(--primary);
 }
 
 .btn--medium{

@@ -1,73 +1,160 @@
-.background-video{
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    z-index: -1;
-    opacity: 80%;
-}
-
-.hero-container{
-    /*background: url('logo.svg') center center/cover no-repeat;
-    /*background: url("lib2.mp4") center;*/
-    height: 100vh;
-    width: 100%;
+.home-page {
+    min-width: 1280px;
+    height: 2240px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    box-shadow: inset 0 0 0 1000px rgba(9, 9, 9, 0.637);
     object-fit: contain;
+    background-color: #FFEEC1;
 }
 
-.hero-container > h1{
-    color: rgba(10, 181, 238, 0.806); 
-    font-size: 85px;
-    margin-top: -3px; 
+.section-container {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
 }
 
-.hero-container > p{
+.background-img {
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    background-image: url("../../img/lib.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.background-block {
+    position: absolute;
+    opacity: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    padding-top: 10px;
+}
+
+.textblock {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 26vw;
+    height: 100%;
+    margin-left: 10vw;
+    margin-top: 10px;
+    background-color: #B14B2A;
+    opacity: 90%;
+    z-index: 1;
+    /* Place the rectangle above the video */
+}
+
+.textblock2 {
+    position: absolute;
+    top: 0;
+    right: 10vw;
+    width: 26vw;
+    height: 100%;
+    margin-left: 10vw;
+    margin-top: 10px;
+    background-color: #B14B2A;
+    opacity: 90%;
+    z-index: 1;
+    /* Place the rectangle above the video */
+}
+
+.text-overlay {
+    position: absolute;
+    padding: 10%;
+    color: #FFEEC1;
+    z-index: 2;
+    /* Place the text above the rectangle */
+}
+
+.text-overlay2 {
+    position: absolute;
+    align-self: right;
+    padding: 10%;
+    color: #FFEEC1;
+    z-index: 2;
+}
+
+.text-overlay h1 {
+    font-size: 24px;
+    margin: 0;
+    font-family: 'Quicksand';
+    font-weight: 400;
+}
+
+.text-overlay p {
+    font-size: 16px;
+    margin: 20px 0px;
+    line-height: 2;
+    font-family: 'Quicksand';
+}
+
+.gradient-bar {
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to left, #952D0B, #FFEEC1);
+}
+
+.gradient-bar2 {
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to right, #952D0B, #FFEEC1);
+}
+
+.home-page>h1 {
+    font-size: 60px;
+    color: #6C0404;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    padding-right: 5%;
+    margin-bottom: -11px;
+}
+
+.firstHeading {
+    text-align: right;
+}
+
+.secondHeading {
+    text-align: left;
+}
+
+.home-page>p {
     margin-top: 8px;
     color: rgb(255, 255, 255);
     font-size: 32px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family: 'Quicksand';
 }
 
-.hero-btns .btns{
+.btns {
     margin: 6px;
-
 }
 
-@media screen and (max-width: 960px) {
-    .hero-container > h1{
-        font-size: 70px;
-        margin-top: -3px; 
-    }
-} 
+.middleGap {
+    width: 100%;
+    height: 10vh;
+}
 
-@media screen and (max-width: 768px) {
-    .hero-container > h1{
-        font-size: 50px;
-        margin-top: -3px; 
-    }
-    .hero-container > p{
-        font-size: 20px;
-
-    }
-    .hero-btns .btns{
-        width: 93%;
-        margin: 0px;
-        align-items: center;
-    }
-    
-    .btn-mobile {
-        padding: 0;
-        display: block;
-        text-decoration: none;
-    }
-
-    .btns {
+/* Media query for screens smaller than 1280px */
+@media (max-width: 1280px) {
+    .home-page {
+        min-width: auto;
         width: 100%;
     }
 }
 
- 
+@media screen and (max-width: 960px) {
+    .home-page>h1 {
+        font-size: 70px;
+        margin-top: -3px;
+    }
+
+    .video-container {
+        height: 50vh;
+    }
+
+    .text-overlay p {
+        line-height: 1.4;
+    }
+}
