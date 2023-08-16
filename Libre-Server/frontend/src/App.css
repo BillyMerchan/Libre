@@ -1,3 +1,7 @@
+body {
+  overflow: overlay;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +39,23 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+/* Set the parent element's background color */
+
+/* Customize the scrollbar appearance */
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #FFEEC1;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background-color: red;
+  background-color: #6C0404;
+}
+
+::-webkit-scrollbar-track {
+    display: none;
 }
