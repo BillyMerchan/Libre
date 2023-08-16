@@ -1,17 +1,23 @@
 const express = require('express')
+const mongoose = require("mongoose");
 const app = express()
 const cors = require('cors')
+const allRoutes = require('./routes/index.js');
 require('dotenv').config({ path: './config.env' })
 const port = process.env.PORT
 
 app.use(cors())
 app.use(express.json())
 // get database connection
-require('./models/conn')
-const routes = require('./routes/rooms')
+//require('./models/conn')
+app.use('/api', allRoutes)
 
-app.use('/room', routes)
+mongoose
+  .connect("mongodb://127.0.0.1:27017/Libre-server", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => console.log("Connected to DB"))
+  .catch(console.error);
 
-app.listen(port, () => {
-  console.log(`Server is running on port: ${port}`)
-})
+const server = app.listen(3001, () => console.log("Server started on port 3001"))
