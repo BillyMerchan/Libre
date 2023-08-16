@@ -6,7 +6,7 @@ const allRoutes = require('./routes/index.js');
 require('dotenv').config({ path: './config.env' })
 const port = process.env.PORT
 
-app.use(cors())
+app.use(cors({ credentials: true, origin: true }))
 app.use(express.json())
 // get database connection
 //require('./models/conn')
