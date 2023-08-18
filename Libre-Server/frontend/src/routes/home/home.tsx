@@ -28,8 +28,9 @@ function Home() {
               </p>
           </div>
         </div>
-      </div>
       {Button && <Button buttonStyle='btn--signin'>Sign In / Sign Up</Button>}
+      </div>
+      
 
 
       <div className="middleGap">
@@ -39,7 +40,7 @@ function Home() {
 
       <h1 className="secondHeading">Other Resources</h1>
 
-      <div className="section-container">
+      <div className="section-container2">
         <div className="gradient-bar2"></div>
         <video className="background-block" autoPlay muted loop>
           <source src={require("../../img/lib2.mp4")} type="video/mp4" />
@@ -54,8 +55,9 @@ function Home() {
           </div>
         </div>
 
-
+      {Button && <Button buttonStyle='btn--signin'>View Map</Button>}
       </div>
+      
 
       {/* <img style={{ width: 250, height: 250 }} src={LibreLogoWord} /> */}
     </div >
