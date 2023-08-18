@@ -18,9 +18,19 @@
 }
 
 .btn--signin {
-    background-color: transparent;
-    color: #FFEEC1;
-    border: 1px solid var(--primary);
+    background-color: white;
+    width: 40vw;
+    height: 8vh;
+    color: #6C0404;
+    font-family: 'Quicksand';
+    font-size: 35px;
+    padding: 10px 20px;
+    border-radius: 18px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
 }
 
 .btn--medium{

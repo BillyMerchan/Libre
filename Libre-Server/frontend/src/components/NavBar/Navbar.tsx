@@ -2,13 +2,13 @@ import { click } from "@testing-library/user-event/dist/click";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom"
 import Button from "../Button/Button";
-import LibreLogoWord from "../../img/LibreLogoWordWhite.svg";
+import LibreLogoWord from "../../img/new_logo.svg";
 import "./Navbar.css";
 
 
 
 function NavBar() {
-    const [button] = useState(true);
+    // const [button] = useState(true);
 
     return (
         <nav className="navbar">
@@ -30,7 +30,12 @@ function NavBar() {
                     FAQ
                 </Link>
             </li>
-            {button && <Button buttonStyle='btn--signin'>Sign In</Button>}
+            <li className="nav-itemSignIn">
+                <Link to="/SignIn" className="nav-links">
+                    Sign In
+                </Link>
+            </li>
+            {/* {button && <Button buttonStyle='btn--signin'>Sign In</Button>} */}
         </nav>
     )
 
