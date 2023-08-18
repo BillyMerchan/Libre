@@ -40,19 +40,6 @@
 
 }
 
- input[type='text']{
-    border-radius: 5px;
-    border-color: rgb(160, 47, 9);
-    width: 500px;
-    height: 50px;
-    font: 2px;
-    size: 12em;
-    padding: 4px;
-    margin-bottom: 10px;
-    opacity: 70%;
-    
- }
-
  .forgotpass{
     font-size: 15px;
     align-items: left;
