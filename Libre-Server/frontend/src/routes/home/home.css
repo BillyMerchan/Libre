@@ -73,6 +73,7 @@
     position: absolute;
     align-self: right;
     padding: 10%;
+    line-height: 2;
     color: #FFEEC1;
     z-index: 2;
 }
