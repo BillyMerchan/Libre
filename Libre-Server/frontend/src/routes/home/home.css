@@ -73,6 +73,7 @@
     position: absolute;
     align-self: right;
     padding: 10%;
+    line-height: 2;
     color: #FFEEC1;
     z-index: 2;
 }
@@ -89,6 +90,7 @@
     margin: 20px 0px;
     line-height: 2;
     font-family: 'Quicksand';
+    font-weight: 400;
 }
 
 .gradient-bar {

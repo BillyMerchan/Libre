@@ -27,6 +27,7 @@ function Home() {
           </div>
         </div>
       </div>
+      {Button && <Button buttonStyle='btn--signin'>Sign In / Sign Up</Button>}
 
 
       <div className="middleGap">
