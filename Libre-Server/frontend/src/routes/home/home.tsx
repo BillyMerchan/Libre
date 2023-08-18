@@ -21,9 +21,11 @@ function Home() {
         <div className="textblock">
           <div className="text-overlay">
             <h1>Secure a study room at RPI Folsom Library</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.</p>
+            <p> Libre is a platform allowing students to reserve individual study rooms in university libraries.
+
+            This project was thought of as a solution to combat the hassle students face when trying to find an open study room at RPI.
+            Students have the ability to view which rooms are empty via a map, coloring in the occupied rooms while lighting up the empty rooms.
+              </p>
           </div>
         </div>
       </div>
