@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./SignIn.css";
+import NavBar from "../../components/NavBar/Navbar";
 
 export default function SignIn() {
   const navigate = useNavigate();
@@ -37,6 +38,7 @@ export default function SignIn() {
 
   return (
     <div>
+      <NavBar></NavBar>
       <div className="sign">
         <div className="Loginn">
           <h1>Login</h1>

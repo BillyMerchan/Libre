@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Register.css";
+import NavBar from "../../components/NavBar/Navbar";
 
 function Register() {
   const navigate = useNavigate();
@@ -33,6 +34,7 @@ function Register() {
 
   return (
     <div>
+        <NavBar></NavBar>
       <div className="BackgroundRegister">
         <div className="RegisterWrap">
           <h1>Register</h1>
@@ -63,6 +65,7 @@ function Register() {
             <br />
             <input className="buttR" type="submit" value="Register" />
           </form>
+          <button className="buttR" onClick={() => navigate("/signIn")}>Already hava an account?</button>
         </div>
       </div>
     </div>
