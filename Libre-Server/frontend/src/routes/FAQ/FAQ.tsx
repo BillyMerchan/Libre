@@ -12,7 +12,7 @@ export default function FAQ() {
                 Frequently Asked Questions
             </h1>
           </div>
-          <div className='Q'>
+          <div className='QBox'>
               Q: <span className='input'> Who created Libre? </span>
           </div>
           <div className='A'>
@@ -25,6 +25,7 @@ export default function FAQ() {
               A:  <span className='input'> Yes </span>
           </div>
           
+
         </div>
     </div>
 

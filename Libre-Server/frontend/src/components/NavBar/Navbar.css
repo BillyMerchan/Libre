@@ -1,197 +1,71 @@
 .navbar {
-  /*background: linear-gradient(90deg, rgba(28, 4, 180, 0.944) 0%, rgb(238, 94, 4) 100%);*/
-  /*background-color: rgba(107, 156, 97, 0.869);*/
-  background:rgb(160, 47, 9);
+  background: rgb(160, 47, 9);
   height: 80px;
-  display: flex;
-  justify-content: center;
+  width: 100%;
   align-items: center;
-  font-size: 1.2rem;
   position: sticky;
-  top: 0;
-  z-index:999;
+  margin: 0;
   display: flex;
-
-}
-
-.navbar-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70px;
-  width: 100vw;
+  padding: 20px 80px 20px 20px;
 }
 
 .navbar-logo {
-  /*color: rgb(214, 105, 32);*/
-  margin-top: 10px;
-  /*cursor: pointer;*/
-  display: flex;
-  align-items: center;
-  max-width: 800px;
-  padding: 0rem;
-  margin-left: -50px;
-}
-
-.nav-menu {
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-gap: 10px;
-  list-style: none;
-  text-align: center;
-  width: 50vw;
-  justify-content: end;
-  margin-right: 2rem;
+  margin-top: 131px;
+  margin-right: auto;
+  width: 195px;
+  height: 250px;
+  height: 211px;
 }
 
 .nav-item {
   height: 80px;
-  font-family: Libre Baskerville;
+  list-style: none;
+  padding: 0vw 2vw;
+}
+.nav-itemFAQ {
+  height: 80px;
+  list-style: none;
+  padding: 0vw 2vw;
+}
+.nav-itemSignIn{
+  height: 80px;
+  list-style: none;
+  padding: 0vw 2vw;
+  /* border: 1px solid white; */
 }
 
 .nav-links {
-  color: rgb(255, 230, 0);
+  font-size: 20px;
+  color: #FFEEC1;
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 1rem 1rem;
+  float: left;
   height: 100%;
+  font-family: 'Quicksand';
 }
 
 .nav-links:hover {
   text-align: center;
   text-decoration: none;
   transition: all 0.2s ease-out;
-  border-bottom: 2mm ridge rgba(222, 232, 17, 0.6);
-  overflow:auto;
+  border-bottom: 2mm ridge #FFEEC1;
+  overflow: auto;
 
 }
 
-.fa-book {
-  color: #fff;
-}
-
-.fa-minus-square {
-  color: #fff;
-}
-
-
-.nav-links-mobile {
-  display: none;
-}
-
-.menu-icon {
-  display: none;
-}
 
 @media screen and (max-width: 960px) {
-  .NavbarItems {
-    display: flex;
-  }
-  .navbar-logo{
-
-    /*color: rgb(214, 105, 32);*/
-    /*cursor: pointer;*/
-    display: flex;
-    align-items: center;
-    padding: 0rem;
-    margin-top: -185px;
-    width: 100%;
-    
-  }
-  
-  .navbar-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-  }
-  
-
-  .nav-menu {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 45vh;
-    position: absolute;
-    top: 60px;
-    left: -100%;
-    opacity: 0.5;
-    transition: all 0.5s ease;
-    border-spacing: 0;
-  }
-
-  .nav-menu.active {
-    background-image: linear-gradient(90deg, rgba(115, 130, 64, 0.788) 0%, rgba(76, 143, 139, 0.803) 100%);
-    left: 0%;
-    opacity: 1;
-    transition: all 0.5s ease;
-    width: 100vw;
-    padding:0;
-  }
-  
-  .nav-item {
-    height: 80px;
-    font-family: Libre Baskerville;
-  }
-
-  .nav-links {
-
-    color: rgb(255, 230, 0);
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    padding: 1rem 1rem;
-    height: 100%;
-  }
-  
-  .nav-links:hover {
-    text-align: center;
-    width: 100%;
-    display: table;
-  }
-
-  .nav-links:hover {
-      color: #ffffff;
-      display: block;
-      font-size: 20px;
-  }
-
   .navbar-logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(25%, 50%);
+    width: 200px;
+    height: 200px;
   }
 
-  .menu-icon {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
-    cursor: pointer;
-  }
-
-
-  .nav-links-mobile {
-    color: rgb(255, 230, 0);
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    padding: 1rem 1rem;
-    height: 100%;
-    text-align: center;
+  .navbar {
+    height: 75px;
     width: 100%;
-    display: table;
-  }
-  
-  .nav-links-mobile:hover {
-      color: #ffffff;
-      display: block;
-      font-size: 20px;
-      border-bottom: 2mm ridge rgba(222, 232, 17, 0.6);
+    padding: 15px 70px 15px 15px;
   }
 }
 
