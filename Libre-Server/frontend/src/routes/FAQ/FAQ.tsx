@@ -15,6 +15,17 @@ export default function FAQ() {
           <div className='QBox'>
               Q: <span className='input'> Who created Libre? </span>
           </div>
+          <div className='A'>
+              A:  <span className='input'> Libre was created by Billy Merchan, Daniela Liang, Rachel Tsui, Ryan Cheng, and Dante Luis</span>
+          </div>
+          <div className='Q'>
+              Q: <span className='input'> Libre is super cool </span>
+          </div>
+          <div className='A'>
+              A:  <span className='input'> Yes </span>
+          </div>
+          
+
         </div>
     </div>
 
