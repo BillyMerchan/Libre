@@ -1,6 +1,6 @@
 .FAQ{
-    background-color: #B14B2A;
-    height: 280vh;
+    background-color: #FFEEC1;
+    height: 100vh;
     width: 100%;
     display: flex;
     object-fit: cover;
@@ -9,35 +9,47 @@
     box-shadow: inset 0 0 0 1000px rgba(21, 81, 40, 0.637);
     opacity: 70%;
     position: relative;
+    font-family: 'Quicksand';
 }
 
 .title{
     align-items: center;
     text-align: center;
-    font-family:  Libre Baskerville;
     color: white;
     font-size: 25px;
 }
 
 .QandABlock{
-    background-color: #FFEEC1;
-    
+    width: 80%;
+    height: 10%;
+    background-color: white;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding-top: 18px;
 }
 
 .QBox{
-    color: #6C0404;
-    font-family: Quicksand;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    background: #FFF;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding-top: 20px;
+    width: 100%;
+    height: 80%;
+    background: #FFEEC1;
+    padding-left: 10%; /*find way to center the blocks in middle */
 }
 
 .input{
     font-size: 25px;
-    color: rgb(255, 255, 255);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #6C0404;
+}
+
+.background-img {
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    background-image: url("../../img/lib.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 960px) {
