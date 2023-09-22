@@ -9,14 +9,14 @@
     box-shadow: inset 0 0 0 1000px rgba(21, 81, 40, 0.637);
     opacity: 70%;
     position: relative;
-    font-family: 'Quicksand';
+    font-family: "Quicksand", sans-serif;
 }
 
 .title{
-    align-items: center;
     text-align: center;
-    color: white;
     font-size: 25px;
+    padding-right: 45%;
+    margin-top: 3%;
 }
 
 .QandABlock{

@@ -8,12 +8,9 @@ export default function FAQ() {
       <NavBar />
       <div className='FAQ'>
         <div className="background-img">
-
-          <div className='title'>
-            <h1>
+            <h1 className='title'>
               Frequently Asked Questions
             </h1>
-          </div>
           <div className='QBox'>
             <div className='QandABlock'>
               <span className='input'> Who created Libre? </span>
