@@ -12,14 +12,14 @@ function Home() {
     <div className='home-page'>
       <NavBar />
 
-      <h1 className="firstHeading">Welcome to Libre</h1>
+      <h1 className="firstHeading" data-testid='firstHeading'>Welcome to Libre</h1>
 
       <div className="section-container">
         <div className="gradient-bar"></div>
         <div className="background-img"></div>
 
         <div className="textblock">
-          <div className="text-overlay">
+          <div className="text-overlay" data-testid='text-overlay'>
             <h1>Secure a study room at RPI Folsom Library</h1>
             <p> Libre is a platform allowing students to reserve individual study rooms in university libraries.
 

@@ -16,16 +16,13 @@ export default function SignIn() {
               <div className="header" data-testid="password">
               Password:
               </div>
-                <input type="text" placeholder='Password'/>
+              <input type="text" placeholder='Password'/>
           </form>
               <p className="forgotpass" data-testid="forgotPassword">
                   Forgot your Password?
               </p>
           <button className="signInbutt" type="submit" data-testid="submit">Submit</button>
-
-
       </div>
     </div>
-
   )
 }

@@ -12,7 +12,7 @@ import {room_311, room_323A, room_323B, room_323C, room_332A,
 
 const Map: FC = () => {
   return (
-    <div>
+    <div data-testid='map'>
       <NavBar/>
       <div className="Page">
         <div className="Map">
@@ -65,3 +65,4 @@ const MapDiagram: FC = () => {
 }
 
 export default Map;
+ 

@@ -8,7 +8,7 @@ export default function FAQ() {
     <NavBar/>
       <div className='FAQ'>
           <div className='title'>
-            <h1>
+            <h1 data-testid="FAQ">
                 Frequently Asked Questions
             </h1>
           </div>
