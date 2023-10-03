@@ -179,4 +179,25 @@
     .text-overlay p {
         line-height: 1.4;
     }
+    .hero-btns .btns{
+        width: 93%;
+        margin: 0px;
+        align-items: center;
+    }
+    
+    .btn-mobile {
+        padding: 0;
+        display: block;
+        text-decoration: none;
+    }
+
+    .btns {
+        width: 100%;
+    }
 }
+
+
+ 
+
+}
+

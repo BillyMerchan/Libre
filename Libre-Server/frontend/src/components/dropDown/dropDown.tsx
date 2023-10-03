@@ -1,49 +1,39 @@
-import React, {FC} from 'react';
-import './dropDown.scss';
+import React, { useState, useRef } from 'react';
+import './dropdown.css';
 
-const DropDown: FC = () => {
-    {
-        const dropDowns = document.querySelectorAll('.dropDown');
-        dropDowns.forEach(dropDown => {
-            const select = dropDown.querySelector('.select')!;
-            const caret = dropDown.querySelector('.caret')!;
-            const menu = dropDown.querySelector('.menu')!;
-            const options = dropDown.querySelectorAll('.menu li')!;
-            const selected = dropDown.querySelector('.selected')!;
+const DropDown: React.FC = () => {
+  const [open, setOpen] = useState<boolean>(false);
+  const menuRef = useRef<HTMLUListElement>(null);
 
-            select.addEventListener('click', () => {
-                select.classList.toggle('select-clicked');
-                caret.classList.toggle('caret-rotate');
-                menu.classList.toggle('menu-open');
-            });
-            options.forEach(option => {
-                option.addEventListener('click', () => {
-                    // selected.innerText = option.innerText;
-                    select.classList.remove('select-clicked');
-                    caret.classList.remove('caret-rotate');
-                    menu.classList.remove('menu-open');
-                    options.forEach(option => {
-                        option.classList.remove('active');
-                    });
-                    option.classList.add('active');
-                });
-            });
-        });
-    }
+  const toggleDropdown = () => {
+    setOpen(!open);
+  };
 
-    return(
-        <div className = "dropDown">
-            <div className = "select">
-                <span className = "selected">Option 0</span>
-                <div className = "caret"></div>
-            </div>
-            <ul className = "menu">
-                <li className = "active">Option 1</li>
-                <li>Option 2</li>
-            </ul>
-        </div>
-        )
-}
+
+  return (
+    <label className="Dropdown">
+      
+      <select className="look">
+        <option> Floor 3 </option>
+        <option> Floor 4 </option>
+        <option> option 1 </option>
+        <option> option 1 </option>
+        <option> option 1 </option>
+      </select>
+    </label>
+    /*
+    <div className="dropDown">
+      <div className="select" onClick={toggleDropdown}>
+        <span className="selected">Option 0</span>
+        <div className="caret"></div>
+      </div>
+      <ul className={`menu ${open ? 'open' : ''}`} ref={menuRef}>
+        <li className="active">floor 1</li>
+        <li>floor 2</li>
+      </ul>
+    </div>*/
+  );
+};
 
 
 export default DropDown;
