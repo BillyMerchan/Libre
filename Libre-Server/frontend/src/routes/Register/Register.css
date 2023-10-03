@@ -1,4 +1,4 @@
-.sign{
+.BackgroundRegister {
     background-color: rgba(248, 227, 157, 0.876);
     height: 100vh;
     width: 100%;
@@ -10,30 +10,24 @@
     justify-content: center;
 }
 
-.Loginn{
+  
+  .RegisterWrap {
     background-color:  rgba(160, 47, 9, 0.818);
     margin-top: -100px;
-    width: 450px;
-    height: 300px;
+    width: 420px;
+    height: 350px;
     justify-content: center;
     text-align: center;
     font-family: 'Quicksand';
     border-radius: 15px;
-
-.form-group label {
-  display: block;
-  margin-bottom: 5px;
-  color: #555;
-}
-.Loginn > h1{
+  }
+  
+  h1 {
     text-align: center;
-    align-items: center;
-    color: rgb(0, 0, 0);
-    opacity: 70%;
-    font-size: 40px;
-}
-
-.InputL{
+    margin-bottom: 20px;
+  }
+  
+  .InputR {
     width: 200px;
     height: 40px;
     border-radius: 10px;
@@ -41,37 +35,20 @@
     padding: 10px;
     margin-bottom: 10px;
     font-family: 'Quicksand';
+  }
 
-}
-
-.Outer {
-  height: 100vh;
-  width: 100%;
-  background: linear-gradient(to bottom, #F8E0B5, #FFF);
-}
-
- .signInbutt[type='submit']{
-    display: block;
-    width: 500px;
-    background-color:rgb(160, 47, 9);
-    border-color: rgb(160, 47, 9);
-    border-radius: 5px;
-    color: white;
-    padding: 14px 28px;
-    font-size: 16px;
-    font-family: Libre Baskerville;
-    cursor: pointer;
-    text-align: center;
-    margin-top: 10px;
- }
-
- .buttL{
+  .buttR {
     border-radius: 15px;
-    width: 70px;
-    height: 30px;
+    width: 150px;
+    height: 37px;
+    padding: 3px;
     margin-top: 10px;
     background-color:  rgba(222, 132, 14, 0.876);
     font-family: 'Quicksand';
     border-style: none;
-
- }
+  }
+  
+  .buttR:hover {
+    background-color: #0056b3;
+  }
+  

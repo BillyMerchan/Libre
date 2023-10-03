@@ -1,8 +1,12 @@
 const express = require('express');
-const authRoutes = require('./auth.js');
 const roomsRoutes = require('./rooms.js');
+const userRoutes = require('./user.js');
+const authRoutes = require('./auth.js');
 
 const router = express.Router();
 
+router.use('/rooms', roomsRoutes);
+router.use('/user', userRoutes);
 router.use('/auth',authRoutes);
-router.use('/room',roomsRoutes);
+
+module.exports = router;
