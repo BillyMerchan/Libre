@@ -71,30 +71,64 @@ import React from 'react'
 import NavBar from '../../components/NavBar/Navbar'
 import "./SignIn.css"
 
-export default function SignIn() {
+const SignIn = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    try {
+      const response = await fetch('/api/auth/signin', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email, password }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Authentication failed');
+      }
+
+      const data = await response.json();
+      const token = data.token;
+      // Store the token in localStorage or state
+    } catch (error) {
+      console.error('Authentication error:', error);
+    }
+  };
+
   return (
-    <div>
-    <NavBar/>
-    <div className="sign">
-        <h1>Log In <i className="fa fa-address-card-o"> </i> </h1> 
-          <form>
-            <div className= "header">
-              RCSID:
-            </div>
-              <input type="text" placeholder='Username'/>
-              <div className= "header">
-              Password:
-              </div>
-                <input type="text" placeholder='Password'/>
-          </form>
-              <p className="forgotpass">
-                  Forgot your Password?
-              </p>
-          <button className= "signInbutt" type="submit" >Submit</button>
-
-
+    <div className="Outer">
+      <NavBar/>
+      <div className="sign-in-container">
+      <h2>Sign In</h2>
+      <form onSubmit={handleSubmit}>
+        <div className="form-group">
+          <label>Email:</label>
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+        </div>
+        <div className="form-group">
+          <label>Password:</label>
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+        </div>
+        <button type="submit">Sign In</button>
+      </form>
       </div>
     </div>
+  );
+};
 
   )
 }*/
+
