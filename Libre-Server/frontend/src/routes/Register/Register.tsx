@@ -34,10 +34,10 @@ function Register() {
 
   return (
     <div>
-        <NavBar></NavBar>
+      <NavBar></NavBar>
       <div className="BackgroundRegister">
         <div className="RegisterWrap">
-          <h1>Register</h1>
+          <h1 data-testid="register">Register</h1>
           <form onSubmit={registerUser}>
             <input
               className="InputR"
