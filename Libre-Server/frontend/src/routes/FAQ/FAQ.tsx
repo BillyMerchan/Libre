@@ -26,7 +26,9 @@ const FAQ: React.FC = () => {
             <p className={`accordion input ${activeAccordion === 2 ? 'active' : ''}`} onClick={() => toggleAccordion(2)}>
               How are rooms detected?
             </p>
-            <div className={`panel ${activeAccordion === 2 ? 'show' : ''}`}> Motion detection hardware in study rooms. </div>
+            <div className={`panel ${activeAccordion === 2 ? 'show' : ''}`}> Motion detection hardware in study rooms. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. </div>
 
             <p className={`accordion input ${activeAccordion === 3 ? 'active' : ''}`} onClick={() => toggleAccordion(3)}>
               How often does the map update?
