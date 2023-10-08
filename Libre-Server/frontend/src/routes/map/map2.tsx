@@ -1,5 +1,5 @@
 import {FC} from 'react';
-import './map.css';
+import './map.scss';
 import NavBar from '../../components/NavBar/Navbar';
 import DropDown from '../../components/dropDown/dropDown';
 import React, {useState} from "react";

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./Register.css";
+import "./Register.scss";
 import NavBar from "../../components/NavBar/Navbar";
 
 function Register() {

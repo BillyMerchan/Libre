@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom"
 import Button from "../Button/Button";
 import LibreLogoWord from "../../img/new_logo.svg";
-import "./Navbar.css";
+import "./Navbar.scss";
 
 
 
