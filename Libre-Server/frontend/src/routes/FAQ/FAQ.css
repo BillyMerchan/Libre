@@ -1,6 +1,6 @@
-.FAQ{
-    background-color: #B14B2A;
-    height: 280vh;
+.FAQ {
+    background-color: #FFEEC1;
+    height: 100vh;
     width: 100%;
     display: flex;
     object-fit: cover;
@@ -9,35 +9,85 @@
     box-shadow: inset 0 0 0 1000px rgba(21, 81, 40, 0.637);
     opacity: 70%;
     position: relative;
+    font-family: "Quicksand", sans-serif;
 }
 
-.title{
-    align-items: center;
+.title {
     text-align: center;
-    font-family:  Libre Baskerville;
     color: white;
-    font-size: 25px;
+    font-size: 40px;
+    padding-right: 45%;
+    margin-top: 3%;
+    font-weight: 500;
 }
 
-.QandABlock{
+.QBox {
+    padding-top: 20px;
+    width: 100%;
+    height: 100%;
     background-color: #FFEEC1;
-    
+    padding: 1% 10%;
 }
 
-.QBox{
-    color: #6C0404;
-    font-family: Quicksand;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    background: #FFF;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+.accordion {
+    background-color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    transition: 0.3s;
+    margin: 0%;
+}
+
+.accordion.active, .accordion:hover {
+    background-color: #E3E3E3;
+}
+
+/* + sign */
+.accordion:after {
+    content: '\2795'; 
+    font-size: 13px;
+    color: #590303;
+    float: right;
+    margin-left: 5px;
+}
+
+/* - sign */
+.accordion.active:after {
+    content: "\2796"; 
+}
+
+.panel {
+    background-color: white;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+    margin-bottom: 5px;
+    height: 10px;
+}
+
+.panel.show {
+    opacity: 1;
+    height:fit-content;
+    max-height: 500px; 
 }
 
 .input{
-    font-size: 25px;
-    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #6C0404;
+}
+
+.background-img-FAQ {
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    background-image: url("../../img/lib.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top -400px;
 }
 
 @media screen and (max-width: 960px) {

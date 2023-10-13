@@ -1,65 +1,43 @@
-import { cleanup, render } from "@testing-library/react"; 
-import SignIn from "./SignIn";
+import { cleanup, render, fireEvent } from "@testing-library/react"; 
 import { MemoryRouter } from "react-router-dom";
+import SignIn from "./SignIn";
 
 afterEach(() => {
     cleanup(); 
 }); 
 
 describe(SignIn, () => {
-    // eventually implement firevent to test button submit 
-    
-    it("should display Sign In", () => { });
-    //     const { getByTestId } = render(
-    //         <MemoryRouter>
-    //             <SignIn />
-    //         </MemoryRouter>
-    //     ); 
-    //     const element = getByTestId("login"); 
-    //     expect(element).toBeInTheDocument(); 
-    //     expect(element).toContainHTML(
-    //         '<h1 data-testid="login">Log In <i class="fa fa-address-card-o"> </i> </h1>'
-    //     );
-    //     expect(element.textContent).toEqual("Log In   "); 
-    // }); 
+    test("for the attributes of the input elements", () => {
+        const { getByPlaceholderText } = render(
+            <MemoryRouter>
+                <SignIn />
+            </MemoryRouter>
+        );
 
-    // it("should display RCSID:", () => {
-    //     const { getByTestId } = render(
-    //         <MemoryRouter>
-    //             <SignIn />
-    //         </MemoryRouter>
-    //     );
-    //     const strValue = getByTestId("rcs").textContent; 
-    //     expect(strValue).toEqual("RCSID:");
-    // }); 
+        const inputEmail = getByPlaceholderText('Email'); 
+        const inputPass = getByPlaceholderText('Password');
 
-    // it("should display Password:", () => {
-    //     const { getByTestId } = render(
-    //         <MemoryRouter>
-    //             <SignIn /> 
-    //         </MemoryRouter>
-    //     ); 
-    //     const strValue = getByTestId("password").textContent; 
-    //     expect(strValue).toEqual("Password:"); 
-    // }); 
+        expect(inputEmail).toBeInTheDocument(); 
+        expect(inputPass).toBeInTheDocument(); 
 
-    // it("should display Forgot your Password?", () => {
-    //     const { getByTestId } = render(
-    //         <MemoryRouter>
-    //             <SignIn /> 
-    //         </MemoryRouter>
-    //     ); 
-    //     const strValue = getByTestId("forgotPassword").textContent; 
-    //     expect(strValue).toEqual("Forgot your Password?"); 
-    // }); 
+        expect(inputEmail.type).toEqual("email");
+        expect(inputPass.type).toEqual("password"); 
+    });
 
-    // it("should display Submit", () => {
-    //     const { getByTestId } = render(
-    //         <MemoryRouter>
-    //             <SignIn /> 
-    //         </MemoryRouter>
-    //     );
-    //     const strValue = getByTestId("submit").textContent; 
-    //     expect(strValue).toEqual("Submit"); 
-    // }); 
+    test("for the value if the a user enters information into the form", () => {
+        const { getByPlaceholderText } = render(
+            <MemoryRouter>
+                <SignIn />
+            </MemoryRouter>
+        );
+
+        const inputEmail = getByPlaceholderText("Email"); 
+        const inputPass = getByPlaceholderText("Password"); 
+
+        fireEvent.change(inputEmail, { target: { value: "bob@gmail.com" }}); 
+        expect(inputEmail.value).toEqual("bob@gmail.com"); 
+
+        fireEvent.change(inputPass, { target: { value: "bobpass" }});
+        expect(inputPass.value).toEqual("bobpass");
+    }); 
 }); 
