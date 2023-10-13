@@ -28,7 +28,7 @@ function Register() {
     const data = await response.json();
 
     if (data.status === "ok") {
-      navigate("/login");
+      navigate("/signIn");
     }
   }
 
@@ -37,7 +37,7 @@ function Register() {
       <NavBar></NavBar>
       <div className="BackgroundRegister">
         <div className="RegisterWrap">
-          <h1 data-testid="register">Register</h1>
+          <h1>Register</h1>
           <form onSubmit={registerUser}>
             <input
               className="InputR"
@@ -63,9 +63,9 @@ function Register() {
               placeholder="Password"
             />
             <br />
-            <input className="buttR" type="submit" value="Register" />
+            <input className="buttR" type="submit" value="Register"/>
           </form>
-          <button className="buttR" onClick={() => navigate("/signIn")}>Already hava an account?</button>
+          <button className="buttR" onClick={() => navigate("/signIn")}>Already have an account?</button>
         </div>
       </div>
     </div>
