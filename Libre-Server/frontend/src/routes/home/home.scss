@@ -1,3 +1,7 @@
+$fg-main: #ffffff;
+$bg-main: #FFEEC1;
+$bg-alt:  #B14B2A;
+
 .home-page {
     min-width: 1280px;
     height: 2240px;
@@ -5,7 +9,7 @@
     display: flex;
     flex-direction: column;
     object-fit: contain;
-    background-color: #FFEEC1;
+    background-color: $bg-main;
 }
 
 .section-container {
@@ -61,7 +65,7 @@
     height: 100%;
     margin-left: 10vw;
     margin-top: 10px;
-    background-color: #B14B2A;
+    background-color: $bg-alt;
     opacity: 90%;
     z-index: 1;
     /* Place the rectangle above the video */
@@ -70,7 +74,7 @@
 .text-overlay {
     position: absolute;
     padding: 10%;
-    color: #FFEEC1;
+    color: $bg-main;
     z-index: 2;
     /* Place the text above the rectangle */
 }
@@ -79,7 +83,7 @@
     position: absolute;
     align-self: right;
     padding: 10%;
-    color: #FFEEC1;
+    color: $bg-main;
     z-index: 2;
 }
 
@@ -116,13 +120,13 @@
 .gradient-bar {
     width: 100%;
     height: 10px;
-    background: linear-gradient(to left, #952D0B, #FFEEC1);
+    background: linear-gradient(to left, #952D0B, $bg-main);
 }
 
 .gradient-bar2 {
     width: 100%;
     height: 10px;
-    background: linear-gradient(to right, #952D0B, #FFEEC1);
+    background: linear-gradient(to right, #952D0B, $bg-main);
 }
 
 .home-page>h1 {

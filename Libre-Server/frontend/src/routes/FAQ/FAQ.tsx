@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import NavBar from '../../components/NavBar/Navbar';
-import "./FAQ.css";
+import "./FAQ.scss";
 
 const FAQ: React.FC = () => {
   const [activeAccordion, setActiveAccordion] = useState<number | null>(null);

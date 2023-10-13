@@ -1,9 +1,8 @@
 import React from 'react';
-import "./home.css";
+import "./home.scss";
 
 import NavBar from '../../components/NavBar/Navbar';
 import Button from "../../components/Button/Button";
-
 
 function Home() {
 

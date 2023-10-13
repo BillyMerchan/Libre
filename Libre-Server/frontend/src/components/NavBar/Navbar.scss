@@ -1,3 +1,7 @@
+$fg-main: #ffffff;
+$bg-main: #FFEEC1;
+$bg-alt:  #B14B2A;
+
 .navbar {
   background: rgb(160, 47, 9);
   height: 80px;
@@ -36,7 +40,7 @@
 
 .nav-links {
   font-size: 20px;
-  color: #FFEEC1;
+  color: $bg-main;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -50,11 +54,10 @@
   text-align: center;
   text-decoration: none;
   transition: all 0.2s ease-out;
-  border-bottom: 2mm ridge #FFEEC1;
+  border-bottom: 2mm ridge $bg-main;
   overflow: auto;
 
 }
-
 
 @media screen and (max-width: 960px) {
   .navbar-logo {
