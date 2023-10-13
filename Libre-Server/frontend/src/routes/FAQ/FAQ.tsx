@@ -21,19 +21,20 @@ const FAQ: React.FC = () => {
             <p className={`accordion input ${activeAccordion === 1 ? 'active' : ''}`} onClick={() => toggleAccordion(1)}>
               Who created Libre?
             </p>
-            <div className={`panel ${activeAccordion === 1 ? 'show' : ''}`}> Group of RCOS students at RPI. </div>
+            <div className={`panel ${activeAccordion === 1 ? 'show' : ''}`} data-testid="answer"> 
+            Group of RCOS students at RPI. </div>
 
             <p className={`accordion input ${activeAccordion === 2 ? 'active' : ''}`} onClick={() => toggleAccordion(2)}>
               How are rooms detected?
             </p>
-            <div className={`panel ${activeAccordion === 2 ? 'show' : ''}`}> Motion detection hardware in study rooms. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            <div className={`panel ${activeAccordion === 2 ? 'show' : ''}`} data-testid="answer"> Motion detection hardware in study rooms. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
               labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat. </div>
 
             <p className={`accordion input ${activeAccordion === 3 ? 'active' : ''}`} onClick={() => toggleAccordion(3)}>
               How often does the map update?
             </p>
-            <div className={`panel ${activeAccordion === 3 ? 'show' : ''}`}> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            <div className={`panel ${activeAccordion === 3 ? 'show' : ''}`} data-testid="answer"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
               labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat. </div>
           </div>
