@@ -35,9 +35,9 @@ function Register() {
   return (
     <div>
       <NavBar></NavBar>
-      <div className="BackgroundRegister">
+      <div className="BackgroundRegister" data-testid="register">
         <div className="RegisterWrap">
-          <h1 data-testid="register">Register</h1>
+          <h1>Register</h1>
           <form onSubmit={registerUser}>
             <input
               className="InputR"
@@ -63,9 +63,9 @@ function Register() {
               placeholder="Password"
             />
             <br />
-            <input className="buttR" type="submit" value="Register" />
+            <input className="buttR" type="submit" value="Register" onClick={() => navigate("/signIn")}/>
           </form>
-          <button className="buttR" onClick={() => navigate("/signIn")}>Already hava an account?</button>
+          <button className="buttR" onClick={() => navigate("/signIn")}>Already have an account?</button>
         </div>
       </div>
     </div>

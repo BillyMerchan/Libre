@@ -16,6 +16,11 @@ describe(Register, () => {
 
         const element = getByTestId("register"); 
         expect(element).toBeInTheDocument(); 
-        console.log(element.textContent); 
+        expect(element.textContent).toEqual("RegisterAlready have an account?"); 
     }); 
+
+    test("testing the submit button", () = {
+        
+
+    });
 }); 
