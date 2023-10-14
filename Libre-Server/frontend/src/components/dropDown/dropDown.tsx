@@ -1,26 +1,20 @@
-import React, { useState, useRef } from 'react';
-import './dropdown.css';
+// import React, { useState, useRef } from 'react';
+import './dropDown.scss';
 
 const DropDown: React.FC = () => {
-  const [open, setOpen] = useState<boolean>(false);
-  const menuRef = useRef<HTMLUListElement>(null);
+  // const [open, setOpen] = useState<boolean>(false);
+  // const menuRef = useRef<HTMLUListElement>(null);
 
-  const toggleDropdown = () => {
-    setOpen(!open);
-  };
+  // const toggleDropdown = () => {
+  //   setOpen(!open);
+  // };
 
 
   return (
-    <label className="Dropdown">
-      
-      <select className="look">
-        <option> Floor 3 </option>
-        <option> Floor 4 </option>
-        <option> option 1 </option>
-        <option> option 1 </option>
-        <option> option 1 </option>
-      </select>
-    </label>
+    <select className="select-floor">
+      <option> Floor 3 </option>
+      <option> Floor 4 </option>
+    </select>
     /*
     <div className="dropDown">
       <div className="select" onClick={toggleDropdown}>
