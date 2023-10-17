@@ -62,14 +62,15 @@
     overflow: hidden;
     transition: 0.3s ease-in-out;
     opacity: 0;
-    margin-bottom: 5px;
-    height: 10px;
+    margin-bottom: 2%;
+    height: 1%;
 }
 
 .panel.show {
     opacity: 1;
     height:fit-content;
     max-height: 500px; 
+    padding: 1%;
 }
 
 .input{
