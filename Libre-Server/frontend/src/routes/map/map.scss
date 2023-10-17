@@ -1,26 +1,10 @@
-$fg-main: #ffffff;
-$bg-main: #FFEEC1;
-
-body {
-  background-color: $bg-main;
-}
-
-.Room {
-  width: 1230px;
-  height: 600px;
-  background-color: rgb(255 255 255);
+.Map {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(229 229 229);
   overflow: visible;
   position: absolute;
   transition: .5s ease;
-}
-
-.Map {
-  margin-top: 10vh;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  height: 80vh;
-  width: 85vw;
 }
 
 .text {
@@ -33,344 +17,191 @@ body {
   text-align: center;
 }
 
-.R2room332A {
+.Room {
+  background-color: rgb(185, 185, 169);
+  position: absolute;
+}
+
+.Room:hover {
+  background-color: rgb(20, 231, 12);
+}
+
+.R332A {
   width: 20px;
   height: 40px;
-  background-color: rgb(185, 169, 169);
   margin-left: 180px;
   margin-top: 95px;
-  position: absolute;
 }
 
 
-.R2room332B {
+.R332B {
   width: 40px;
   height: 60px;
-  background-color: rgb(185, 185, 169);
   margin-left: 180px;
   margin-top: 30px;
-  position: absolute;
 }
 
-.R2room332C {
+.R332C {
   width: 40px;
   height: 60px;
-  background-color: rgb(185, 185, 169);
   margin-left: 225px;
   margin-top: 30px;
-  position: absolute;
 }
 
 
-.R2room332D {
+.R332D {
   width: 40px;
   height: 60px;
-  background-color: rgb(185, 185, 169);
   margin-left: 270px;
   margin-top: 30px;
-  position: absolute;
 }
 
-.R2room332E {
+.R332E {
   width: 20px;
   height: 40px;
-  background-color: rgb(185, 185, 169);
   margin-left: 290px;
   margin-top: 95px;
-  position: absolute;
 }
 
-.R2room333 {
+.R333 {
   width: 135px;
   height: 80px;
-  background-color: rgb(185, 185, 169);
   margin-left: 315px;
   margin-top: 30px;
-  position: absolute;
 }
 
-.R2room337A {
+.R337A {
   width: 20px;
   height: 40px;
-  background-color: rgb(185, 185, 169);
   margin-left: 850px;
   margin-top: 95px;
-  position: absolute;
 }
 
 
-.R2room337B {
+.R337B {
   width: 40px;
   height: 60px;
-  background-color: rgb(185, 185, 169);
   margin-left: 850px;
   margin-top: 30px;
-  position: absolute;
 }
 
-.R2room337C {
+.R337C {
   width: 40px;
   height: 60px;
-  background-color: rgb(185, 185, 169);
   margin-left: 895px;
   margin-top: 30px;
-  position: absolute;
 }
 
 
-.R2room337D {
+.R337D {
   width: 40px;
   height: 60px;
-  background-color: rgb(185, 185, 169);
   margin-left: 940px;
   margin-top: 30px;
-  position: absolute;
 }
 
-.R2room337E {
+.R337E {
   width: 20px;
   height: 40px;
-  background-color: rgb(185, 185, 169);
   margin-left: 960px;
   margin-top: 95px;
-  position: absolute;
 }
 
-.R2room342A {
+.R342A {
   width: 50px;
   height: 40px;
-  background-color: rgb(185, 185, 169);
   margin-left: 1100px;
   margin-top: 250px;
-  position: absolute;
 }
 
-.R2room342B {
+.R342B {
   width: 50px;
   height: 40px;
-  background-color: rgb(185, 185, 169);
   margin-left: 1100px;
   margin-top: 295px;
-  position: absolute;
 }
 
-.R2room342C {
+.R342C {
   width: 50px;
   height: 40px;
-  background-color: rgb(185, 185, 169);
   margin-left: 1100px;
   margin-top: 340px;
-  position: absolute;
 }
 
-.R2room352E {
+.R352E {
   width: 20px;
   height: 40px;
-  background-color: rgb(185, 185, 169);
   margin-left: 960px;
   margin-top: 450px;
-  position: absolute;
 }
 
-.R2room352D {
+.R352D {
   width: 40px;
   height: 60px;
-  background-color: rgb(185, 185, 169);
   margin-left: 940px;
   margin-top: 495px;
-  position: absolute;
 }
 
-.R2room352C {
+.R352C {
   width: 40px;
   height: 60px;
-  background-color: rgb(185, 185, 169);
   margin-left: 895px;
   margin-top: 495px;
-  position: absolute;
 }
 
-.R2room352B {
+.R352B {
   width: 40px;
   height: 60px;
-  background-color: rgb(185, 185, 169);
   margin-left: 850px;
   margin-top: 495px;
-  position: absolute;
 }
 
-.R2room352A {
+.R352A {
   width: 20px;
   height: 40px;
-  background-color: rgb(185, 185, 169);
   margin-left: 850px;
   margin-top: 450px;
-  position: absolute;
 }
 
-.R2room353A {
+.R353A {
   width: 60px;
   height: 90px;
-  background-color: rgb(185, 185, 169);
   margin-left: 785px;
   margin-top: 465px;
-  position: absolute;
 }
 
-.R2room353B {
+.R353B {
   width: 60px;
   height: 90px;
-  background-color: rgb(185, 185, 169);
   margin-left: 720px;
   margin-top: 465px;
-  position: absolute;
 }
 
-.R2room311 {
+.R311 {
   width: 40px;
   height: 60px;
-  background-color: rgb(185, 185, 169);
   margin-left: 450px;
   margin-top: 350px;
-  position: absolute;
 }
 
 
-.R2room323C {
+.R323C {
   width: 50px;
   height: 40px;
-  background-color: rgb(185, 185, 169);
   margin-left: 100px;
   margin-top: 250px;
-  position: absolute;
 }
 
-.R2room323B {
+.R323B {
   width: 50px;
   height: 40px;
-  background-color: rgb(185, 185, 169);
   margin-left: 100px;
   margin-top: 295px;
-  position: absolute;
 }
 
-.R2room323A {
+.R323A {
   width: 50px;
   height: 40px;
-  background-color: rgb(185, 185, 169);
   margin-left: 100px;
   margin-top: 340px;
-  position: absolute;
-}
-
-// .Room:hover {
-//   background-color: rgb(20, 231, 12);
-// }
-
-
-
-/* Hover Function for all the rooms */
-.R2room332A:hover {
-  background-color: rgb(109, 240, 137);
-}
-
-
-.R2room332B:hover {
-  background-color: rgb(109, 240, 137);
-}
-
-.R2room332C:hover {
-  background-color: rgb(109, 240, 137);
-}
-
-
-.R2room332D:hover {
-  background-color: rgb(109, 240, 137);
-}
-
-.R2room332E:hover {
-  background-color: rgb(109, 240, 137);
-}
-
-.R2room333:hover {
-  background-color: rgb(109, 240, 137);
-}
-
-.R2room337A:hover {
-  background-color: rgb(109, 240, 137);
-}
-
-
-.R2room337B:hover {
-  background-color: rgb(109, 240, 137);
-}
-
-.R2room337C:hover {
-  background-color: rgb(109, 240, 137);
-}
-
-
-.R2room337D:hover {
-  background-color: rgb(109, 240, 137);
-}
-
-.R2room337E:hover {
-  background-color: rgb(109, 240, 137);
-}
-
-.R2room342A:hover {
-  background-color: rgb(109, 240, 137);
-}
-
-.R2room342B:hover {
-  background-color: rgb(109, 240, 137);
-}
-
-.R2room342C:hover {
-  background-color: rgb(109, 240, 137);
-}
-
-.R2room352E:hover {
-  background-color: rgb(109, 240, 137);
-}
-
-.R2room352D:hover {
-  background-color: rgb(109, 240, 137);
-}
-
-.R2room352C:hover {
-  background-color: rgb(109, 240, 137);
-}
-
-.R2room352B:hover {
-  background-color: rgb(109, 240, 137);
-}
-
-.R2room352A:hover {
-  background-color: rgb(109, 240, 137);
-}
-
-.R2room353A:hover {
-  background-color: rgb(109, 240, 137);
-}
-
-.R2room353B:hover {
-  background-color: rgb(109, 240, 137);
-}
-
-.R2room311:hover {
-  background-color: rgb(109, 240, 137);
-}
-
-
-.R2room323C:hover {
-  background-color: rgb(109, 240, 137);
-}
-
-.R2room323B:hover {
-  background-color: rgb(109, 240, 137);
-}
-
-.R2room323A:hover {
-  background-color: rgb(109, 240, 137);
 }
