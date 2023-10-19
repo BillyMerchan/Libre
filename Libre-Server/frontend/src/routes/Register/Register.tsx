@@ -38,7 +38,7 @@ function Register() {
       <div className="BackgroundRegister" data-testid="register">
         <div className="RegisterWrap">
           <h1>Register</h1>
-          <form onSubmit={registerUser}>
+          <form onSubmit={registerUser} data-testid="registerForm">
             <input
               className="InputR"
               value={name}
@@ -63,7 +63,7 @@ function Register() {
               placeholder="Password"
             />
             <br />
-            <input className="buttR" type="submit" value="Register" onClick={() => navigate("/signIn")}/>
+            <input className="buttR" type="submit" value="Register"/>
           </form>
           <button className="buttR" onClick={() => navigate("/signIn")}>Already have an account?</button>
         </div>

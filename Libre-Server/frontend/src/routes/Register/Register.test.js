@@ -1,4 +1,4 @@
-import { render, cleanup, fireEvent } from '@testing-library/react'; 
+import { render, cleanup, fireEvent, screen } from '@testing-library/react'; 
 import { MemoryRouter } from 'react-router-dom';
 import Register from './Register';
 
@@ -31,8 +31,8 @@ describe(Register, () => {
         expect(inputPass.type).toEqual("password"); 
     });
 
-    test("tests if the inputs changes the information properly", () => {
-        const { getByPlaceholderText, getAllByRole } = render(
+    test("tests if the inputs changes the information properly", async() => {
+        const { getByPlaceholderText, getAllByRole, debug } = render(
             <MemoryRouter>
                 <Register />
             </MemoryRouter>
@@ -41,7 +41,10 @@ describe(Register, () => {
         const inputName = getByPlaceholderText("Name");
         const inputEmail = getByPlaceholderText("Email"); 
         const inputPass = getByPlaceholderText("Password"); 
-    
+        const submit = getAllByRole("button")[0];
+
+        debug(); 
+
         fireEvent.change(inputName, { target: { value: "Bob" }}); 
         expect(inputName.value).toEqual("Bob"); 
 
@@ -50,5 +53,9 @@ describe(Register, () => {
 
         fireEvent.change(inputPass, { target: { value: "bobpass" }}); 
         expect(inputPass.value).toEqual("bobpass"); 
-    });
+
+        fireEvent.click(submit); 
+        console.log(screen.getByRole("")); 
+
+    }); 
 }); 

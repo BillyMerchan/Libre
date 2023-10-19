@@ -33,7 +33,7 @@
     z-index: 1;
 }
 
-.btn--medium{
+.btn--medium {
     padding: 8px 20px;
     font-size: 20px;
 }
@@ -46,4 +46,33 @@
     background: orangered;
     color: green;
     transition: all 0.3s ease-out;
+}
+
+.btn--signin:hover {
+    opacity: 0.7; 
+    transition: 0.5; 
+}
+
+.btn--signin:active {
+    opacity: 0.5; 
+    transition: 0.5; 
+}
+
+@media (max-width: 1280px) {
+    .btn--signin {
+        font-family: 'Quicksand';
+        font-size: 25px;
+        background-color: white;
+        color: #6C0404;
+        height: 8vh;
+        width: 14vw;
+        padding: 0px;
+        border-radius: 18px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        margin-bottom: 10px; 
+    }
 }
