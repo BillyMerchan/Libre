@@ -22,7 +22,7 @@ const Button: React.FC<Props> = ({
     const checkButtonSize = buttonSize;
 
     return (
-        <Link to="/signIn" className="btn-mobile" >
+        <Link to="/register" className="btn-mobile" >
             <button className={`btn ${checkButtonStyle} ${checkButtonSize} ${className}`}
                 onClick={onClick} type={"submit"}>
                 {children}

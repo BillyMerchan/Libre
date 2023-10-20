@@ -7,31 +7,7 @@ afterEach(() => {
 }); 
 
 describe(Register, () => {
-    test("tests if form elements' attributes are valid", () => {
-        const { getByPlaceholderText } = render(
-            <MemoryRouter>
-                <Register />
-            </MemoryRouter>
-        );  
-        
-        const inputName = getByPlaceholderText("Name");
-        const inputEmail = getByPlaceholderText("Email"); 
-        const inputPass = getByPlaceholderText("Password"); 
-        
-        expect(inputName).toBeInTheDocument(); 
-        expect(inputEmail).toBeInTheDocument(); 
-        expect(inputPass).toBeInTheDocument(); 
-
-        expect(inputName.className).toEqual("InputR"); 
-        expect(inputEmail.className).toEqual("InputR");    
-        expect(inputPass.className).toEqual("InputR");          
-
-        expect(inputName.type).toEqual("text"); 
-        expect(inputEmail.type).toEqual("email"); 
-        expect(inputPass.type).toEqual("password"); 
-    });
-
-    test("tests if the inputs changes the information properly", async() => {
+    test("for register valid values and UI interaction", () => {
         const { getByPlaceholderText, getAllByRole, debug } = render(
             <MemoryRouter>
                 <Register />
@@ -44,6 +20,18 @@ describe(Register, () => {
         const submit = getAllByRole("button")[0];
 
         debug(); 
+        
+        expect(inputName).toBeInTheDocument(); 
+        expect(inputEmail).toBeInTheDocument(); 
+        expect(inputPass).toBeInTheDocument(); 
+
+        expect(inputName.className).toEqual("InputR"); 
+        expect(inputEmail.className).toEqual("InputR");    
+        expect(inputPass.className).toEqual("InputR");          
+
+        expect(inputName.type).toEqual("text"); 
+        expect(inputEmail.type).toEqual("email"); 
+        expect(inputPass.type).toEqual("password"); 
 
         fireEvent.change(inputName, { target: { value: "Bob" }}); 
         expect(inputName.value).toEqual("Bob"); 
@@ -53,9 +41,5 @@ describe(Register, () => {
 
         fireEvent.change(inputPass, { target: { value: "bobpass" }}); 
         expect(inputPass.value).toEqual("bobpass"); 
-
-        fireEvent.click(submit); 
-        console.log(screen.getByRole("")); 
-
-    }); 
+    });
 }); 
