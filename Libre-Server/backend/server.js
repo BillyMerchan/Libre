@@ -1,13 +1,15 @@
 const express = require('express')
 const mongoose = require("mongoose");
-const app = express()
 const cors = require('cors')
 const allRoutes = require('./routes/index.js');
 require('dotenv').config({ path: './config.env' })
+
+const app = express()
 const port = process.env.PORT
 
 app.use(cors({ credentials: true, origin: true }))
 app.use(express.json())
+
 // get database connection
 //require('./models/conn')
 app.use('/api', allRoutes)

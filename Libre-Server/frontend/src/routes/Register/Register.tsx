@@ -4,11 +4,11 @@ import "./Register.scss";
 import NavBar from "../../components/NavBar/Navbar";
 
 function Register() {
-  const navigate = useNavigate();
-
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
+
+  const navigate = useNavigate();
 
   async function registerUser(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -26,7 +26,7 @@ function Register() {
     });
 
     const data = await response.json();
-
+    console.log(data); 
     if (data.status === "ok") {
       navigate("/signIn");
     }
@@ -63,7 +63,7 @@ function Register() {
               placeholder="Password"
             />
             <br />
-            <input className="buttR" type="submit" value="Register" onClick={() => navigate("/signIn")}/>
+            <input className="buttR" type="submit" value="Register"/>
           </form>
           <button className="buttR" onClick={() => navigate("/signIn")}>Already have an account?</button>
         </div>
