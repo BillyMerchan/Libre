@@ -145,7 +145,48 @@ $bg-alt:  #B14B2A;
     height: 10vh;
 }
 
-/* Media query for screens smaller than 1280px */
+
+@media (max-width: 1920px) {
+    .home-page {
+        height: 2000px; 
+    }
+
+    .section-container {
+        height: 85vh; 
+    }
+
+    .section-container2 {
+        height: 80vh; 
+    }
+
+    .textblock,
+    .textblock2 {
+        width: 18vw;
+    }
+
+    .text-overlay h1 {
+        font-size: 25px;
+    }
+
+    .text-overlay p, 
+    .text-overlay2 p {
+        font-size: 18px;
+        margin: 20px 0px;
+        line-height: 2;
+        font-family: 'Quicksand';
+        font-weight: 400;
+    }
+
+    .home-page > h1 {
+        font-size: 50px;
+        color: #6C0404;
+        font-family: "Quicksand", sans-serif;
+        font-weight: 500;
+        padding-right: 5%;
+        margin-bottom: -5px;
+    }
+}
+
 @media (max-width: 1280px) {
     .home-page {
         min-width: auto;    

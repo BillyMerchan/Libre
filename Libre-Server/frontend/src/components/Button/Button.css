@@ -58,21 +58,24 @@
     transition: 0.5; 
 }
 
+@media (max-width: 1920px) {
+    .btn--signin {
+        font-size: 25px;
+        height: 5vh;
+        width: 10vw;
+        padding: 0px;
+        border-radius: 20px;
+        margin-bottom: 12px; 
+    }
+}
+
 @media (max-width: 1280px) {
     .btn--signin {
-        font-family: 'Quicksand';
         font-size: 25px;
-        background-color: white;
-        color: #6C0404;
         height: 8vh;
         width: 14vw;
         padding: 0px;
         border-radius: 18px;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 1;
         margin-bottom: 10px; 
     }
 }

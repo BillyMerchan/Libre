@@ -29,7 +29,7 @@ function Home() {
             </p>
           </div>
         </div>
-        { Button && <Button buttonStyle='btn--signin'>Register</Button> }
+        { Button && <Button buttonStyle='btn--signin' path='/register'>Register</Button> }
       </div>
   
       <h1 className="secondHeading">Other Resources</h1>
@@ -49,8 +49,8 @@ function Home() {
               consequat.
             </p>
           </div>
-        </div>
-        { Button && <Button buttonStyle='btn--signin'>View Map</Button> }
+        </div>    
+        { Button && <Button buttonStyle='btn--signin' path='/map'>View Map</Button> }
       </div>      
     </div >
   )
