@@ -4,7 +4,6 @@ export default function Demo() {
   return (
     <div>
     <NavBar/>
-        Demo
     </div>
 
   )

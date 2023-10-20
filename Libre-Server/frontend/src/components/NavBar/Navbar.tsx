@@ -11,8 +11,8 @@ function NavBar() {
     // const [button] = useState(true);
 
     return (
-        <nav className="navbar">
-            <Link to="/" className="navbar-logo">
+        <nav className="navbar" data-testid="navbar">
+            <Link to="/" className="navbar-logo" data-testid="navbarLogo">
                 <img src={LibreLogoWord} />
             </Link>
             <li className="nav-item">

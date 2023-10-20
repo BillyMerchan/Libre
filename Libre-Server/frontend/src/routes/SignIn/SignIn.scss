@@ -2,19 +2,18 @@ $fg-main: #ffffff;
 $bg-main: #FFEEC1;
 $bg-alt:  #B14B2A;
 
-.sign{
+.sign { 
     background-color: rgba(248, 227, 157, 0.876);
-    height: 100vh;
+    height: 86vh;
     width: 100%;
     padding: 10px;
     display: flex; 
     flex-direction: column;
     align-items: center;
-    /*box-shadow: inset 0 0 0 1000px rgba(222, 104, 13, 0.637);*/
     justify-content: center;
 }
 
-.Loginn{
+.Loginn {
     background-color:  rgba(160, 47, 9, 0.818);
     margin-top: -100px;
     width: 450px;
@@ -24,20 +23,23 @@ $bg-alt:  #B14B2A;
     font-family: 'Quicksand';
     border-radius: 15px;
 }
+
 .form-group label {
   display: block;
   margin-bottom: 5px;
   color: #555;
 }
-.Loginn > h1{
+
+
+.Loginn > h1 {
     text-align: center;
     align-items: center;
     color: rgb(0, 0, 0);
     opacity: 70%;
-    font-size: 40px;
+    font-size: 35px;
 }
 
-.InputL{
+.InputL {
     width: 200px;
     height: 40px;
     border-radius: 10px;
@@ -54,7 +56,7 @@ $bg-alt:  #B14B2A;
   background: linear-gradient(to bottom, #F8E0B5, #FFF);
 }
 
- .signInbutt[type='submit']{
+ .signInbutt[type='submit'] {
     display: block;
     width: 500px;
     background-color:rgb(160, 47, 9);
@@ -69,7 +71,7 @@ $bg-alt:  #B14B2A;
     margin-top: 10px;
  }
 
- .buttL{
+ .buttL {
     border-radius: 15px;
     width: 70px;
     height: 30px;
@@ -77,5 +79,16 @@ $bg-alt:  #B14B2A;
     background-color:  rgba(222, 132, 14, 0.876);
     font-family: 'Quicksand';
     border-style: none;
-
  }
+
+.buttL:hover, .buttL:active {
+  transition: 0.5; 
+}
+
+.buttL:hover {
+  opacity: 0.8; 
+}
+
+.buttL:active {
+  opacity: 0.6; 
+}

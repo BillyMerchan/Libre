@@ -4,7 +4,7 @@ $bg-alt:  #B14B2A;
 
 .navbar {
   background: rgb(160, 47, 9);
-  height: 80px;
+  height: 75px;
   width: 100%;
   align-items: center;
   position: sticky;
@@ -16,9 +16,8 @@ $bg-alt:  #B14B2A;
 .navbar-logo {
   margin-top: 131px;
   margin-right: auto;
-  width: 195px;
-  height: 250px;
-  height: 211px;
+  width: 180px;
+  height: 210px;
 }
 
 .nav-item {
@@ -26,12 +25,14 @@ $bg-alt:  #B14B2A;
   list-style: none;
   padding: 0vw 2vw;
 }
+
 .nav-itemFAQ {
   height: 80px;
   list-style: none;
   padding: 0vw 2vw;
 }
-.nav-itemSignIn{
+
+.nav-itemSignIn {
   height: 80px;
   list-style: none;
   padding: 0vw 2vw;
@@ -39,7 +40,7 @@ $bg-alt:  #B14B2A;
 }
 
 .nav-links {
-  font-size: 20px;
+  font-size: 15px;
   color: $bg-main;
   display: flex;
   align-items: center;
