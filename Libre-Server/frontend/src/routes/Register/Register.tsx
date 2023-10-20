@@ -38,7 +38,7 @@ function Register() {
       <div className="BackgroundRegister" data-testid="register">
         <div className="RegisterWrap">
           <h1>Register</h1>
-          <form onSubmit={registerUser}>
+          <form onSubmit={registerUser} data-testid="registerForm">
             <input
               className="InputR"
               value={name}

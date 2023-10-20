@@ -59,7 +59,7 @@ export default function SignIn() {
             <br />
             <input className="buttL" type="submit" value="Login" />
           </form>
-          <button className="buttL" onClick={() => navigate("/register")}>Sign Up</button>
+          <button className="buttL" onClick={() => navigate("/register")}>Register</button>
         </div>
       </div>
     </div>

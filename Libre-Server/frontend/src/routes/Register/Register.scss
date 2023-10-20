@@ -4,7 +4,7 @@ $bg-alt:  #B14B2A;
 
 .BackgroundRegister {
     background-color: rgba(248, 227, 157, 0.876);
-    height: 100vh;
+    height: 86vh;
     width: 100%;
     padding: 10px;
     display: flex; 
@@ -15,43 +15,52 @@ $bg-alt:  #B14B2A;
 }
 
   
-  .RegisterWrap {
-    background-color:  rgba(160, 47, 9, 0.818);
-    margin-top: -100px;
-    width: 420px;
-    height: 350px;
-    justify-content: center;
-    text-align: center;
-    font-family: 'Quicksand';
-    border-radius: 15px;
-  }
-  
-  h1 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .InputR {
-    width: 200px;
-    height: 40px;
-    border-radius: 10px;
-    border-style: none;
-    padding: 10px;
-    margin-bottom: 10px;
-    font-family: 'Quicksand';
-  }
+.RegisterWrap {
+  background-color:  rgba(160, 47, 9, 0.818);
+  margin-top: -100px;
+  width: 420px;
+  height: 350px;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Quicksand';
+  border-radius: 15px;
+}
 
-  .buttR {
-    border-radius: 15px;
-    width: 150px;
-    height: 37px;
-    padding: 3px;
-    margin-top: 10px;
-    background-color:  rgba(222, 132, 14, 0.876);
-    font-family: 'Quicksand';
-    border-style: none;
-  }
-  
-  .buttR:hover {
-    background-color: #0056b3;
-  }
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.InputR {
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  border-style: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-family: 'Quicksand';
+}
+
+.buttR {
+  border-radius: 15px;
+  width: 120px;
+  height: 37px;
+  padding: 3px;
+  margin-top: 10px;
+  background-color:  rgba(222, 132, 14, 0.876);
+  font-family: 'Quicksand';
+  border-style: none;
+}
+
+.buttR:hover, 
+.buttR:active {
+  transition: 0.5; 
+}
+
+.buttR:hover {
+  opacity: 0.8; 
+}
+
+.buttR:active {
+  opacity: 0.6; 
+}

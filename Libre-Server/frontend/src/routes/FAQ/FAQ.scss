@@ -4,7 +4,7 @@ $bg-alt:  #B14B2A;
 
 .FAQ {
     background-color: $bg-main;
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     display: flex;
     object-fit: cover;
@@ -19,7 +19,7 @@ $bg-alt:  #B14B2A;
 .title {
     text-align: center;
     color: white;
-    font-size: 40px;
+    font-size: 35px;
     padding-right: 45%;
     margin-top: 3%;
     font-weight: 500;
@@ -71,13 +71,15 @@ $bg-alt:  #B14B2A;
 }
 
 .panel.show {
+    font-size: 12px;
     opacity: 1;
-    height:fit-content;
+    height: fit-content;
     max-height: 500px; 
+    padding: 13px; 
 }
 
 .input{
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -94,8 +96,11 @@ $bg-alt:  #B14B2A;
     background-position: center top -400px;
 }
 
-@media screen and (max-width: 960px) {
+@media (max-width: 1280px) {
+}
+
+@media (max-width: 960px) {
 } 
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 }

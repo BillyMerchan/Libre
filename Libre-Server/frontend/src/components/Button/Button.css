@@ -33,7 +33,7 @@
     z-index: 1;
 }
 
-.btn--medium{
+.btn--medium {
     padding: 8px 20px;
     font-size: 20px;
 }
@@ -46,4 +46,36 @@
     background: orangered;
     color: green;
     transition: all 0.3s ease-out;
+}
+
+.btn--signin:hover {
+    opacity: 0.7; 
+    transition: 0.5; 
+}
+
+.btn--signin:active {
+    opacity: 0.5; 
+    transition: 0.5; 
+}
+
+@media (max-width: 1920px) {
+    .btn--signin {
+        font-size: 25px;
+        height: 5vh;
+        width: 10vw;
+        padding: 0px;
+        border-radius: 20px;
+        margin-bottom: 12px; 
+    }
+}
+
+@media (max-width: 1280px) {
+    .btn--signin {
+        font-size: 25px;
+        height: 8vh;
+        width: 14vw;
+        padding: 0px;
+        border-radius: 18px;
+        margin-bottom: 10px; 
+    }
 }
