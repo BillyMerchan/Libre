@@ -14,6 +14,19 @@ $bg-alt:  #B14B2A;
     justify-content: center;
 }
 
+.prompt {
+  color: white;
+  position: absolute;
+  margin-top: 150px;
+  top: 0;
+}
+
+.inpLable {
+  color: white;
+  font-size: 10px;
+  margin: 0;
+  padding-right: 130px;
+}
   
 .RegisterWrap {
   background-color:  rgba(160, 47, 9, 0.818);
@@ -31,10 +44,19 @@ h1 {
   margin-bottom: 20px;
 }
 
+.buttSwitch {
+  border: none;
+  background: none;
+}
+
+.buttSwitch:hover{
+  cursor: pointer;
+}
+
 .InputR {
-  width: 200px;
+  width: 250px;
   height: 40px;
-  border-radius: 10px;
+  border-radius: 5px;
   border-style: none;
   padding: 10px;
   margin-bottom: 10px;
@@ -43,7 +65,7 @@ h1 {
 
 .buttR {
   border-radius: 15px;
-  width: 120px;
+  width: 250px;
   height: 37px;
   padding: 3px;
   margin-top: 10px;
