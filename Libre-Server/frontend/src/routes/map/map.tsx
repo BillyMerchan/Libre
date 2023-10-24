@@ -2,11 +2,15 @@ import { FC } from 'react';
 import './map.scss';
 import NavBar from '../../components/NavBar/Navbar';
 import DropDown from '../../components/dropDown/dropDown';
+// import { ReactComponent as Map } from '../../floors/floor3/map.svg';
+import Map from '../../floors/floor3/Map.js';
+// const map = require("../../floors/floor3/map2.svg") as string;
 
 const Map2: FC = () => {
   return (
     <div>
       <NavBar />
+      <Map />
       <DropDown />
       <MapDiagram />
     </div>
