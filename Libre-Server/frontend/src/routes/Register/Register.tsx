@@ -36,17 +36,9 @@ function Register() {
     <div>
       <NavBar></NavBar>
       <div className="BackgroundRegister" data-testid="register">
-      <h1 className = "prompt"> Sign up to start reserving a room! </h1>
+      <h1 className = "prompt">Sign up to fast-track your studying</h1>
         <div className="RegisterWrap">
-          <h1>Register</h1>
           <form onSubmit={registerUser} data-testid="registerForm">
-            <input
-              className="InputR"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              type="text"
-              placeholder="Name"
-            />
             <br />
             <h2 className = "inpLable">Email address</h2>
             <input
@@ -54,9 +46,10 @@ function Register() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               type="email"
-              placeholder="Email"
+              placeholder="rcsid@rpi.edu"
             />
             <br />
+            <h2 className = "inpLableP">Password</h2>
             <input
               className="InputR"
               value={password}

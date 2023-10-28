@@ -1,6 +1,13 @@
 $fg-main: #ffffff;
 $bg-main: #FFEEC1;
 $bg-alt:  #B14B2A;
+$button-main: rgba(222, 132, 14, 0.876);
+
+body {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
 
 .BackgroundRegister {
     background-color: rgba(248, 227, 157, 0.876);
@@ -15,21 +22,31 @@ $bg-alt:  #B14B2A;
 }
 
 .prompt {
-  color: white;
+  color: $bg-alt;
   position: absolute;
   margin-top: 150px;
+  font-size: 50px;
+  width: 500px;
   top: 0;
 }
 
 .inpLable {
-  color: white;
-  font-size: 10px;
+  color: $bg-alt;
+  font-size: 13px;
   margin: 0;
-  padding-right: 130px;
+  padding-right: 260px;
+  padding-bottom: 4px;
+}
+
+.inpLableP {
+  color: $bg-alt;
+  font-size: 13px;
+  margin: 0;
+  padding-right: 290px;
+  padding-bottom: 4px;
 }
   
 .RegisterWrap {
-  background-color:  rgba(160, 47, 9, 0.818);
   margin-top: -100px;
   width: 420px;
   height: 350px;
@@ -54,24 +71,28 @@ h1 {
 }
 
 .InputR {
-  width: 250px;
+  width: 350px;
   height: 40px;
   border-radius: 5px;
   border-style: none;
   padding: 10px;
   margin-bottom: 10px;
   font-family: 'Quicksand';
+  background-color: $bg-main;
+  border: 2px solid $button-main;
 }
 
 .buttR {
   border-radius: 15px;
   width: 250px;
-  height: 37px;
+  height: 45px;
   padding: 3px;
   margin-top: 10px;
-  background-color:  rgba(222, 132, 14, 0.876);
+  background-color:  $button-main;
   font-family: 'Quicksand';
   border-style: none;
+  font-size: 20px;
+  font-weight: 800;
 }
 
 .buttR:hover, 
