@@ -1,10 +1,11 @@
 $fg-main: #ffffff;
 $bg-main: #FFEEC1;
 $bg-alt:  #B14B2A;
+$button-main: rgba(222, 132, 14, 0.876);
 
 .sign { 
     background-color: rgba(248, 227, 157, 0.876);
-    height: 86vh;
+    height: 100vh;
     width: 100%;
     padding: 10px;
     display: flex; 
@@ -14,11 +15,9 @@ $bg-alt:  #B14B2A;
 }
 
 .Loginn {
-    background-color:  rgba(160, 47, 9, 0.818);
     margin-top: -100px;
     width: 450px;
     height: 300px;
-    justify-content: center;
     text-align: center;
     font-family: 'Quicksand';
     border-radius: 15px;
@@ -31,23 +30,17 @@ $bg-alt:  #B14B2A;
 }
 
 
-.Loginn > h1 {
-    text-align: center;
-    align-items: center;
-    color: rgb(0, 0, 0);
-    opacity: 70%;
-    font-size: 35px;
-}
 
 .InputL {
-    width: 200px;
-    height: 40px;
-    border-radius: 10px;
-    border-style: none;
-    padding: 10px;
-    margin-bottom: 10px;
-    font-family: 'Quicksand';
-
+  width: 350px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-family: 'Quicksand';
+  background-color: $bg-main;
+  border: 2px solid $button-main;
 }
 
 .Outer {
@@ -64,7 +57,7 @@ $bg-alt:  #B14B2A;
     border-radius: 5px;
     color: white;
     padding: 14px 28px;
-    font-size: 16px;
+    font-size: 20px;
     font-family: Libre Baskerville;
     cursor: pointer;
     text-align: center;
@@ -73,16 +66,27 @@ $bg-alt:  #B14B2A;
 
  .buttL {
     border-radius: 15px;
-    width: 70px;
-    height: 30px;
+    width: 250px;
+    height: 45px;
     margin-top: 10px;
+    font-size: 20px;
     background-color:  rgba(222, 132, 14, 0.876);
     font-family: 'Quicksand';
     border-style: none;
+    font-weight: 800;
  }
 
 .buttL:hover, .buttL:active {
   transition: 0.5; 
+}
+
+.prompt {
+  position: absolute;
+  color: $bg-alt;
+  margin-top: 150px;
+  font-size: 50px;
+  width: 500px;
+  top: 0;
 }
 
 .buttSwitch {
