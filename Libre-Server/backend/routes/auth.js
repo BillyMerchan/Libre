@@ -1,16 +1,10 @@
-const express = require('express')
 const User = require('../models/User.js')
 const bcryptjs = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 const express = require('express');
-const jwt = require('jsonwebtoken');
-const bcryptjs = require('bcryptjs');
-const User = require('../models/User.js');
 
 const router = express.Router()
 
-router.post('/login', async (req, res) => {
-  console.log('helllo')
 router.post("/login", async (req, res) => {
   console.log("helllo");
   const user = await User.findOne({
@@ -47,15 +41,13 @@ router.post("/login", async (req, res) => {
 })
 
 router.post('/register', async (req, res) => {
-router.post("/register", async (req, res) => {
-  console.log("here");
   try {
     const newPassword = await bcryptjs.hash(req.body.password, 10)
     await User.create({
-      name: req.body.name,
       email: req.body.email,
       password: newPassword
     })
+    console.log(User)
     res.json({ status: 'ok' })
   } catch (err) {
     res.json({ status: 'error', error: 'Duplicate email' })
