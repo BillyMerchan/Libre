@@ -31,14 +31,13 @@ describe(Register, () => {
         fireEvent.change(inputName, { target: { value: "Bob" }}); 
         expect(inputName.value).toEqual("Bob"); 
 
-
         const inputEmail = getByPlaceholderText("Email"); 
         expect(inputEmail).toBeInTheDocument(); 
         expect(inputEmail.className).toEqual("InputR");    
         expect(inputEmail.type).toEqual("email"); 
         fireEvent.change(inputEmail, { target: { value: "Bob@gmail.com"}});
         expect(inputEmail.value).toEqual("Bob@gmail.com"); 
-    
+
         const inputPass = getByPlaceholderText("Password"); 
         expect(inputPass).toBeInTheDocument(); 
         expect(inputPass.className).toEqual("InputR");          

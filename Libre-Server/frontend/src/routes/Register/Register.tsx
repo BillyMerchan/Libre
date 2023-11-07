@@ -36,25 +36,20 @@ function Register() {
     <div>
       <NavBar></NavBar>
       <div className="BackgroundRegister" data-testid="register">
+      <h1 className = "prompt">Sign up to fast-track your studying</h1>
         <div className="RegisterWrap">
-          <h1>Register</h1>
           <form onSubmit={registerUser} data-testid="registerForm">
-            <input
-              className="InputR"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              type="text"
-              placeholder="Name"
-            />
             <br />
+            <h2 className = "inpLable">Email address</h2>
             <input
               className="InputR"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               type="email"
-              placeholder="Email"
+              placeholder="rcsid@rpi.edu"
             />
             <br />
+            <h2 className = "inpLableP">Password</h2>
             <input
               className="InputR"
               value={password}
@@ -65,7 +60,7 @@ function Register() {
             <br />
             <input className="buttR" type="submit" value="Register"/>
           </form>
-          <button className="buttR" onClick={() => navigate("/signIn")}>Already have an account?</button>
+          <button className="buttSwitch" onClick={() => navigate("/signIn")}>Already have an account?</button>
         </div>
       </div>
     </div>
