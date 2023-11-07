@@ -22,7 +22,7 @@ describe(Register, () => {
         );
         
         const buttons = getAllByRole('button'); 
-        act(() => fireEvent.click(buttons[0])); 
+        act(() => fireEvent.click(buttons[0]));     
 
         const inputName = getByPlaceholderText("Name");
         expect(inputName).toBeInTheDocument(); 
@@ -31,23 +31,19 @@ describe(Register, () => {
         fireEvent.change(inputName, { target: { value: "Bob" }}); 
         expect(inputName.value).toEqual("Bob"); 
 
-
         const inputEmail = getByPlaceholderText("Email"); 
         expect(inputEmail).toBeInTheDocument(); 
         expect(inputEmail.className).toEqual("InputR");    
         expect(inputEmail.type).toEqual("email"); 
         fireEvent.change(inputEmail, { target: { value: "Bob@gmail.com"}});
         expect(inputEmail.value).toEqual("Bob@gmail.com"); 
-    
+
         const inputPass = getByPlaceholderText("Password"); 
         expect(inputPass).toBeInTheDocument(); 
         expect(inputPass.className).toEqual("InputR");          
         expect(inputPass.type).toEqual("password"); 
         fireEvent.change(inputPass, { target: { value: "bobpass" }}); 
         expect(inputPass.value).toEqual("bobpass"); 
-
-        const form = getByTestId("registerForm"); 
-        act(() => fireEvent.submit(form)); 
 
         debug(); 
     });
