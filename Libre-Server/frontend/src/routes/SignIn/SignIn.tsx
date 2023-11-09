@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./SignIn.scss";
+
 import NavBar from "../../components/NavBar/Navbar";
+import "./SignIn.scss";
+
 
 export default function SignIn() {
   const navigate = useNavigate();

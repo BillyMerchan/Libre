@@ -1,12 +1,13 @@
 import { render, cleanup, fireEvent } from '@testing-library/react';
-import FAQ from './FAQ';
 import { MemoryRouter } from 'react-router-dom';
+
+import FAQ from './FAQ';
 
 afterEach(() => {
     cleanup(); 
 })
 
-describe(FAQ, () => {
+describe("Testing the FAQ component", () => {
     test("should test if the onClick event updates the accordian state variable", () => {
         const { getByText, getAllByTestId } = render( 
             <MemoryRouter>
@@ -22,7 +23,7 @@ describe(FAQ, () => {
         expect(questionOne).toBeInTheDocument(); 
         expect(questionTwo).toBeInTheDocument(); 
         expect(questionThree).toBeInTheDocument(); 
-
+ 
         fireEvent.click(questionOne); 
         expect(questionOne.className).toEqual("accordion input active");
         fireEvent.click(questionOne);

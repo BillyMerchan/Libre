@@ -43,14 +43,6 @@ const FAQ: React.FC = () => {
               labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat. 
             </div>
-
-            <p className={`accordion input ${activeAccordion === 4 ? 'active' : ''}`} onClick={() => toggleAccordion(4)}>
-              Who created Libre?
-            </p>
-            <div className={`panel ${activeAccordion === 4 ? 'show' : ''}`} onClick={() => toggleAccordion(4)}>
-              Libre was created by Billy Merchan, Daniela Liang, Rachel Tsui, Ryan Cheng, and Dante Luis
-            </div>
-
           </div>
         </div>          
       </div>

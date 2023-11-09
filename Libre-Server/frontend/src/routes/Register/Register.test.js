@@ -10,20 +10,21 @@ afterEach(() => {
 }); 
 
 describe(Register, () => {
-    it("should test for correct registering functionality", () => {
-        const { getAllByRole, getByPlaceholderText, getByTestId, debug } = render(
+    it("should test for correct registering functionality with valid fields", () => {
+        const { getByTestId, getAllByRole, getByPlaceholderText, debug } = render(
             <MemoryRouter>
                 <Routes>
                     <Route path='/' id='home' element={<Home/>} />
                     <Route path='/register' id='register' element={<Register/>} />
-                    <Route path='/signIn' id='signIn' element={<SignIn />} /> 
                 </Routes>
             </MemoryRouter>
         );
         
-        const buttons = getAllByRole('button'); 
-        act(() => fireEvent.click(buttons[0])); 
+        // go to the register page 
+        const registerButton = getAllByRole('button')[0]; 
+        act(() => fireEvent.click(registerButton));     
 
+        // input the form fields 
         const inputName = getByPlaceholderText("Name");
         expect(inputName).toBeInTheDocument(); 
         expect(inputName.className).toEqual("InputR"); 
@@ -45,9 +46,36 @@ describe(Register, () => {
         fireEvent.change(inputPass, { target: { value: "bobpass" }}); 
         expect(inputPass.value).toEqual("bobpass"); 
 
-        const form = getByTestId("registerForm"); 
-        act(() => fireEvent.submit(form)); 
-
-        debug(); 
+        // test if the submission works... 
+        const handleOnSubmitMock = jest.fn(); 
+        const formElement = getByTestId("formElement");
+        formElement.onsubmit = handleOnSubmitMock; 
+        const submitElement = getAllByRole("button")[0]; 
+        fireEvent.click(submitElement); 
+        expect(handleOnSubmitMock).toHaveBeenCalled(); 
+    
+        // debug(); 
     });
+
+    it("should test if it goes to the Login Page if the user has an account", () => {
+        const { getByText, getAllByText, getAllByRole, debug } = render(
+            <MemoryRouter>
+                <Routes>
+                    <Route path='/' id='home' element={<Home/>} />
+                    <Route path='/register' id='register' element={<Register/>} />
+                    <Route path='/signIn' id='signIn' element={<SignIn />} /> 
+                </Routes>
+            </MemoryRouter>
+        );
+        
+        const registerButton = getAllByRole('button')[0]
+        act(() => fireEvent.click(registerButton));
+        expect(getAllByText("Register").length).toBeGreaterThan(1); 
+
+        const switchButton = getByText("Already have an account?");
+        fireEvent.click(switchButton); 
+        expect(getAllByText("Login").length).toBeGreaterThan(1); 
+
+        // debug();     
+    }); 
 }); 

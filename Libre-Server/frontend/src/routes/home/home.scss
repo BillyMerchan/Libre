@@ -146,7 +146,7 @@ $bg-alt:  #B14B2A;
 }
 
 
-@media (max-width: 1920px) {
+@media (min-width: 1920px) {
     .home-page {
         height: 2000px; 
     }
@@ -187,7 +187,7 @@ $bg-alt:  #B14B2A;
     }
 }
 
-@media (max-width: 1280px) {
+@media (min-width: 1280px) {
     .home-page {
         min-width: auto;    
     }

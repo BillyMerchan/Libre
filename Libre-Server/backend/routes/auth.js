@@ -60,4 +60,4 @@ router.get('/logout', async (req, res) => {
   return res.status(200).json({ message: 'logout success' })
 })
 
-module.exports = router
+module.exports = router;
