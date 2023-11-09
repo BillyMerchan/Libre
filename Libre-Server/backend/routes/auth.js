@@ -1,12 +1,11 @@
-const express = require('express')
-const User = require('../models/User.js')
-const bcryptjs = require('bcryptjs')
-const jwt = require('jsonwebtoken')
+const express = require('express');
+const jwt = require('jsonwebtoken');
+const bcryptjs = require('bcryptjs');
+const User = require('../models/User.js');
 
 const router = express.Router()
 
 router.post("/login", async (req, res) => {
-  console.log("helllo");
   const user = await User.findOne({
     email: req.body.email
   })
@@ -41,7 +40,6 @@ router.post("/login", async (req, res) => {
 })
 
 router.post("/register", async (req, res) => {
-  console.log("here");
   try {
     const newPassword = await bcryptjs.hash(req.body.password, 10)
     await User.create({
@@ -61,4 +59,4 @@ router.get('/logout', async (req, res) => {
   return res.status(200).json({ message: 'logout success' })
 })
 
-module.exports = router
+module.exports = router;
