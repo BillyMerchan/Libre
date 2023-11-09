@@ -55,9 +55,8 @@ $bg-alt:  #B14B2A;
   text-align: center;
   text-decoration: none;
   transition: all 0.2s ease-out;
-  border-bottom: 2mm ridge $bg-main;
+  border-bottom: 2mm solid $bg-main;
   overflow: auto;
-
 }
 
 @media screen and (max-width: 960px) {

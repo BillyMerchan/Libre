@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236.02 192.57">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-linecap: round;
+        stroke-width: 12px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #fff;
+      }
+
+      .cls-2 {
+        stroke-width: 8px;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        font-family: UDDigiKyokashoNP-B, 'UD Digi Kyokasho NP-B';
+        font-size: 100px;
+      }
+    </style>
+  </defs>
+  <text class="cls-3" transform="translate(.6 101.8)"><tspan x="0" y="0">F ow</tspan></text>
+  <polyline class="cls-1" points="230.02 113.81 125.05 113.81 110.22 167.94 78.1 27.29 58.85 113.81 6 113.81"/>
+  <line class="cls-2" x1="126.43" y1="57.51" x2="126.58" y2="91.1"/>
+  <line class="cls-2" x1="139.32" y1="74.26" x2="113.69" y2="74.26"/>
+</svg>

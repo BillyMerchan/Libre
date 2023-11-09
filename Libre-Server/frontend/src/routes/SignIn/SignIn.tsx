@@ -43,15 +43,17 @@ export default function SignIn() {
       <NavBar></NavBar>
       <div className="sign">
         <div className="Loginn">
-          <h1>Login</h1>
-          <form onSubmit={loginUser} data-testid='formElement'>
+          <h1 className = "prompt">Log in to Libre</h1>
+          <form onSubmit={loginUser}>
+            <h2 className = "inpLable">Email address</h2>
             <input className="InputL"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               type="email"
-              placeholder="Email"
+              placeholder="rcsid@rpi.edu"
             />
             <br />
+            <h2 className = "inpLableP">Password</h2>
             <input className="InputL"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
@@ -61,7 +63,7 @@ export default function SignIn() {
             <br />
             <input className="buttL" type="submit" value="Login" />
           </form>
-          <button className="buttL" onClick={() => navigate("/register")}>Register</button>
+          <button className="buttSwitch" onClick={() => navigate("/register")}>Don't have an account? <u>Sign up for Libre</u></button>
         </div>
       </div>
     </div>
