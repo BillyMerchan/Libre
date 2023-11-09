@@ -36,36 +36,36 @@ function Register() {
   return (
     <div>
       <NavBar></NavBar>
-      <div className="BackgroundRegister" data-testid="register">
+      <div className="BackgroundRegister">
         <div className="RegisterWrap">
           <h1>Register</h1>
-          <form onSubmit={registerUser} data-testid="registerForm">
-            <input
-              className="InputR"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              type="text"
-              placeholder="Name"
-            />
-            <br />
-            <input
-              className="InputR"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              type="email"
-              placeholder="Email"
-            />
-            <br />
-            <input
-              className="InputR"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              type="password"
-              placeholder="Password"
-            />
-            <br />
-            <input className="buttR" type="submit" value="Register"/>
-          </form>
+            <form onSubmit={registerUser} data-testid="formElement">
+              <input
+                className="InputR"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                type="text"
+                placeholder="Name"
+              />
+              <br />
+              <input
+                className="InputR"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                type="email"
+                placeholder="Email"
+              />
+              <br />
+              <input
+                className="InputR"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                type="password"
+                placeholder="Password"
+              />
+              <br />
+              <input className="buttR" type="submit" value="Register"/>
+            </form> 
           <button className="buttR" onClick={() => navigate("/signIn")}>Already have an account?</button>
         </div>
       </div>

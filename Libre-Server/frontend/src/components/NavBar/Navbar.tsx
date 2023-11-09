@@ -1,8 +1,10 @@
-import { click } from "@testing-library/user-event/dist/click";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom"
+import { click } from "@testing-library/user-event/dist/click";
+
 import Button from "../Button/Button";
 import LibreLogoWord from "../../img/new_logo.svg";
+
 import "./Navbar.scss";
 
 function NavBar() {

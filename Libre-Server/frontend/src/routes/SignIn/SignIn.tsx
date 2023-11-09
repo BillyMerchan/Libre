@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./SignIn.scss";
+
 import NavBar from "../../components/NavBar/Navbar";
+import "./SignIn.scss";
+
 
 export default function SignIn() {
   const navigate = useNavigate();
@@ -42,7 +44,7 @@ export default function SignIn() {
       <div className="sign">
         <div className="Loginn">
           <h1>Login</h1>
-          <form onSubmit={loginUser}>
+          <form onSubmit={loginUser} data-testid='formElement'>
             <input className="InputL"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
