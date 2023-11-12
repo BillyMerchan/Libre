@@ -14,7 +14,7 @@ const RoomPopup: FC<RoomPopupProps> = ({ roomName, description, color, onClose }
   // adjusted opacity
   const rgbaColor = `rgba(${r}, ${g}, ${b}, 0.4)`;
   return (
-    <div className="ColorOverlap" style={{backgroundColor: 'white'}}>
+    <div className="ColorOverlap" style={{ backgroundColor: 'white' }}>
       <div className="RoomPopup" style={{ backgroundColor: rgbaColor }}>
         <button className="CloseButton" onClick={onClose}>
           X
