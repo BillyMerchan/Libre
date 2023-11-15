@@ -27,7 +27,7 @@ describe(SignIn, () => {
         expect(getAllByText("Login").length).toBeGreaterThan(1);  
 
         // input important information
-        const inputEmail = getByPlaceholderText('Email'); 
+        const inputEmail = getByPlaceholderText('rcsid@rpi.edu'); 
         expect(inputEmail.type).toEqual('email');
         fireEvent.change(inputEmail, { target: { value: "bob@gmail.com"}}); 
         expect(inputEmail.value).toEqual("bob@gmail.com"); 
@@ -44,7 +44,7 @@ describe(SignIn, () => {
         fireEvent.submit(formElement); 
         expect(handleOnSubmitMock).toHaveBeenCalled(); 
 
-        debug(); 
+        // debug(); 
     });
 
     it("should redirect to the register page if user does not have an account", () => {
@@ -64,10 +64,10 @@ describe(SignIn, () => {
         expect(getAllByText("Login").length).toBeGreaterThan(1); 
 
         // go to the register page 
-        const registerButton = getAllByRole("button")[0]; 
+        const registerButton = getAllByRole("button")[1]; 
         act(() => fireEvent.click(registerButton)); 
         expect(getByText("Register")).toBeInTheDocument(); 
 
-        // debug(); 
+        debug(); 
     }); 
 }); 

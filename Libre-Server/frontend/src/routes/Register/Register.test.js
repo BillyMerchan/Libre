@@ -24,15 +24,7 @@ describe(Register, () => {
         const registerButton = getAllByRole('button')[0]; 
         act(() => fireEvent.click(registerButton));     
 
-        // input the form fields 
-        const inputName = getByPlaceholderText("Name");
-        expect(inputName).toBeInTheDocument(); 
-        expect(inputName.className).toEqual("InputR"); 
-        expect(inputName.type).toEqual("text"); 
-        fireEvent.change(inputName, { target: { value: "Bob" }}); 
-        expect(inputName.value).toEqual("Bob"); 
-
-        const inputEmail = getByPlaceholderText("Email"); 
+        const inputEmail = getByPlaceholderText("rcsid@rpi.edu"); 
         expect(inputEmail).toBeInTheDocument(); 
         expect(inputEmail.className).toEqual("InputR");    
         expect(inputEmail.type).toEqual("email"); 
@@ -48,7 +40,7 @@ describe(Register, () => {
 
         // test if the submission works... 
         const handleOnSubmitMock = jest.fn(); 
-        const formElement = getByTestId("formElement");
+        const formElement = getByTestId("registerForm");
         formElement.onsubmit = handleOnSubmitMock; 
         const submitElement = getAllByRole("button")[0]; 
         fireEvent.click(submitElement); 
@@ -70,7 +62,7 @@ describe(Register, () => {
         
         const registerButton = getAllByRole('button')[0]
         act(() => fireEvent.click(registerButton));
-        expect(getAllByText("Register").length).toBeGreaterThan(1); 
+        expect(getAllByText("Register").length).toEqual(1); 
 
         const switchButton = getByText("Already have an account?");
         fireEvent.click(switchButton); 
