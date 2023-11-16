@@ -107,3 +107,14 @@ h1 {
 .buttR:active {
   opacity: 0.6; 
 }
+
+@media (max-width: 1280px) {
+  .prompt {
+    font-size: 35px;
+    margin-top: 120px;
+  }
+
+  .RegisterWrap {
+    margin-top: 80px;
+  }
+}

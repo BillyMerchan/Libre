@@ -3,15 +3,19 @@ $bg-main: #FFEEC1;
 $bg-alt:  #B14B2A;
 $button-main: rgba(222, 132, 14, 0.876);
 
+.sign, 
+.Loginn {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .sign { 
     background-color: rgba(248, 227, 157, 0.876);
     height: 100vh;
     width: 100%;
     padding: 10px;
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .Loginn {
@@ -28,8 +32,6 @@ $button-main: rgba(222, 132, 14, 0.876);
   margin-bottom: 5px;
   color: #555;
 }
-
-
 
 .InputL {
   width: 350px;
@@ -100,4 +102,10 @@ $button-main: rgba(222, 132, 14, 0.876);
 
 .buttL:active {
   opacity: 0.6; 
+}
+
+@media (max-width: 1280px) {
+  .Loginn {
+    margin-top: -50px;
+  }
 }

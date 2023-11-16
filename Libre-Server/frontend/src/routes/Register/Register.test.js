@@ -6,7 +6,7 @@ import Register from './Register';
 import SignIn from '../SignIn/SignIn';
 
 afterEach(() => {
-    cleanup(); 
+    cleanup();  
 }); 
 
 describe(Register, () => {
