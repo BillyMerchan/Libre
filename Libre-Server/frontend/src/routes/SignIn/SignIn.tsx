@@ -44,7 +44,7 @@ export default function SignIn() {
       <div className="sign">
         <div className="Loginn">
           <h1 className = "prompt">Log in to Libre</h1>
-          <form onSubmit={loginUser}>
+          <form onSubmit={loginUser} data-testid="formElement">
             <h2 className = "inpLable">Email address</h2>
             <input className="InputL"
               value={email}

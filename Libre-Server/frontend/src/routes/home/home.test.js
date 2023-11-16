@@ -30,7 +30,8 @@ describe("Testing Home Component", () => {
         const registerButton = getAllByRole('button')[0]; 
         console.log("HERE:", registerButton.href); 
         act(() => fireEvent.click(registerButton));   
-        expect(getAllByText("Register")[0].textContent).toEqual("Register");  
+        debug();
+        expect(getByText("Sign up to fast-track your studying")).toBeInTheDocument();   
 
         // query for the icon to test if it redirects back to the home page 
         const homeElement1 = getAllByRole("link")[0];
@@ -78,6 +79,6 @@ describe("Testing Home Component", () => {
         expect(getByText("FAQ")).toBeInTheDocument(); 
         expect(getByText("Login")).toBeInTheDocument(); 
 
-        debug();  
+        // debug();  
     });
 }); 
