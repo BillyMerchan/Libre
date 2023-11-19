@@ -15,7 +15,7 @@ const MapDiagram = ({ onClick }) => {
     },
     restroom: {
       className: "restroom",
-      fill: 'rgb(246, 170, 170)',
+      fill: 'rgb(240, 190, 220)',
     },
   };
 
