@@ -35,7 +35,7 @@ const Map: FC = () => {
           {selectedFloor === 3 ? (
             <MapFloor3 onClick={handleClick} />
           ) : selectedFloor === 4 ? (
-            <MapFloor4 onClick={handleClick} /> // Render MapFloor4 for Floor 4
+            <MapFloor4 onClick={handleClick} />
           ) : null}
         </div>
       </div>
