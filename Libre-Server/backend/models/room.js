@@ -15,6 +15,10 @@ const roomSchema = new mongoose.Schema(
     occupancy: {
       type: Boolean,
       required: true
+    },
+    floor: {
+      type: String,
+      required: false
     }
   },
   { timestamps: true }
