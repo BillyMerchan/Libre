@@ -1,39 +1,25 @@
-import React, { useState, useRef } from 'react';
-import './dropdown.css';
+import React, { useState } from 'react';
+import './dropDown.scss';
 
-const DropDown: React.FC = () => {
-  const [open, setOpen] = useState<boolean>(false);
-  const menuRef = useRef<HTMLUListElement>(null);
+interface DropDownProps {
+  onSelectFloor: (floor: number) => void;
+}
 
-  const toggleDropdown = () => {
-    setOpen(!open);
+const DropDown: React.FC<DropDownProps> = ({ onSelectFloor }) => {
+  const [selectedFloor, setSelectedFloor] = useState(3);
+
+  const handleSelectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    const selected = parseInt(event.target.value, 10);
+    setSelectedFloor(selected);
+    onSelectFloor(selected);
   };
 
-
   return (
-    <label className="Dropdown">
-      
-      <select className="look">
-        <option> Floor 3 </option>
-        <option> Floor 4 </option>
-        <option> option 1 </option>
-        <option> option 1 </option>
-        <option> option 1 </option>
-      </select>
-    </label>
-    /*
-    <div className="dropDown">
-      <div className="select" onClick={toggleDropdown}>
-        <span className="selected">Option 0</span>
-        <div className="caret"></div>
-      </div>
-      <ul className={`menu ${open ? 'open' : ''}`} ref={menuRef}>
-        <li className="active">floor 1</li>
-        <li>floor 2</li>
-      </ul>
-    </div>*/
+    <select className="select-floor" value={selectedFloor} onChange={handleSelectChange}>
+      <option value={3}>Floor 3</option>
+      <option value={4}>Floor 4</option>
+    </select>
   );
 };
-
 
 export default DropDown;

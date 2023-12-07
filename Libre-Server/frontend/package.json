@@ -23,7 +23,7 @@
   },
   "scripts": {
     "lint": "eslint . --ext .ts",
-    "start": "react-scripts start",
+    "start": "WATCHPACK_POLLING=true react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",

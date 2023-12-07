@@ -1,68 +1,48 @@
-import {FC} from 'react';
+import React, { FC, useState } from 'react';
 import './map.scss';
 import NavBar from '../../components/NavBar/Navbar';
-import DropDown from '../../components/dropDown/dropDown'
-import {room_311, room_323A, room_323B, room_323C, room_332A,
-       room_332B, room_332C, room_332D, room_332E, room_333,
-       room_337A, room_337B, room_337C, room_337D, room_337E,
-       room_342A, room_342B, room_342C, room_352A, room_352B,
-       room_352C, room_352D, room_352E, room_353A, room_353B
-} from '../../floors/floor3/index'
-
+import DropDown from '../../components/dropDown/dropDown';
+import MapFloor3 from '../../floors/floor3/Map.js';
+import MapFloor4 from '../../floors/floor4/Map.js'; 
+import RoomPopup from '../../components/RoomPopup/RoomPopup';
 
 const Map: FC = () => {
+  const [popupData, setPopupData] = useState({ roomName: '', description: '', color: '' });
+  const [isPopupVisible, setPopupVisibility] = useState(false);
+  const [selectedFloor, setSelectedFloor] = useState(3); // Default to Floor 3
+
+  // NOTE: for description, in future we can add images/desc in Map.js. Once hardware is done, also pass in occupancy data
+  const handleClick = (id: string, fill: string) => {
+    setPopupData({ roomName: `Room: ${id}`, description: 'Description of the room.', color: `${fill}` });
+    setPopupVisibility(true);
+  };
+
+  const handleClosePopup = () => {
+    setPopupVisibility(false);
+  };
+
+  const handleSelectFloor = (floor: number) => {
+    setSelectedFloor(floor);
+  };
+
   return (
-    <div data-testid='map'>
-      <NavBar/>
-      <div className="Page">
-        <div className="Map">
-          <DB/>
+    <div>
+      <NavBar />
+
+      <div className="Map">
+        <DropDown onSelectFloor={handleSelectFloor} />
+        <div className="MapDiagramContainer">
+          {selectedFloor === 3 ? (
+            <MapFloor3 onClick={handleClick} />
+          ) : selectedFloor === 4 ? (
+            <MapFloor4 onClick={handleClick} />
+          ) : null}
         </div>
       </div>
-      </div>
-    );
-}
 
-const DB: FC = () => {
-  return (
-    <div>
-      <DropDown/>
-      <MapDiagram/>
+      {isPopupVisible && <RoomPopup roomName={popupData.roomName} description={popupData.description} color={popupData.color} onClose={handleClosePopup} />}
     </div>
-  )
-}
-
-const MapDiagram: FC = () => {
-  return (
-    <div>
-      <img src = {room_311} className = "mapRoom"/>
-      <img src = {room_323A} className = "mapRoom"/>
-      <img src = {room_323B} className = "mapRoom"/>
-      <img src = {room_323C} className = "mapRoom"/>
-      <img src = {room_332A} className = "mapRoom"/>
-      <img src = {room_332B} className = "mapRoom"/>
-      <img src = {room_332C} className = "mapRoom"/>
-      <img src = {room_332D} className = "mapRoom"/>
-      <img src = {room_332E} className = "mapRoom"/>
-      <img src = {room_333} className = "mapRoom"/>
-      <img src = {room_337A} className = "mapRoom"/>
-      <img src = {room_337B} className = "mapRoom"/>
-      <img src = {room_337C} className = "mapRoom"/>
-      <img src = {room_337D} className = "mapRoom"/>
-      <img src = {room_337E} className = "mapRoom"/>
-      <img src = {room_342A} className = "mapRoom"/>
-      <img src = {room_342B} className = "mapRoom"/>
-      <img src = {room_342C} className = "mapRoom"/>
-      <img src = {room_352A} className = "mapRoom"/>
-      <img src = {room_352B} className = "mapRoom"/>
-      <img src = {room_352C} className = "mapRoom"/>
-      <img src = {room_352D} className = "mapRoom"/>
-      <img src = {room_352E} className = "mapRoom"/>
-      <img src = {room_353A} className = "mapRoom"/>
-      <img src = {room_353B} className = "mapRoom"/>
-    </div>
-  )
-}
+  );
+};
 
 export default Map;
- 
