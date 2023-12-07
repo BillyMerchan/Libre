@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./SignIn.scss";
+
 import NavBar from "../../components/NavBar/Navbar";
+import "./SignIn.scss";
+
 
 export default function SignIn() {
   const navigate = useNavigate();
@@ -41,15 +43,17 @@ export default function SignIn() {
       <NavBar></NavBar>
       <div className="sign">
         <div className="Loginn">
-          <h1>Login</h1>
+          <h1 className = "prompt">Log in to Libre</h1>
           <form onSubmit={loginUser}>
+            <h2 className = "inpLable">Email address</h2>
             <input className="InputL"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               type="email"
-              placeholder="Email"
+              placeholder="rcsid@rpi.edu"
             />
             <br />
+            <h2 className = "inpLableP">Password</h2>
             <input className="InputL"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
@@ -59,76 +63,9 @@ export default function SignIn() {
             <br />
             <input className="buttL" type="submit" value="Login" />
           </form>
-          <button className="buttL" onClick={() => navigate("/register")}>Sign Up</button>
+          <button className="buttSwitch" onClick={() => navigate("/register")}>Don't have an account? <u>Sign up for Libre</u></button>
         </div>
       </div>
     </div>
   );
 }
-
-/*
-import React from 'react'
-import NavBar from '../../components/NavBar/Navbar'
-import "./SignIn.css"
-
-const SignIn = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    try {
-      const response = await fetch('/api/auth/signin', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email, password }),
-      });
-
-      if (!response.ok) {
-        throw new Error('Authentication failed');
-      }
-
-      const data = await response.json();
-      const token = data.token;
-      // Store the token in localStorage or state
-    } catch (error) {
-      console.error('Authentication error:', error);
-    }
-  };
-
-  return (
-    <div className="Outer">
-      <NavBar/>
-      <div className="sign-in-container">
-      <h2>Sign In</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label>Email:</label>
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-        </div>
-        <div className="form-group">
-          <label>Password:</label>
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-        </div>
-        <button type="submit">Sign In</button>
-      </form>
-      </div>
-    </div>
-  );
-};
-
-  )
-}*/
-

@@ -7,36 +7,31 @@ import Button from "../../components/Button/Button";
 function Home() {
 
   return (
-
     <div className='home-page'>
       <NavBar />
 
-      <h1 className="firstHeading">Welcome to Libre</h1>
+      <h1 className="firstHeading" data-testid='firstHeading'>Welcome to Libre</h1>
 
       <div className="section-container">
         <div className="gradient-bar"></div>
         <div className="background-img"></div>
 
         <div className="textblock">
-          <div className="text-overlay">
+          <div className="text-overlay" data-testid='text-overlay'>
             <h1>Secure a study room at RPI Folsom Library</h1>
-            <p> Libre is a platform allowing students to reserve individual study rooms in university libraries.
+            <p> Libre is a platform allowing students to reserve individual study rooms 
+              in university libraries.
 
-            This project was thought of as a solution to combat the hassle students face when trying to find an open study room at RPI.
-            Students have the ability to view which rooms are empty via a map, coloring in the occupied rooms while lighting up the empty rooms.
-              </p>
+              This project was thought of as a solution to combat the hassle students face 
+              when trying to find an open study room at RPI. Students have the ability to 
+              view which rooms are empty via a map, coloring in the occupied rooms while 
+              lighting up the empty rooms.
+            </p>
           </div>
         </div>
-      {Button && <Button buttonStyle='btn--signin'>Sign In / Sign Up</Button>}
+        { Button && <Button buttonStyle='btn--signin' path='/register'>Register</Button> }
       </div>
-      
-
-
-      <div className="middleGap">
-
-      </div>
-
-
+  
       <h1 className="secondHeading">Other Resources</h1>
 
       <div className="section-container2">
@@ -48,20 +43,17 @@ function Home() {
         <div className="textblock2">
           <div className="text-overlay2">
             <h1>Map, directions, and other resoucres</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+              consequat.
+            </p>
           </div>
-        </div>
-
-      {Button && <Button buttonStyle='btn--signin'>View Map</Button>}
-      </div>
-      
-
-      {/* <img style={{ width: 250, height: 250 }} src={LibreLogoWord} /> */}
+        </div>    
+        { Button && <Button buttonStyle='btn--signin' path='/map'>View Map</Button> }
+      </div>      
     </div >
-
   )
 }
 
-export default Home
+export default Home; 

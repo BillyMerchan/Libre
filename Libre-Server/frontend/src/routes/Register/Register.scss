@@ -1,6 +1,13 @@
 $fg-main: #ffffff;
 $bg-main: #FFEEC1;
 $bg-alt:  #B14B2A;
+$button-main: rgba(222, 132, 14, 0.876);
+
+body {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
 
 .BackgroundRegister {
     background-color: rgba(248, 227, 157, 0.876);
@@ -14,44 +21,89 @@ $bg-alt:  #B14B2A;
     justify-content: center;
 }
 
-  
-  .RegisterWrap {
-    background-color:  rgba(160, 47, 9, 0.818);
-    margin-top: -100px;
-    width: 420px;
-    height: 350px;
-    justify-content: center;
-    text-align: center;
-    font-family: 'Quicksand';
-    border-radius: 15px;
-  }
-  
-  h1 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .InputR {
-    width: 200px;
-    height: 40px;
-    border-radius: 10px;
-    border-style: none;
-    padding: 10px;
-    margin-bottom: 10px;
-    font-family: 'Quicksand';
-  }
+.prompt {
+  color: $bg-alt;
+  position: absolute;
+  margin-top: 150px;
+  font-size: 50px;
+  width: 500px;
+  top: 0;
+}
 
-  .buttR {
-    border-radius: 15px;
-    width: 150px;
-    height: 37px;
-    padding: 3px;
-    margin-top: 10px;
-    background-color:  rgba(222, 132, 14, 0.876);
-    font-family: 'Quicksand';
-    border-style: none;
-  }
+.inpLable {
+  color: $bg-alt;
+  font-size: 13px;
+  margin: 0;
+  padding-right: 260px;
+  padding-bottom: 4px;
+}
+
+.inpLableP {
+  color: $bg-alt;
+  font-size: 13px;
+  margin: 0;
+  padding-right: 290px;
+  padding-bottom: 4px;
+}
   
-  .buttR:hover {
-    background-color: #0056b3;
-  }
+.RegisterWrap {
+  margin-top: -100px;
+  width: 420px;
+  height: 350px;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Quicksand';
+  border-radius: 15px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.buttSwitch {
+  border: none;
+  background: none;
+}
+
+.buttSwitch:hover{
+  cursor: pointer;
+}
+
+.InputR {
+  width: 350px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-family: 'Quicksand';
+  background-color: $bg-main;
+  border: 2px solid $button-main;
+}
+
+.buttR {
+  border-radius: 15px;
+  width: 250px;
+  height: 45px;
+  padding: 3px;
+  margin-top: 10px;
+  background-color:  $button-main;
+  font-family: 'Quicksand';
+  border-style: none;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.buttR:hover, 
+.buttR:active {
+  transition: 0.5; 
+}
+
+.buttR:hover {
+  opacity: 0.8; 
+}
+
+.buttR:active {
+  opacity: 0.6; 
+}

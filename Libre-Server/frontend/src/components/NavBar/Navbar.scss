@@ -4,7 +4,7 @@ $bg-alt:  #B14B2A;
 
 .navbar {
   background: rgb(160, 47, 9);
-  height: 80px;
+  height: 75px;
   width: 100%;
   align-items: center;
   position: sticky;
@@ -23,12 +23,14 @@ $bg-alt:  #B14B2A;
   list-style: none;
   padding: 0vw 2vw;
 }
+
 .nav-itemFAQ {
   height: 80px;
   list-style: none;
   padding: 0vw 2vw;
 }
-.nav-itemSignIn{
+
+.nav-itemSignIn {
   height: 80px;
   list-style: none;
   padding: 0vw 2vw;
@@ -36,7 +38,7 @@ $bg-alt:  #B14B2A;
 }
 
 .nav-links {
-  font-size: 20px;
+  font-size: 15px;
   color: $bg-main;
   display: flex;
   align-items: center;
@@ -51,9 +53,8 @@ $bg-alt:  #B14B2A;
   text-align: center;
   text-decoration: none;
   transition: all 0.2s ease-out;
-  border-bottom: 2mm ridge $bg-main;
+  border-bottom: 2mm solid $bg-main;
   overflow: auto;
-
 }
 
 @media screen and (max-width: 960px) {

@@ -4,7 +4,7 @@ $bg-alt:  #B14B2A;
 
 .home-page {
     min-width: 1280px;
-    height: 2240px;
+    height: 1400px; 
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -12,124 +12,7 @@ $bg-alt:  #B14B2A;
     background-color: $bg-main;
 }
 
-.section-container {
-    width: 100%;
-    height: 80vh;
-    position: relative;
-    overflow: hidden;
-}
-.section-container2 {
-    width: 100%;
-    height: 54vh;
-    position: relative;
-    overflow: hidden;
-}
-
-.background-img {
-    width: 100%;
-    height: 100%;
-    padding-top: 10px;
-    background-image: url("../../img/lib.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.background-block {
-    position: absolute;
-    opacity: 100%;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    padding-top: 10px;
-}
-
-.textblock {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 26vw;
-    height: 100%;
-    margin-left: 10vw;
-    margin-top: 10px;
-    background-color: #B14B2A;
-    opacity: 90%;
-    z-index: 1;
-    /* Place the rectangle above the video */
-}
-
-.textblock2 {
-    position: absolute;
-    top: 0;
-    right: 10vw;
-    width: 26vw;
-    height: 100%;
-    margin-left: 10vw;
-    margin-top: 10px;
-    background-color: $bg-alt;
-    opacity: 90%;
-    z-index: 1;
-    /* Place the rectangle above the video */
-}
-
-.text-overlay {
-    position: absolute;
-    padding: 10%;
-    color: $bg-main;
-    z-index: 2;
-    /* Place the text above the rectangle */
-}
-
-.text-overlay2 {
-    position: absolute;
-    align-self: right;
-    padding: 10%;
-    color: $bg-main;
-    z-index: 2;
-}
-
-.text-overlay h1 {
-    font-size: 24px;
-    margin: 0;
-    font-family: 'Quicksand';
-    font-weight: 400;
-}
-
-.text-overlay2 h1 {
-    font-size: 24px;
-    margin: 0;
-    font-family: 'Quicksand';
-    font-weight: 400;
-}
-
-.text-overlay p {
-    font-size: 16px;
-    margin: 20px 0px;
-    line-height: 2;
-    font-family: 'Quicksand';
-    font-weight: 400;
-}
-
-.text-overlay2 p {
-    font-size: 16px;
-    margin: 20px 0px;
-    line-height: 2;
-    font-family: 'Quicksand';
-    font-weight: 400;
-}
-
-.gradient-bar {
-    width: 100%;
-    height: 10px;
-    background: linear-gradient(to left, #952D0B, $bg-main);
-}
-
-.gradient-bar2 {
-    width: 100%;
-    height: 10px;
-    background: linear-gradient(to right, #952D0B, $bg-main);
-}
-
-.home-page>h1 {
+.home-page > h1 {
     font-size: 60px;
     color: #6C0404;
     font-family: "Quicksand", sans-serif;
@@ -138,19 +21,119 @@ $bg-alt:  #B14B2A;
     margin-bottom: -11px;
 }
 
+.home-page > p {
+    margin-top: 8px;
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    font-family: 'Quicksand';
+}
+
+.section-container, 
+.section-container2 {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-container {
+    height: 85vh;
+}
+
+.section-container2 {
+    height: 100vh;
+}
+
+.background-img, 
+.background-block {
+    height: 100%;
+    width: 100%;
+}
+
+.background-img {
+    padding-top: 10px;
+    background-image: url("../../img/lib.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.background-block {
+    opacity: 60%;
+    object-fit: cover;
+    padding-top: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.textblock,
+.textblock2 {
+    height: 100%;
+    width: 26vw;
+    margin-top: 10px;
+    margin-left: 10vw;
+    position: absolute;
+    opacity: 90%;
+    top: 0;
+    z-index: 1;
+}
+
+/* Place the rectangle above the video */
+.textblock {
+    left: 0;
+    background-color: #B14B2A;
+}
+
+/* Place the rectangle above the video */
+.textblock2 {
+    right: 10vw;
+    background-color: $bg-alt;
+}
+
+/* Place the text above the rectangle */
+.text-overlay, 
+.text-overlay2 {
+    color: $bg-main;
+    padding: 10%;
+    position: absolute;
+    z-index: 2;
+}
+
+.text-overlay2 {
+    align-self: right;
+    color: $bg-main;
+    z-index: 2;
+}
+
+.text-overlay h1,
+.text-overlay2 h1 {
+    font-size: 24px;
+    margin: 0;
+    font-family: 'Quicksand';
+    font-weight: 400;
+}
+
+.text-overlay p,
+.text-overlay2 p {
+    font-size: 20px;
+    margin: 20px 0px;
+    line-height: 2;
+    font-family: 'Quicksand';
+    font-weight: 400;
+}
+
+.gradient-bar,
+.gradient-bar2 {
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to left, #952D0B, $bg-main);
+}
+
 .firstHeading {
     text-align: right;
 }
 
 .secondHeading {
     text-align: left;
-}
-
-.home-page>p {
-    margin-top: 8px;
-    color: rgb(255, 255, 255);
-    font-size: 32px;
-    font-family: 'Quicksand';
 }
 
 .btns {
@@ -162,16 +145,72 @@ $bg-alt:  #B14B2A;
     height: 10vh;
 }
 
-/* Media query for screens smaller than 1280px */
-@media (max-width: 1280px) {
+
+@media (min-width: 1920px) {
     .home-page {
-        min-width: auto;
-        width: 100%;
+        height: 2000px; 
+    }
+
+    .section-container {
+        height: 85vh; 
+    }
+
+    .section-container2 {
+        height: 80vh; 
+    }
+
+    .textblock,
+    .textblock2 {
+        width: 18vw;
+    }
+
+    .text-overlay h1 {
+        font-size: 25px;
+    }
+
+    .text-overlay p, 
+    .text-overlay2 p {
+        font-size: 18px;
+        margin: 20px 0px;
+        line-height: 2;
+        font-family: 'Quicksand';
+        font-weight: 400;
+    }
+
+    .home-page > h1 {
+        font-size: 50px;
+        color: #6C0404;
+        font-family: "Quicksand", sans-serif;
+        font-weight: 500;
+        padding-right: 5%;
+        margin-bottom: -5px;
     }
 }
 
-@media screen and (max-width: 960px) {
-    .home-page>h1 {
+@media (min-width: 1280px) {
+    .home-page {
+        min-width: auto;    
+    }
+
+    .text-overlay h1 {
+        font-size: 20px;
+    }
+
+    .text-overlay2 p {
+        font-size: 16px;
+    }
+
+    .text-overlay p {
+        font-size: 15px; 
+    }
+
+    .home-page > h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 960px) {
+    .home-page > h1 {
         font-size: 70px;
         margin-top: -3px;
     }
@@ -183,6 +222,7 @@ $bg-alt:  #B14B2A;
     .text-overlay p {
         line-height: 1.4;
     }
+
     .hero-btns .btns{
         width: 93%;
         margin: 0px;
