@@ -4,14 +4,12 @@ $bg-alt:  #B14B2A;
 
 .FAQ {
     background-color: $bg-main;
-    height: 80vh;
+    padding-bottom: 400px;
     width: 100%;
     display: flex;
     object-fit: cover;
     flex-direction: column;
     align-items: center;
-    box-shadow: inset 0 0 0 1000px rgba(21, 81, 40, 0.637);
-    opacity: 70%;
     position: relative;
     font-family: "Quicksand", sans-serif;
 }
