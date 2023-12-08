@@ -1,0 +1,18 @@
+$fg-main: #ffffff;
+$bg-main: #FFEEC1;
+$bg-alt:  #B14B2A;
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: "Quicksand";
+}
+
+.footer {
+  background: $bg-main;
+  padding: 20px;
+  text-align: center;
+}

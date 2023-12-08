@@ -1,0 +1,26 @@
+.Legend {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background: white;
+  border-radius: 5px;
+  font-family: 'Quicksand';
+}
+
+.LegendItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.ColorBox {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  border: 1px solid #ddd;
+}
+
+.RoomLabel {
+  font-size: 16px;
+  color: black;
+}

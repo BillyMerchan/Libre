@@ -1,3 +1,5 @@
+$bg: white;
+
 .Map {
   width: 100%;
   background-color: #FFEEC1;
@@ -5,14 +7,90 @@
 
 .MapDiagramContainer {
   width: 100%;
+  height: 1000px;
+  z-index: 1;
 }
 
 .MapDiagramContainer path {
   transition: filter 0.3s ease;
   stroke: black;
   stroke-width: 0.3;
+  z-index: 1;
 }
 
 .MapDiagramContainer path:hover {
   filter: brightness(110%);
+}
+
+.MapDiagramContainer path:hover::after {
+  content: attr(id);
+  display: block;
+  position: fixed;
+  top: 0; /* Adjust the distance from the path */
+  left: 0;
+  background: #fff;
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  z-index: 99;
+  
+}
+
+.ZoomButtons {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  right: 3%;
+  top: 30%;
+  z-index: 2;
+}
+
+.ZoomButtons button {
+  font-family: 'Quicksand';
+  color: black;
+  font-size: 17px;
+  margin-right: 5px;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 5px;
+  background: $bg;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  z-index: 2;
+}
+
+.ZoomButtons button:hover {
+  background: lightgrey;
+}
+
+.LegendContainer {
+  right: 3%;
+  top: 40%;
+  position: fixed;
+  z-index: 2;
+}
+
+.FloorBackdrop {
+  position: absolute;
+  top: 44px;
+  left: 57px;
+  width: 93%;
+  height: 93%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.FloorBackdropImage {
+  background-image: url('../../floors/floor4/floor4Backdrop.png');
+  background-size: cover;
+  opacity: 0.7;
+  image-rendering: pixelated;
+}
+
+.Floor3 {
+  background-image: url('../../floors/floor3/floor3Backdrop.png');
+}
+
+.Floor4 {
+  background-image: url('../../floors/floor4/floor4Backdrop.png');
 }
