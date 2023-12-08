@@ -37,9 +37,10 @@ function Register() {
     <div>
       <NavBar></NavBar>
       <div className="BackgroundRegister" data-testid="register">
-      <h1 className = "prompt">Sign up to fast-track your studying</h1>
+      <h1 className = "promptS">Sign up to fast-track your studying</h1>
         <div className="RegisterWrap">
           <form onSubmit={registerUser} data-testid="registerForm">
+          <div id="errorMessage" className="err-message"></div>
             <br />
             <h2 className = "inpLable">Email address</h2>
             <input

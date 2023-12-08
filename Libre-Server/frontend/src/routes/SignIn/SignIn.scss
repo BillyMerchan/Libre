@@ -16,7 +16,7 @@ $button-main: rgba(222, 132, 14, 0.876);
 
 .Loginn {
     margin-top: -100px;
-    width: 450px;
+    width: 500px;
     height: 300px;
     text-align: center;
     font-family: 'Quicksand';
@@ -30,17 +30,25 @@ $button-main: rgba(222, 132, 14, 0.876);
 }
 
 
-
 .InputL {
   width: 350px;
   height: 40px;
   border-radius: 5px;
-  border-style: none;
   padding: 10px;
   margin-bottom: 10px;
   font-family: 'Quicksand';
   background-color: $bg-main;
   border: 2px solid $button-main;
+}
+
+.promptL {
+  color: $bg-alt;
+  font-family: 'Quicksand';
+  position: absolute;
+  margin-top: 150px;
+  font-size: 50px;
+  width: 500px;
+  top: 0;
 }
 
 .Outer {
@@ -75,6 +83,26 @@ $button-main: rgba(222, 132, 14, 0.876);
     border-style: none;
     font-weight: 800;
  }
+
+@keyframes wiggle {
+  0% {transform: rotate(1deg);}
+  25% {transform: rotate(-.5deg);}
+  50% {transform: rotate(1deg);}
+  75% {transform: rotate(-.8deg);}
+  100% {transform: rotate(0deg);}
+}
+
+.err-message {
+  color: red;
+  font-weight: 900;
+  font-family: 'Quicksand';
+}
+
+ .errorInp {
+    border-color: red;
+    animation-name: wiggle;
+    animation-duration: .75s;
+  }
 
 .buttL:hover, .buttL:active {
   transition: 0.5; 

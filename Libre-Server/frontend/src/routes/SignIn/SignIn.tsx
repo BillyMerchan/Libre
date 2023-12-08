@@ -30,7 +30,19 @@ export default function SignIn() {
         alert(data.message);
         navigate('/');
       } else {
+        const inputEmail = document.getElementById('InputEmail');
+        const inputPass = document.getElementById('InputPass');
+        const errorMessage = document.getElementById('errorMessage');
         const errorData = await response.json();
+
+        inputEmail?.classList.add('errorInp'); // Adding class to highlight input
+        inputPass?.classList.add('errorInp');
+
+        if(errorMessage) {
+          errorMessage.innerText = `Error: ${errorData.error}`;
+        }
+
+
         alert(errorData.error);
       }
     } catch (err) {
@@ -43,10 +55,12 @@ export default function SignIn() {
       <NavBar></NavBar>
       <div className="sign">
         <div className="Loginn">
-          <h1 className = "prompt">Log in to Libre</h1>
+          <h1 className = "promptL">Log in to Libre</h1>
           <form onSubmit={loginUser}>
+          <div id="errorMessage" className="err-message"></div>
             <h2 className = "inpLable">Email address</h2>
             <input className="InputL"
+              id = "InputEmail"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               type="email"
@@ -55,6 +69,7 @@ export default function SignIn() {
             <br />
             <h2 className = "inpLableP">Password</h2>
             <input className="InputL"
+              id = "InputPass"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               type="password"

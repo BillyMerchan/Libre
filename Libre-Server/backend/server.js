@@ -5,7 +5,7 @@ const allRoutes = require('./routes/index.js')
 require('dotenv').config({ path: './config.env' })
 
 const app = express()
-const port = process.env.PORT
+// const port = process.env.PORT
 
 app.use(cors({ credentials: true, origin: true }))
 app.use(express.json())
@@ -22,4 +22,5 @@ mongoose
   .then(() => console.log('Connected to DB'))
   .catch(console.error)
 
-const server = app.listen(3001, () => console.log('Server started on port 3001'))
+// const app =
+app.listen(3001, () => console.log('Server started on port 3001'))
