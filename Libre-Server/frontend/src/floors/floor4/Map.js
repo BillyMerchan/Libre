@@ -20,7 +20,10 @@ const MapDiagram4 = ({ onClick }) => {
   };
 
   const roomDescriptions = {
-    studyRoom: "Desk space: 1 person\nWindows: none\nWhite Board: none",
+    studyRoom: `Desk space: 1 person \nWindows: none \nWhite Board: none`,
+    studyRoomv2: `Desk space: 2 people \nWindows: 1 side \nWhite Board: none`,
+    studyRoomv3: `Desk space: 4 people \nWindows: 1 side \nWhite Board: none`,
+    restRoom1: `Stalls: 2 \nOne of which is accessibility. \nSinks: 2 \nPaper Towel dispensor available.`
     // Add descriptions for other rooms 
   };
 
@@ -59,14 +62,12 @@ const MapDiagram4 = ({ onClick }) => {
         description="Desk space: 1 person\n Windows: none \nWhite Board: none"
       />
       <path
-        id="Men's restroom" {...roomStyles.restroom} onClick={() => onClick("Men's restroom", roomStyles.restroom.fill, roomDescriptions.studyRoom)}
+        id="Men's restroom" {...roomStyles.restroom} onClick={() => onClick("Men's restroom", roomStyles.restroom.fill, roomDescriptions.restRoom1)}
         d="M290.773 16.861h29.802v26.107l-19.443-.037-.144-13.404-1.102.025-.093 17.177-9.02.036z"
-        description="Desk space: 1 person\n Windows: none \nWhite Board: none"
       />
       <path
-        id="Women's restroom" {...roomStyles.restroom} onClick={() => onClick("Women's restroom", roomStyles.restroom.fill, roomDescriptions.studyRoom)}
+        id="Women's restroom" {...roomStyles.restroom} onClick={() => onClick("Women's restroom", roomStyles.restroom.fill, roomDescriptions.restRoom1)}
         d="M301.178 71.84h12.948v-1.037l-13.02-.14.087-11.633 6.251-.05-.014-11.546 13.53-.01.19 31.554h-19.972z"
-        description="Desk space: 1 person\n Windows: none \nWhite Board: none"
       />
       <path
         id="433A" {...roomStyles.studyRoom} onClick={() => onClick('433A', roomStyles.studyRoom.fill, roomDescriptions.studyRoom)}
@@ -215,24 +216,20 @@ const MapDiagram4 = ({ onClick }) => {
         description="Desk space: 1 person\n Windows: none \nWhite Board: none"
       />
       <path
-        id="437C" {...roomStyles.studyRoom} onClick={() => onClick('437C', roomStyles.studyRoom.fill, roomDescriptions.studyRoom)}
+        id="437C" {...roomStyles.studyRoom} onClick={() => onClick('437C', roomStyles.studyRoom.fill, roomDescriptions.studyRoomv2)}
         d="M450.02 33.338h17.087v19.44h-17.086z"
-        description="Desk space: 1 person\n Windows: none \nWhite Board: none"
       />
       <path
-        id="437B" {...roomStyles.studyRoom} onClick={() => onClick('437B', roomStyles.studyRoom.fill, roomDescriptions.studyRoom)}
+        id="437B" {...roomStyles.studyRoom} onClick={() => onClick('437B', roomStyles.studyRoom.fill, roomDescriptions.studyRoomv2)}
         d="M429.745 33.414h19.06v19.44h-19.06Z"
-        description="Desk space: 1 person\n Windows: none \nWhite Board: none"
       />
       <path
-        id="437A" {...roomStyles.studyRoom} onClick={() => onClick('437A', roomStyles.studyRoom.fill, roomDescriptions.studyRoom)}
+        id="437A" {...roomStyles.studyRoom} onClick={() => onClick('437A', roomStyles.studyRoom.fill, roomDescriptions.studyRoomv3)}
         d="M411.899 33.338h16.175v19.516H411.9z"
-        description="Desk space: 1 person\n Windows: none \nWhite Board: none"
       />
       <path
-        id="435D" {...roomStyles.studyRoom} onClick={() => onClick('435D', roomStyles.studyRoom.fill, roomDescriptions.studyRoom)}
+        id="435D" {...roomStyles.studyRoom} onClick={() => onClick('435D', roomStyles.studyRoom.fill, roomDescriptions.studyRoomv2)}
         d="M322.897 33.338h25.364v12.985h-25.364z"
-        description="Desk space: 1 person\n Windows: none \nWhite Board: none"
       />
     </svg >
   );

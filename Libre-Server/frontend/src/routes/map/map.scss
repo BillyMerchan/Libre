@@ -1,5 +1,9 @@
 $bg: white;
 
+div {
+  white-space: pre-wrap;
+}
+
 .Map {
   width: 100%;
   background-color: #FFEEC1;
@@ -15,6 +19,7 @@ $bg: white;
   transition: filter 0.3s ease;
   stroke: black;
   stroke-width: 0.3;
+  border: #000;
   z-index: 1;
 }
 
