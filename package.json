@@ -44,6 +44,7 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.0.0",
     "react": "^18.2.0",
+    "react-zoom-pan-pinch": "^3.3.0",
     "run-script": "^0.1.1",
     "typescript-eslint": "^0.0.1-alpha.0"
   }

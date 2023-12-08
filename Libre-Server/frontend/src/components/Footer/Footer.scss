@@ -2,17 +2,42 @@ $fg-main: #ffffff;
 $bg-main: #FFEEC1;
 $bg-alt:  #B14B2A;
 
-.container {
+.footer {
+  background: $bg-alt;
+  padding: 6px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
-  box-sizing: border-box;
-  font-family: "Quicksand";
 }
 
-.footer {
-  background: $bg-main;
-  padding: 20px;
-  text-align: center;
+.footer-content {
+  width: 48%;
+}
+
+.copyright {
+  color: white;
+}
+
+.copyright-content {
+  margin-left: 0;
+}
+
+.link-content {
+  margin-right: 0;
+}
+
+
+.ghlogo {
+  padding-top:5px;
+  filter: invert(100%);
+  width: 40px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
