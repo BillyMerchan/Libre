@@ -10,7 +10,7 @@ const FAQ: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className='wPage'>
       <NavBar />
       <div className='FAQ'>
         <div className="background-img-FAQ">

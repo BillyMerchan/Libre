@@ -2,9 +2,11 @@ $fg-main: #ffffff;
 $bg-main: #FFEEC1;
 $bg-alt:  #B14B2A;
 
+.wPage {
+}
+
 .FAQ {
     background-color: $bg-main;
-    padding-bottom: 400px;
     width: 100%;
     display: flex;
     object-fit: cover;
@@ -87,7 +89,6 @@ $bg-alt:  #B14B2A;
 .background-img-FAQ {
     width: 100%;
     height: 100%;
-    padding-top: 10px;
     background-image: url("../../img/lib.png");
     background-size: cover;
     background-repeat: no-repeat;

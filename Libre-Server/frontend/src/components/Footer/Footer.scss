@@ -3,6 +3,8 @@ $bg-main: #FFEEC1;
 $bg-alt:  #B14B2A;
 
 .footer {
+  position: absolute;
+  z-index: 1;
   background: $bg-alt;
   padding: 6px;
   text-align: center;
@@ -12,7 +14,7 @@ $bg-alt:  #B14B2A;
 }
 
 .footer-content {
-  width: 48%;
+  width: 18%;
 }
 
 .copyright {
@@ -21,10 +23,12 @@ $bg-alt:  #B14B2A;
 
 .copyright-content {
   margin-left: 0;
+  padding-left: 0;
 }
 
 .link-content {
   margin-right: 0;
+
 }
 
 
