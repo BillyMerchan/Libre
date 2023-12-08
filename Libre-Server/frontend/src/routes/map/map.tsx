@@ -1,11 +1,9 @@
-// Map.jsx
 import React, { FC, useState } from 'react';
 import './map.scss';
 import NavBar from '../../components/NavBar/Navbar';
 import DropDown from '../../components/dropDown/dropDown';
 import MapFloor3 from '../../floors/floor3/Map.js';
 import MapFloor4 from '../../floors/floor4/Map.js';
-import MapFloor4Backdrop from '../../floors/floor4/floor4Backdrop.png'
 import RoomPopup from '../../components/RoomPopup/RoomPopup';
 import Legend from '../../components/Legend/Legend';
 import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
@@ -42,7 +40,7 @@ const Map: FC = () => {
 
         <TransformWrapper initialScale={1} initialPositionX={0} initialPositionY={0} limitToBounds={false}>
 
-          {({ zoomIn, zoomOut, resetTransform, ...rest }) => (
+          {({ zoomIn, zoomOut, resetTransform }) => (
             <React.Fragment>
               <div className="tools ZoomButtons">
                 <button onClick={() => zoomIn()}>+</button>
